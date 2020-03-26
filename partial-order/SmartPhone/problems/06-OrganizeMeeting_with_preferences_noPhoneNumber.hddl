@@ -1,0 +1,49 @@
+(define
+	(problem p06_OrganizeMeeting_with_preferences_noPhoneNumber)
+	(:domain  SmartPhone_HierarchicalNoAxioms)
+	(:objects
+		call1 - Call
+		dateForMeeting - Date
+		sms1 - SMS
+		Biundo - Person
+		BiundoEMailAddress - EMailAddress
+		BiundoPicture - Picture
+		account1 - EMailAccount
+		room101 - Location
+		email1 - EMail
+		BiundoOfficeNumber - NumberOffice
+		contact1 - Contact
+		agenda - Agenda
+	)
+	(:htn
+		:parameters (?extractsInformation_Biundo_message - Message)
+		:subtasks (and
+		 (task0 (attachInformation ?extractsInformation_Biundo_message dateForMeeting))
+		 (task1 (contact Biundo ?extractsInformation_Biundo_message))
+		 (task2 (extractsInformation Biundo ?extractsInformation_Biundo_message dateForMeeting))
+		)
+		:ordering (and
+			(task0 < task2)
+			(task1 < task2)
+		)
+	)
+	(:init
+		(associated_Contact contact1 Biundo)
+		(associated_Picture contact1 BiundoPicture)
+		(created contact1)
+		(haveInformation_Contactable Biundo BiundoEMailAddress)
+		(haveInformation_Regular agenda)
+		(haveInformation_Regular dateForMeeting)
+		(haveInformation_Regular BiundoPicture)
+		(haveInformation_Regular room101)
+		(inMode_Home)
+		(inUse contact1)
+		(isFavourite contact1)
+		(selected account1)
+	)
+	(:goal
+		(and
+		(hasInformation_Regular Biundo dateForMeeting)
+		)
+	)
+)

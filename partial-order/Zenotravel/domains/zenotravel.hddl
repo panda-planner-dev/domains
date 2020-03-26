@@ -1,0 +1,180 @@
+(define (domain zenotravel)
+(:requirements :typing :hierachie )
+(:types
+    Time City Thing FLevel - Object
+    Aircraft Person  - Thing
+)
+
+(:predicates
+    ;;todo
+    (at ?p - Thing ?c - City)
+    (in ?p - Person ?a - Aircraft)
+    (different ?c1 ?c2 - City)
+    (next ?l1 ?l2 - FLevel)
+    (fuel-level ?a - Aircraft ?l - FLevel)
+)
+
+;;;;; abstract tasks
+(:task transport-person
+    :parameters (?p - Person ?c - City)
+)
+
+(:task upper-move-aircraft
+    :parameters (?a - Aircraft ?c - City)
+)
+
+(:task move-aircraft
+    :parameters (?a - Aircraft ?c1 ?c2 - City)
+)
+
+(:task transport-aircraft
+    :parameters (?a - Aircraft ?c - City)
+)
+
+;;;;; methods
+(:method m1
+    :parameters (?p - Person ?c - City)
+    :task (transport-person ?p ?c)
+    :precondition (at ?p ?c)
+    :subtasks ( )
+)
+
+(:method m2
+    :parameters (?p - Person ?c1 ?c2 - City ?a - Aircraft)
+    :task (transport-person ?p ?c2)
+    :precondition (and
+        (at ?p ?c1)
+        (at ?a ?c1)
+    )
+    :ordered-tasks (and
+        (board ?p ?a ?c1)
+        (upper-move-aircraft ?a ?c2)
+        (debark ?p ?a ?c2)
+    )
+)
+
+(:method m3
+    :parameters (?p - Person ?c1 ?c2 ?c3 - City ?a - Aircraft)
+    :task (transport-person ?p ?c2)
+    :precondition (and
+        (at ?p ?c1)
+        (at ?a ?c3)
+        (different ?c1 ?c3)
+    )
+    :ordered-tasks (and
+        (upper-move-aircraft ?a ?c1)
+        (board ?p ?a ?c1)
+        (upper-move-aircraft ?a ?c2)
+        (debark ?p ?a ?c2)
+    )
+)
+
+
+
+(:method m4-abort
+    :parameters (?c - City ?a - Aircraft)
+    :task (upper-move-aircraft ?a ?c)
+    :precondition (and
+        (at ?a ?c)
+    )
+    :ordered-tasks ()
+)
+
+(:method m4-do
+    :parameters (?c ?other - City ?a - Aircraft)
+    :task (upper-move-aircraft ?a ?c)
+    :precondition (and
+        (not (at ?a ?c))
+        (at ?a ?other)
+        (different ?c ?other)
+    )
+    :ordered-tasks (and
+        (move-aircraft ?a ?other ?c)
+    )
+)
+
+(:method m5-case1
+    :parameters (?c1 ?c2 - City ?a - Aircraft ?l1 ?l2 - FLevel)
+    :task (move-aircraft ?a ?c1 ?c2)
+    :precondition (and
+        (fuel-level ?a ?l1)
+        (next ?l2 ?l1)
+    )
+    :ordered-tasks (and
+        (fly ?a ?c1 ?c2 ?l1 ?l2)
+    )
+)
+
+(:method m5-case2
+    :parameters (?c1 ?c2 - City ?a - Aircraft ?l ?l1 - FLevel)
+    :task (move-aircraft ?a ?c1 ?c2)
+    :precondition (and
+        (fuel-level ?a ?l)
+        (forall (?l2 - FLevel) (not (next ?l2 ?l)))
+    )
+    :ordered-tasks (and
+        (refuel ?a ?l ?l1)
+        (fly ?a ?c1 ?c2 ?l1 ?l)
+    )
+)
+
+(:method m6
+    :parameters (?c - City ?a - Aircraft)
+    :task (transport-aircraft ?a ?c)
+    :ordered-tasks (and
+        (upper-move-aircraft ?a ?c)
+    )
+)
+
+
+;;; primitive actions
+(:action board
+    :parameters (?p - Person ?a - Aircraft ?c - City)
+    :precondition (and
+            (at ?p ?c)
+        )
+    :effect (and
+            (not (at ?p ?c))
+            (in ?p ?a)
+    )
+)
+
+(:action debark
+    :parameters (?p - Person ?a - Aircraft ?c - City)
+    :precondition (and
+            (in ?p ?a)
+        )
+    :effect (and
+            (not (in ?p ?a))
+            (at ?p ?c)
+    )
+)
+
+(:action refuel
+    :parameters (?a - Aircraft ?l ?l1 - FLevel)
+    :precondition (and
+            (fuel-level ?a ?l)
+        )
+    :effect (and
+            (not (fuel-level ?a ?l))
+            (fuel-level ?a ?l1)
+    )
+)
+
+(:action fly
+    :parameters (?a - Aircraft ?c1 ?c2 - City ?l1 ?l2 - FLevel)
+    :precondition (and
+            (at ?a ?c1)
+            (fuel-level ?a ?l1)
+        )
+    :effect (and
+            (not (at ?a ?c1))
+            (not (fuel-level ?a ?l1))
+
+            (at ?a ?c2)
+            (fuel-level ?a ?l2)
+    )
+)
+
+
+)

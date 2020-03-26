@@ -1,0 +1,57 @@
+(define(problem zenotravel03)
+(:domain zenotravel)
+(:objects
+    p1 p2 p3 p4 - Person
+    c1 c2 c3 - City
+    a1 a2 - Aircraft
+    f0 f1 f2 f3 f4 f5 f6 - FLevel
+)
+
+(:htn
+    :tasks
+    (and
+           (transport-person p1 c2)
+           (transport-person p2 c1)
+           (transport-person p3 c1)
+           (transport-person p4 c2)
+           (transport-person p2 c2)
+           (transport-aircraft a2 c3)
+    )
+    :ordering ( )
+    :constraints ( )
+)
+
+(:init
+    (next f0 f1)
+    (next f1 f2)
+    (next f2 f3)
+    (next f3 f4)
+    (next f4 f5)
+    (next f5 f6)
+    (next f5 f6)
+    (different c1 c2)
+    (different c1 c3)
+    (different c2 c1)
+    (different c2 c3)
+    (different c3 c1)
+    (different c3 c2)
+
+    (at a1 c1)
+    (at a2 c3)
+    (at p1 c1)
+    (at p2 c1)
+    (at p3 c2)
+    (at p4 c2)
+    (fuel-level a1 f4)
+    (fuel-level a2 f5)
+)
+
+(:goal (and
+    (at a2 c3)
+    (at p1 c2)
+    (at p2 c2)
+    (at p3 c1)
+    (at p4 c2)
+    )
+)
+)
