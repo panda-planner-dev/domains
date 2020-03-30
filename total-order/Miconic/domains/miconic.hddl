@@ -40,12 +40,10 @@
 		:parameters (?d - Floor ?f - Floor ?o - Floor ?p - Person)
 		:task (solve_elevator)
 		:precondition (and
-			(and
-				(goal ?p)
-				(lift_at ?f)
-				(origin ?p ?o)
-				(destination ?p ?d)
-			)
+			(goal ?p)
+			(lift_at ?f)
+			(origin ?p ?o)
+			(destination ?p ?d)
 		)
 		:subtasks (and
 		 (task0 (deliver_person ?p ?o ?d))
@@ -60,9 +58,7 @@
 		:parameters (?d - Floor ?f - Floor ?o - Floor ?p - Person)
 		:task (deliver_person ?p ?o ?d)
 		:precondition (and
-			(and
-				(lift_at ?f)
-			)
+			(lift_at ?f)
 		)
 		:subtasks (and
 		 (task0 (move ?f ?o))

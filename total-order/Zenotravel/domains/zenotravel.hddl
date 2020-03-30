@@ -54,10 +54,8 @@
 		:parameters (?a - Aircraft ?c1 - City ?c2 - City ?p - Person)
 		:task (transport-person ?p ?c2)
 		:precondition (and
-			(and
-				(at ?p ?c1)
-				(at ?a ?c1)
-			)
+			(at ?p ?c1)
+			(at ?a ?c1)
 		)
 		:subtasks (and
 		 (task0 (board ?p ?a ?c1))
@@ -74,11 +72,9 @@
 		:parameters (?a - Aircraft ?c1 - City ?c2 - City ?c3 - City ?p - Person)
 		:task (transport-person ?p ?c2)
 		:precondition (and
-			(and
-				(at ?p ?c1)
-				(at ?a ?c3)
-				(different ?c1 ?c3)
-			)
+			(at ?p ?c1)
+			(at ?a ?c3)
+			(different ?c1 ?c3)
 		)
 		:subtasks (and
 		 (task0 (upper-move-aircraft ?a ?c1))
@@ -97,9 +93,7 @@
 		:parameters (?a - Aircraft ?c - City)
 		:task (upper-move-aircraft ?a ?c)
 		:precondition (and
-			(and
-				(at ?a ?c)
-			)
+			(at ?a ?c)
 		)
 		:subtasks (
 		)
@@ -109,11 +103,9 @@
 		:parameters (?a - Aircraft ?c - City ?other - City)
 		:task (upper-move-aircraft ?a ?c)
 		:precondition (and
-			(and
-				(not (at ?a ?c))
-				(at ?a ?other)
-				(different ?c ?other)
-			)
+			(not (at ?a ?c))
+			(at ?a ?other)
+			(different ?c ?other)
 		)
 		:subtasks (and
 		 (task0 (move-aircraft ?a ?other ?c))
@@ -124,10 +116,8 @@
 		:parameters (?a - Aircraft ?c1 - City ?c2 - City ?l1 - FLevel ?l2 - FLevel)
 		:task (move-aircraft ?a ?c1 ?c2)
 		:precondition (and
-			(and
-				(fuel-level ?a ?l1)
-				(next ?l2 ?l1)
-			)
+			(fuel-level ?a ?l1)
+			(next ?l2 ?l1)
 		)
 		:subtasks (and
 		 (task0 (fly ?a ?c1 ?c2 ?l1 ?l2))
@@ -138,11 +128,9 @@
 		:parameters (?a - Aircraft ?c1 - City ?c2 - City ?l - FLevel ?l1 - FLevel)
 		:task (move-aircraft ?a ?c1 ?c2)
 		:precondition (and
-			(and
-				(fuel-level ?a ?l)
-				(forall (?l2 - FLevel)
-					(not (next ?l2 ?l))
-				)
+			(fuel-level ?a ?l)
+			(forall (?l2 - FLevel)
+				(not (next ?l2 ?l))
 			)
 		)
 		:subtasks (and
