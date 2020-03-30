@@ -144,10 +144,8 @@
 		:parameters (?from - waypoint ?rover - rover ?to - waypoint)
 		:task (navigate_abs ?rover ?to)
 		:precondition (and
-			(and
-				(not (at ?rover ?to))
-				(can_traverse ?rover ?from ?to)
-			)
+			(not (at ?rover ?to))
+			(can_traverse ?rover ?from ?to)
 		)
 		:subtasks (and
 		 (task0 (navigate ?rover ?from ?to))
@@ -158,12 +156,10 @@
 		:parameters (?from - waypoint ?mid - waypoint ?rover - rover ?to - waypoint)
 		:task (navigate_abs ?rover ?to)
 		:precondition (and
-			(and
-				(not (at ?rover ?to))
-				(not (can_traverse ?rover ?from ?to))
-				(can_traverse ?rover ?from ?mid)
-				(not (visited ?mid))
-			)
+			(not (at ?rover ?to))
+			(not (can_traverse ?rover ?from ?to))
+			(can_traverse ?rover ?from ?mid)
+			(not (visited ?mid))
 		)
 		:subtasks (and
 		 (task0 (navigate ?rover ?from ?mid))
@@ -182,10 +178,8 @@
 		:parameters (?l - lander ?rover - rover ?waypoint - waypoint ?x - waypoint ?y - waypoint)
 		:task (send_soil_data ?rover ?waypoint)
 		:precondition (and
-			(and
-				(at_lander ?l ?y)
-				(visible ?x ?y)
-			)
+			(at_lander ?l ?y)
+			(visible ?x ?y)
 		)
 		:subtasks (and
 		 (task0 (navigate_abs ?rover ?x))
@@ -200,10 +194,8 @@
 		:parameters (?rover - rover ?s - store ?waypoint - waypoint)
 		:task (get_soil_data ?waypoint)
 		:precondition (and
-			(and
-				(store_of ?s ?rover)
-				(equipped_for_soil_analysis ?rover)
-			)
+			(store_of ?s ?rover)
+			(equipped_for_soil_analysis ?rover)
 		)
 		:subtasks (and
 		 (task0 (navigate_abs ?rover ?waypoint))
@@ -222,10 +214,8 @@
 		:parameters (?l - lander ?rover - rover ?waypoint - waypoint ?x - waypoint ?y - waypoint)
 		:task (send_rock_data ?rover ?waypoint)
 		:precondition (and
-			(and
-				(at_lander ?l ?y)
-				(visible ?x ?y)
-			)
+			(at_lander ?l ?y)
+			(visible ?x ?y)
 		)
 		:subtasks (and
 		 (task0 (navigate_abs ?rover ?x))
@@ -240,10 +230,8 @@
 		:parameters (?rover - rover ?s - store ?waypoint - waypoint)
 		:task (get_rock_data ?waypoint)
 		:precondition (and
-			(and
-				(equipped_for_rock_analysis ?rover)
-				(store_of ?s ?rover)
-			)
+			(equipped_for_rock_analysis ?rover)
+			(store_of ?s ?rover)
 		)
 		:subtasks (and
 		 (task0 (navigate_abs ?rover ?waypoint))
@@ -262,10 +250,8 @@
 		:parameters (?l - lander ?mode - mode ?objective - objective ?rover - rover ?x - waypoint ?y - waypoint)
 		:task (send_image_data ?rover ?objective ?mode)
 		:precondition (and
-			(and
-				(at_lander ?l ?y)
-				(visible ?x ?y)
-			)
+			(at_lander ?l ?y)
+			(visible ?x ?y)
 		)
 		:subtasks (and
 		 (task0 (navigate_abs ?rover ?x))
@@ -280,12 +266,10 @@
 		:parameters (?camera - camera ?mode - mode ?objective - objective ?rover - rover ?waypoint - waypoint)
 		:task (get_image_data ?objective ?mode)
 		:precondition (and
-			(and
-				(equipped_for_imaging ?rover)
-				(on_board ?camera ?rover)
-				(supports ?camera ?mode)
-				(visible_from ?objective ?waypoint)
-			)
+			(equipped_for_imaging ?rover)
+			(on_board ?camera ?rover)
+			(supports ?camera ?mode)
+			(visible_from ?objective ?waypoint)
 		)
 		:subtasks (and
 		 (task0 (calibrate_abs ?rover ?camera))
@@ -304,10 +288,8 @@
 		:parameters (?camera - camera ?objective - objective ?rover - rover ?waypoint - waypoint)
 		:task (calibrate_abs ?rover ?camera)
 		:precondition (and
-			(and
-				(calibration_target ?camera ?objective)
-				(visible_from ?objective ?waypoint)
-			)
+			(calibration_target ?camera ?objective)
+			(visible_from ?objective ?waypoint)
 		)
 		:subtasks (and
 		 (task0 (navigate_abs ?rover ?waypoint))
@@ -320,7 +302,7 @@
 
 	(:action navigate
 		:parameters (?x - rover ?y - waypoint ?z - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(can_traverse ?x ?y ?z)
 				(available ?x)
@@ -336,7 +318,7 @@
 
 	(:action sample_soil
 		:parameters (?x - rover ?s - store ?p - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(at ?x ?p)
 				(at_soil_sample ?p)
@@ -355,7 +337,7 @@
 
 	(:action sample_rock
 		:parameters (?x - rover ?s - store ?p - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(at_rock_sample ?p)
 				(equipped_for_rock_analysis ?x)
@@ -373,7 +355,7 @@
 
 	(:action drop
 		:parameters (?x - rover ?y - store)
-		:precondition 
+		:precondition
 			(and
 				(store_of ?y ?x)
 				(full ?y)
@@ -387,7 +369,7 @@
 
 	(:action calibrate
 		:parameters (?r - rover ?i - camera ?t - objective ?w - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(equipped_for_imaging ?r)
 				(calibration_target ?i ?t)
@@ -403,7 +385,7 @@
 
 	(:action take_image
 		:parameters (?r - rover ?p - waypoint ?o - objective ?i - camera ?m - mode)
-		:precondition 
+		:precondition
 			(and
 				(calibrated ?i ?r)
 				(on_board ?i ?r)
@@ -421,7 +403,7 @@
 
 	(:action communicate_soil_data
 		:parameters (?r - rover ?l - lander ?p - waypoint ?x - waypoint ?y - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(at ?r ?x)
 				(at_lander ?l ?y)
@@ -442,7 +424,7 @@
 
 	(:action communicate_rock_data
 		:parameters (?r - rover ?l - lander ?p - waypoint ?x - waypoint ?y - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(at ?r ?x)
 				(at_lander ?l ?y)
@@ -463,7 +445,7 @@
 
 	(:action communicate_image_data
 		:parameters (?r - rover ?l - lander ?o - objective ?m - mode ?x - waypoint ?y - waypoint)
-		:precondition 
+		:precondition
 			(and
 				(at ?r ?x)
 				(at_lander ?l ?y)
