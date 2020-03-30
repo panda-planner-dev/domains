@@ -1,0 +1,26 @@
+
+(define
+    (problem generated)
+    (:domain factories)
+    (:objects
+        last_factory - factory
+        factory0 - factory
+        location0 - location
+        resource0 - resource
+        factory1 - factory location1 - location resource1 - resource factory2 - factory location2 - location resource2 - resource factory3 - factory location3 - location resource3 - resource factory4 - factory location4 - location resource4 - resource factory5 - factory location5 - location resource5 - resource factory6 - factory location6 - location resource6 - resource factory7 - factory location7 - location resource7 - resource factory8 - factory location8 - location resource8 - resource last_location - location
+    )
+    (:htn
+        :tasks (construct_factory last_factory)
+        :ordering ()
+        :constraints ()
+    )
+    (:init
+        (truck-at location0)
+        (constructed factory0)
+        (factory-at factory0 location0)
+        (produces factory0 resource0)
+        (demands last_factory resource8)
+        (connected location1 location0) (connected location0 location1) (produces factory1 resource1) (demands factory1 resource0) (connected location2 location1) (connected location1 location2) (produces factory2 resource2) (demands factory2 resource1) (demands factory2 resource0) (connected location3 location2) (connected location2 location3) (produces factory3 resource3) (demands factory3 resource1) (demands factory3 resource0) (demands factory3 resource2) (connected location4 location3) (connected location3 location4) (produces factory4 resource4) (demands factory4 resource2) (demands factory4 resource0) (demands factory4 resource1) (demands factory4 resource3) (connected location5 location4) (connected location4 location5) (produces factory5 resource5) (demands factory5 resource4) (demands factory5 resource0) (demands factory5 resource2) (demands factory5 resource3) (connected location6 location5) (connected location5 location6) (produces factory6 resource6) (demands factory6 resource4) (demands factory6 resource2) (demands factory6 resource1) (demands factory6 resource3) (connected location7 location6) (connected location6 location7) (produces factory7 resource7) (demands factory7 resource6) (demands factory7 resource2) (demands factory7 resource1) (demands factory7 resource3) (connected location8 location7) (connected location7 location8) (produces factory8 resource8) (demands factory8 resource5) (demands factory8 resource6) (demands factory8 resource1) (demands factory8 resource7) (connected location8 last_location) (connected last_location location8)
+    )
+)
+    

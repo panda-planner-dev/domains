@@ -1,0 +1,26 @@
+
+(define
+    (problem generated)
+    (:domain factories)
+    (:objects
+        last_factory - factory
+        factory0 - factory
+        location0 - location
+        resource0 - resource
+        factory1 - factory location1 - location resource1 - resource factory2 - factory location2 - location resource2 - resource factory3 - factory location3 - location resource3 - resource factory4 - factory location4 - location resource4 - resource factory5 - factory location5 - location resource5 - resource factory6 - factory location6 - location resource6 - resource factory7 - factory location7 - location resource7 - resource factory8 - factory location8 - location resource8 - resource factory9 - factory location9 - location resource9 - resource factory10 - factory location10 - location resource10 - resource factory11 - factory location11 - location resource11 - resource factory12 - factory location12 - location resource12 - resource factory13 - factory location13 - location resource13 - resource factory14 - factory location14 - location resource14 - resource factory15 - factory location15 - location resource15 - resource last_location - location
+    )
+    (:htn
+        :tasks (construct_factory last_factory)
+        :ordering ()
+        :constraints ()
+    )
+    (:init
+        (truck-at location0)
+        (constructed factory0)
+        (factory-at factory0 location0)
+        (produces factory0 resource0)
+        (demands last_factory resource15)
+        (connected location1 location0) (connected location0 location1) (produces factory1 resource1) (demands factory1 resource0) (connected location2 location1) (connected location1 location2) (produces factory2 resource2) (demands factory2 resource1) (demands factory2 resource0) (connected location3 location2) (connected location2 location3) (produces factory3 resource3) (demands factory3 resource1) (demands factory3 resource2) (demands factory3 resource0) (connected location4 location3) (connected location3 location4) (produces factory4 resource4) (demands factory4 resource3) (demands factory4 resource1) (demands factory4 resource0) (demands factory4 resource2) (connected location5 location4) (connected location4 location5) (produces factory5 resource5) (demands factory5 resource3) (demands factory5 resource1) (demands factory5 resource4) (demands factory5 resource0) (connected location6 location5) (connected location5 location6) (produces factory6 resource6) (demands factory6 resource5) (demands factory6 resource0) (demands factory6 resource2) (demands factory6 resource4) (connected location7 location6) (connected location6 location7) (produces factory7 resource7) (demands factory7 resource5) (demands factory7 resource3) (demands factory7 resource4) (demands factory7 resource1) (connected location8 location7) (connected location7 location8) (produces factory8 resource8) (demands factory8 resource1) (demands factory8 resource0) (demands factory8 resource4) (demands factory8 resource7) (connected location9 location8) (connected location8 location9) (produces factory9 resource9) (demands factory9 resource0) (demands factory9 resource4) (demands factory9 resource3) (demands factory9 resource8) (connected location10 location9) (connected location9 location10) (produces factory10 resource10) (demands factory10 resource8) (demands factory10 resource3) (demands factory10 resource1) (demands factory10 resource5) (connected location11 location10) (connected location10 location11) (produces factory11 resource11) (demands factory11 resource1) (demands factory11 resource10) (demands factory11 resource6) (demands factory11 resource0) (connected location12 location11) (connected location11 location12) (produces factory12 resource12) (demands factory12 resource4) (demands factory12 resource9) (demands factory12 resource11) (demands factory12 resource1) (connected location13 location12) (connected location12 location13) (produces factory13 resource13) (demands factory13 resource6) (demands factory13 resource3) (demands factory13 resource10) (demands factory13 resource12) (connected location14 location13) (connected location13 location14) (produces factory14 resource14) (demands factory14 resource0) (demands factory14 resource2) (demands factory14 resource5) (demands factory14 resource1) (connected location15 location14) (connected location14 location15) (produces factory15 resource15) (demands factory15 resource9) (demands factory15 resource11) (demands factory15 resource0) (demands factory15 resource2) (connected location15 last_location) (connected last_location location15)
+    )
+)
+    

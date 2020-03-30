@@ -1,0 +1,26 @@
+
+(define
+    (problem generated)
+    (:domain factories)
+    (:objects
+        last_factory - factory
+        factory0 - factory
+        location0 - location
+        resource0 - resource
+        factory1 - factory location1 - location resource1 - resource last_location - location
+    )
+    (:htn
+        :tasks (construct_factory last_factory)
+        :ordering ()
+        :constraints ()
+    )
+    (:init
+        (truck-at location0)
+        (constructed factory0)
+        (factory-at factory0 location0)
+        (produces factory0 resource0)
+        (demands last_factory resource1)
+        (connected location1 location0) (connected location0 location1) (produces factory1 resource1) (demands factory1 resource0) (connected location1 last_location) (connected last_location location1)
+    )
+)
+    
