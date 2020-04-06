@@ -18,7 +18,8 @@
 ; - vehicle is not a point anymore
 
 (define (domain monroe)
-    (:types
+    (:requirements :hierarchy :typing)
+	(:types
           person tree condition food callable hazardousness town generator gas-can point vehicle - object
           child adult - person
           waterco powerco - callable
