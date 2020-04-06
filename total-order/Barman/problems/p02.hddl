@@ -2,7 +2,7 @@
 (:domain barman)
 
 
-(:requirements :typing :hierachie)
+(:requirements :typing :hierarchy)
 
 
 (:objects
