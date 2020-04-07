@@ -2,7 +2,7 @@
 
 (:requirements
   :typing
-  :hierachie)
+  :hierarchy)
 
 (:types hand level beverage dispenser container - object ingredient cocktail - beverage shot shaker - container)
 

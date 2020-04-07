@@ -1,6 +1,6 @@
 (define (problem prob)
 (:domain barman)
-(:requirements :typing :hierachie)
+(:requirements :typing :hierarchy)
 
 (:objects
 shaker1 - shaker

@@ -1,5 +1,5 @@
 (define (domain zenotravel)
-(:requirements :typing :hierachie )
+(:requirements :typing :hierarchy )
 (:types
     Time City Thing FLevel - Object
     Aircraft Person  - Thing
