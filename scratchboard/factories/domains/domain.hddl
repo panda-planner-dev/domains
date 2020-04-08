@@ -71,7 +71,7 @@
     )
 
     (:method m_get_resources
-        :parameters (?r - resource ?f ?fr - factory ?l - location)
+        :parameters (?r - resource ?f ?fr - factory ?fl ?l - location)
         :task (get_resources ?f ?l)
         :precondition (and
             (produces ?fr ?r)
@@ -79,7 +79,7 @@
             (not (resource-at ?r ?l))
         )
         :ordered-subtasks (and
-            (construct_factory ?fr)
+            (construct_factory ?fr ?fl)
             (produce_resource ?r)
             (deliver_resource ?r ?l)
             (get_resources ?f ?l)

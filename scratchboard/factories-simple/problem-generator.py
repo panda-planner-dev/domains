@@ -27,7 +27,7 @@ def main():
         {}
     )
     (:htn
-        :tasks (construct_factory last_factory)
+        :tasks (construct_factory last_factory last_location)
         :ordering ()
         :constraints ()
     )

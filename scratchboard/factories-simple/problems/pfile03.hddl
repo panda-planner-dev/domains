@@ -19,7 +19,7 @@ resource_f_2_1 - resource
 last_location - location
     )
     (:htn
-        :tasks (construct_factory last_factory)
+        :tasks (construct_factory last_factory last_location)
         :ordering ()
         :constraints ()
     )
