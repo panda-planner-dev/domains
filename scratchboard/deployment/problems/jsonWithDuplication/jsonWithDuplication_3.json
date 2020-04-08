@@ -1,0 +1,50 @@
+[{
+  "u_cname": "C0",
+  "u_automaton": [{
+    "u_name": "s0",
+    "u_successors": ["s1"],
+    "u_provides": [],
+    "u_requires": []
+  }, {
+    "u_name": "s1",
+    "u_successors": [],
+    "u_provides": ["p0_2"],
+    "u_requires": ["p1_1"]
+  }]
+}, {
+  "u_cname": "C1",
+  "u_automaton": [{
+    "u_name": "s0",
+    "u_successors": ["s1"],
+    "u_provides": [],
+    "u_requires": []
+  }, {
+    "u_name": "s1",
+    "u_successors": ["s2"],
+    "u_provides": ["p1_1"],
+    "u_requires": ["p2_1"]
+  }, {
+    "u_name": "s2",
+    "u_successors": [],
+    "u_provides": ["p1_2"],
+    "u_requires": ["p0_2", "p2_1"]
+  }]
+}, {
+  "u_cname": "C2",
+  "u_automaton": [{
+    "u_name": "s0",
+    "u_successors": ["s1"],
+    "u_provides": [],
+    "u_requires": []
+  }, {
+    "u_name": "s1",
+    "u_successors": ["s2"],
+    "u_provides": ["p2_1"],
+    "u_requires": []
+  }, {
+    "u_name": "s2",
+    "u_successors": [],
+    "u_provides": ["p2_1"],
+    "u_requires": ["p1_2"]
+  }]
+}]

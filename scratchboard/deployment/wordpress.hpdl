@@ -1,0 +1,17 @@
+(define (problem problem-example) (:domain deployment)
+(:requirements :typing :negative-preconditions :universal-preconditions :numeric-fluents :conditional-effects)
+(:objects
+  wordpress mysql apache2 - component
+  httpd mysql mysql-up - port
+)
+(:init
+  (installed-require wordpress httpd)
+  (running-require wordpress httpd)
+  (running-require wordpress mysql-up)
+  (installed-provide apache2 httpd)
+  (installed-provide mysql mysql)
+  (running-provide mysql mysql-up)
+  (= (instance-number) 0)
+)
+(:goal-tasks (sequence (run-configuration wordpress)))
+)
