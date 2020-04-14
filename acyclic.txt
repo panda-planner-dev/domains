@@ -1,0 +1,17 @@
+The following domains are wholly acyclic:
+
+partial-order/Satellite
+partial-order/Woodworking
+partial-order/Zenotravel
+
+total-order/Barman
+total-order/Barman-BDI
+total-order/Childsnack
+total-order/Gripper_new
+
+
+The following problem instances are acyclic:
+
+partial-order/SmartPhone/problems/05-OrganizeMeeting_with_preferences_hasPhoneNumber.hddl
+partial-order/SmartPhone/problems/06-OrganizeMeeting_with_preferences_noPhoneNumber.hddl
+partial-order/SmartPhone/problems/07-ThesisExampleProblem.hddl
