@@ -14,14 +14,10 @@
 
 	(:task solve_elevator
 		:parameters ()
-		:precondition ()
-		:effect ()
 	)
 
 	(:task deliver_person
 		:parameters (?p - Person ?o - Floor ?d - Floor)
-		:precondition ()
-		:effect ()
 	)
 
 	(:method m1_abort_ordering_0
