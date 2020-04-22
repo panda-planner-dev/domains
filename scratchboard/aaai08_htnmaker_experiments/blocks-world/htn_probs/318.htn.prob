@@ -1,0 +1,15 @@
+( defproblem bw5block5tower blocksworld
+  (
+    ( arm-empty )
+    ( on-table b5 )
+    ( clear b5 )
+    ( on-table b4 )
+    ( on b2 b4 )
+    ( on b3 b2 )
+    ( on b1 b3 )
+    ( clear b1 )
+  )
+  (
+    ( MAKE-5PILE b1 b2 b3 b4 b5 )
+  )
+)
