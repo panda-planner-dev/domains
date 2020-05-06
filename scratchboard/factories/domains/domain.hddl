@@ -19,32 +19,22 @@
 
     (:task construct_factory
         :parameters (?f - factory ?l - location)
-        :precondition ()
-        :effect ()
     )
 
     (:task produce_resource
         :parameters (?r - resource)
-        :precondition ()
-        :effect ()
     )
 
     (:task get_resources
         :parameters (?f - factory ?l - location)
-        :precondition ()
-        :effect ()
     )
 
     (:task deliver_resource
         :parameters (?r - resource ?l - location)
-        :precondition ()
-        :effect ()
     )
 
     (:task goto
         :parameters (?l - location)
-        :precondition ()
-        :effect ()
     )
 
     (:method m_construct_factory
