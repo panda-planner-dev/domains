@@ -1,6 +1,5 @@
 (define (problem gripper-x-7 )
 (:domain gripper-typed )
-(:requirements :typing :hierarchy)
 
 (:objects rooma roomb - room
 ball16 ball15 ball14 ball13 ball12 ball11 ball10 ball9 ball8
