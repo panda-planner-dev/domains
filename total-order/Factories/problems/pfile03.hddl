@@ -1,0 +1,39 @@
+(define
+  (problem p)
+  (:domain d)
+  (:objects
+    factory0 - sort_for_factory0
+    factory1 - sort_for_factory1
+    factory2 - sort_for_factory2
+    last_factory - sort_for_last_factory
+    last_location - sort_for_last_location
+    location0 - location
+    location1 - location
+    location2 - location
+    resource0 - sort_for_resource0
+    resource1 - sort_for_resource1
+    resource2 - sort_for_resource2
+  )
+  (:htn
+    :parameters ()
+    :subtasks (and (US__top))
+  )
+  (:init
+    (truckMINUS_at location0)
+    (constructed factory0)
+    (factoryMINUS_at factory0 location0)
+    (produces factory0 resource0)
+    (demands last_factory resource2)
+    (connected location1 location0)
+    (connected location0 location1)
+    (produces factory1 resource1)
+    (demands factory1 resource0)
+    (connected location2 location1)
+    (connected location1 location2)
+    (produces factory2 resource2)
+    (demands factory2 resource1)
+    (demands factory2 resource0)
+    (connected location2 last_location)
+    (connected last_location location2)
+  )
+)
