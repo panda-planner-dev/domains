@@ -1,0 +1,28 @@
+(define (problem jsonWithDuplication_3) (:domain deployment)
+(:objects
+i1 i2 i3 i4 i5 i6 - instance
+c0 c1 c2 - component
+p02 p11 p21 p12 - port)
+(:htn
+	:parameters ()
+	:ordered-subtasks (and (run-configuration c2)))
+(:init
+(currentNextInstance i1)
+(next i1 i2)
+(next i2 i3)
+(next i3 i4)
+(next i4 i5)
+(next i5 i6) 
+(installed-require c0 p11)
+(installed-provide c0 p02)
+(installed-require c1 p21)
+(installed-provide c1 p11)
+(running-require c1 p02)
+(running-require c1 p21)
+(running-provide c1 p12)
+(installed-provide c2 p21)
+(running-require c2 p12)
+(running-provide c2 p21)
+
+)
+)
