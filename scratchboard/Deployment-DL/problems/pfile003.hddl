@@ -1,0 +1,42 @@
+(define
+  (problem p)
+  (:domain d)
+  (:objects
+    c0 - component
+    c1 - component
+    c2 - sort_for_c2
+    i1 - sort_for_i1
+    i2 - sort_for_i2
+    i3 - sort_for_i3
+    i4 - sort_for_i4
+    i5 - sort_for_i5
+    i6 - sort_for_i6
+    p02 - sort_for_p02
+    p11 - sort_for_p11
+    p12 - sort_for_p12
+    p21 - sort_for_p21
+  )
+  (:htn
+    :parameters ()
+    :subtasks (and (US__top))
+  )
+  (:init
+    (currentNextInstance i1)
+    (next i1 i2)
+    (next i2 i3)
+    (next i3 i4)
+    (next i4 i5)
+    (next i5 i6)
+    (installedMINUS_require c0 p11)
+    (installedMINUS_provide c0 p02)
+    (installedMINUS_require c1 p21)
+    (installedMINUS_provide c1 p11)
+    (runningMINUS_require c1 p02)
+    (runningMINUS_require c1 p21)
+    (runningMINUS_provide c1 p12)
+    (runningMINUS_provide c1 p11)
+    (installedMINUS_provide c2 p21)
+    (runningMINUS_require c2 p12)
+    (runningMINUS_provide c2 p21)
+  )
+)
