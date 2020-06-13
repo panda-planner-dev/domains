@@ -1,0 +1,57 @@
+(define (problem p)
+(:domain blocks)
+(:objects
+	B - BLOCK
+	A - BLOCK
+	G - BLOCK
+	C - BLOCK
+	F - BLOCK
+	D - BLOCK
+	H - BLOCK
+	E - BLOCK
+	B - OBJECT
+	A - OBJECT
+	G - OBJECT
+	C - OBJECT
+	F - OBJECT
+	D - OBJECT
+	H - OBJECT
+	E - OBJECT
+)
+(:htn
+	:tasks (and
+	(task0 (ACHIEVE-ON C D))
+	(task1 (ACHIEVE-ON D B))
+	(task2 (ACHIEVE-ON B G))
+	(task3 (ACHIEVE-ON G F))
+	(task4 (ACHIEVE-ON F H))
+	(task5 (ACHIEVE-ON H A))
+	(task6 (ACHIEVE-ON A E))
+	)
+:ordering (and
+	(task6 < task5)
+	(task5 < task4)
+	(task4 < task3)
+	(task3 < task2)
+	(task2 < task1)
+	(task1 < task0)
+)
+:constraints ( )
+)
+(:init
+        (CLEAR E)
+        (CLEAR H)
+        (CLEAR D)
+        (CLEAR F)
+        (ONTABLE C)
+        (ONTABLE G)
+        (ONTABLE D)
+        (ONTABLE F)
+        (ON E C)
+        (ON H A)
+        (ON A B)
+        (ON B G)
+        (HANDEMPTY)
+)
+)
+
