@@ -1,8 +1,10 @@
 (define (domain barman)
 
 (:requirements
-  :typing
-  :hierarchy)
+  	:hierarchy
+	:typing
+	:method-precondition
+)
 
 (:types hand level beverage dispenser container - object ingredient cocktail - beverage shot shaker - container)
 

@@ -1,8 +1,11 @@
 (define (domain gripper-typed)
 
 (:requirements
-  :typing
-  :hierarchy)
+	:hierarchy
+	:typing
+	:equality
+	:method-precondition
+)
 
 (:types room ball gripper)
 

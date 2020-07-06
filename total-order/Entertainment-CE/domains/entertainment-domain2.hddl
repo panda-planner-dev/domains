@@ -12,7 +12,15 @@
 ; - make a totally-ordered version
 
 (define (domain entertainment)
-  (:requirements :hierarchy :typing)
+  (:requirements 
+    :hierarchy
+	:typing
+	:equality
+	:existential-precondition
+	:universal-precondition
+	:method-precondition
+	:conditional-effects
+  )
   (:types
       equipment connector - object
   )

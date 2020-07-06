@@ -1,5 +1,10 @@
 (define (domain miconic)
-	(:requirements :typing :hierarchy)
+	(:requirements
+	:hierarchy
+	:typing
+	:universal-precondition
+	:method-precondition
+    )
 	(:types
 		Floor - Object
 		Person - Object
