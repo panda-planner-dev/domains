@@ -46,7 +46,7 @@
             (task1 (build ?f ?l))
         )
         :ordering (and
-            (task0 < task1)
+            (< task0 task1)
         )
     )
 

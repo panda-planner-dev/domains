@@ -32,10 +32,10 @@
 		 (task7 (extractsMultipleInformation peer1 email2))
 		)
 		:ordering (and
-			(task0 < task2)
-			(task1 < task3)
-			(task2 < task6)
-			(task3 < task7)
+			(< task0 task2)
+			(< task1 task3)
+			(< task2 task6)
+			(< task3 task7)
 		)
 	)
 	(:init

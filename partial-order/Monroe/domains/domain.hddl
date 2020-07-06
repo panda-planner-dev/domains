@@ -559,11 +559,11 @@
         (t3 (string-wire ?crew ?lineloc))
         (t4 (turn-on-power ?crew ?lineloc)))
       :order (and
-        (t0 < t1)
-        (t0 < t2)
-        (t1 < t3)
-        (t2 < t3)
-        (t3 < t4)))
+        (< t0 t1)
+        (< t0 t2)
+        (< t1 t3)
+        (< t2 t3)
+        (< t3 t4)))
     
     ;;  repair-line without-tree
     (:method m-repair-line-without-tree
