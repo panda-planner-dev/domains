@@ -538,11 +538,11 @@
     
     ;; add-fuel (at service-station)
     (:method m-add-fuel
-      :parameters (?ss - service-station ?obj - object)
-      :task (add-fuel ?ss ?obj)
+      :parameters (?ss - service-station ?gen - generator)
+      :task (add-fuel ?ss ?gen)
       :subtasks (and
         (pay ?ss)
-        (pump-gas-into ?ss ?obj))
+        (pump-gas-into ?ss ?gen))
     )
     
     ;;  repair-line

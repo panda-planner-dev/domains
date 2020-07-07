@@ -44,7 +44,7 @@
   :ordered-subtasks(and (t1 (do_fill_shot ?sh ?i ?h)) (t2 (leave ?h ?sh))) ) 
 
 (:method m2_get_first_ingredient
-  :parameters ( ?c - cocktail  ?h1 - hand ?sh - shot ?i - beverage ?h2 - hand ?s - shaker ?l0 - level ?l1 - level )
+  :parameters ( ?c - cocktail  ?h1 - hand ?sh - shot ?i - ingredient ?h2 - hand ?s - shaker ?l0 - level ?l1 - level )
   :task (get_first_ingredient ?c ?h1)
   :precondition(and (cocktail-part1 ?c ?i) (empty ?sh))
   :ordered-subtasks(and (t1 (do_fill_shot ?sh ?i ?h1)) (t2 (pour-shot-to-clean-shaker ?sh ?i ?s ?h1 ?l0 ?l1)) (t3 (clean-shot ?sh ?i ?h1 ?h2))) ) 
