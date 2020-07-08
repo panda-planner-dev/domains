@@ -22,7 +22,7 @@
 	:hierarchy
 	:typing
 	:equality
-	:existential-precondition
+	:existential-preconditions
 	:universal-preconditions
 	:method-precondition
     )
