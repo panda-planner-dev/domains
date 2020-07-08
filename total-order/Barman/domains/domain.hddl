@@ -3,7 +3,7 @@
 (:requirements
   	:hierarchy
 	:typing
-	:method-precondition
+	:method-preconditions
 )
 
 (:types hand level beverage dispenser container - object ingredient cocktail - beverage shot shaker - container)

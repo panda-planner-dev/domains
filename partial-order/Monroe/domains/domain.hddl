@@ -24,7 +24,7 @@
 	:equality
 	:existential-preconditions
 	:universal-preconditions
-	:method-precondition
+	:method-preconditions
     )
 	(:types
           person tree condition food callable hazardousness town generator gas-can point vehicle - object
