@@ -18,7 +18,7 @@
 ; - vehicle is not a point anymore
 
 (define (domain monroe)
-    (:requirements
+    (:requirements :negative-preconditions
 	:hierarchy
 	:typing
 	:equality

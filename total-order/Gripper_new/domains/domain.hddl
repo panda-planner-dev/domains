@@ -1,6 +1,6 @@
 (define (domain gripper-typed)
 
-(:requirements
+(:requirements :negative-preconditions
 	:hierarchy
 	:typing
 	:equality
