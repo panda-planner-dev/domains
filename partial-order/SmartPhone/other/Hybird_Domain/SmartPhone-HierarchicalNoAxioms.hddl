@@ -1,5 +1,5 @@
 (define (domain SmartPhone_HierarchicalNoAxioms)
-	(:requirements :typing :hierarchy)
+	(:requirements :negative-preconditions :typing :hierarchy)
 	(:types
 		Company - Contactable
 		Call - Message

@@ -1,5 +1,5 @@
 (define (domain d)
-  (:requirements :typing :hierarchy)
+  (:requirements :negative-preconditions :typing :hierarchy)
 
   (:types
     factory - master_sort
