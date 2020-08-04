@@ -1,6 +1,5 @@
-; Snake by Mau Magnaguagno
 (define (domain snake)
-  (:requirements :hierarchy :typing :equality :negative-preconditions :method-precondition :universal-preconditions)
+  (:requirements :strips :typing :equality :negative-preconditions)
 
   (:types snake location)
 
@@ -69,57 +68,6 @@
       (connected ?snake ?nextpos ?headpos)
       (occupied ?nextpos)
       (not (occupied ?tailpos))
-    )
-  )
-
-  (:task hunt :parameters ())
-  (:method hunt_all
-    :parameters (?snake - snake ?foodpos ?snakepos ?pos1 - location)
-    :task (hunt)
-    :precondition (and
-      (mouse-at ?foodpos)
-      (head ?snake ?snakepos)
-      (adjacent ?foodpos ?pos1)
-    )
-    :ordered-subtasks (and
-      (move ?snake ?snakepos ?pos1)
-      (strike ?snake ?pos1 ?foodpos)
-      (hunt)
-    )
-  )
-
-  (:method hunt_done
-    :parameters ()
-    :task (hunt)
-    :precondition (forall (?pos - location) (not (mouse-at ?pos)))
-    :subtasks ()
-  )
-
-  (:task move :parameters (?snake - snake ?snakepos ?goalpos - location))
-  (:method move-base
-    :parameters (?snake - snake ?snakepos ?goalpos - location)
-    :task (move ?snake ?snakepos ?goalpos)
-    :precondition (= ?snakepos ?goalpos)
-    :subtasks ()
-  )
-
-  (:method move-long-snake
-    :parameters (?snake - snake ?snakepos ?goalpos ?pos2 ?bodypos ?tailpos - location)
-    :task (move ?snake ?snakepos ?goalpos)
-    :precondition (and (adjacent ?pos2 ?snakepos) (not (occupied ?pos2)) (connected ?snake ?bodypos ?tailpos) (tail ?snake ?tailpos))
-    :ordered-subtasks (and
-      (move-long ?snake ?pos2 ?snakepos ?bodypos ?tailpos)
-      (move ?snake ?pos2 ?goalpos)
-    )
-  )
-
-  (:method move-short-snake
-    :parameters (?snake - snake ?snakepos ?goalpos ?pos2 - location)
-    :task (move ?snake ?snakepos ?goalpos)
-    :precondition (and (adjacent ?pos2 ?snakepos) (not (occupied ?pos2)) (tail ?snake ?snakepos))
-    :ordered-subtasks (and
-      (move-short ?snake ?pos2 ?snakepos)
-      (move ?snake ?pos2 ?goalpos)
     )
   )
 )
