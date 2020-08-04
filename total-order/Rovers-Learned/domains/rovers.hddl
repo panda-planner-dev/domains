@@ -1,5 +1,10 @@
 (define (domain rovers )
-(:requirements :typing)
+(:requirements 
+	:hierarchy
+	:typing
+	:method-precondition
+	:negative-preconditions
+)
 (:types
 	ROVER WAYPOINT STORE CAMERA MODE LANDER OBJECTIVE - OBJECT
 )

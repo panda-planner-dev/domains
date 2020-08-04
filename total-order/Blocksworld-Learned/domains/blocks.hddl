@@ -1,5 +1,10 @@
 (define (domain blocks )
-(:requirements :typing)
+(:requirements 
+	:hierarchy
+	:typing
+	:method-precondition
+	:negative-preconditions
+)
 (:types
 	BLOCK - OBJECT
 )

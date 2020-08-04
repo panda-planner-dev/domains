@@ -1,5 +1,10 @@
 (define (domain depots )
-(:requirements :typing)
+(:requirements 
+	:hierarchy
+	:typing
+	:method-precondition
+	:negative-preconditions
+)
 (:types
 	PLACE LOCATABLE - OBJECT
 	DEPOT DISTRIBUTOR - PLACE
