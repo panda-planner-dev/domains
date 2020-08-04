@@ -1,5 +1,10 @@
 (define (domain satellite )
-(:requirements :typing)
+(:requirements 
+	:hierarchy
+	:typing
+	:method-precondition
+	:negative-preconditions
+)
 (:types
 	SATELLITE DIRECTION INSTRUMENT MODE - OBJECT
 )
