@@ -5,10 +5,6 @@
 	B - BLOCK
 	A - BLOCK
 	C - BLOCK
-	D - OBJECT
-	B - OBJECT
-	A - OBJECT
-	C - OBJECT
 )
 (:htn
 	:tasks (and

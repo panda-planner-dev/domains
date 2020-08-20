@@ -6,11 +6,6 @@
 	E - BLOCK
 	B - BLOCK
 	D - BLOCK
-	A - OBJECT
-	C - OBJECT
-	E - OBJECT
-	B - OBJECT
-	D - OBJECT
 )
 (:htn
 	:tasks (and

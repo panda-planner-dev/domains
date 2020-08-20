@@ -18,23 +18,6 @@
 	G - BLOCK
 	L - BLOCK
 	Q - BLOCK
-	C - OBJECT
-	D - OBJECT
-	E - OBJECT
-	F - OBJECT
-	B - OBJECT
-	I - OBJECT
-	J - OBJECT
-	A - OBJECT
-	N - OBJECT
-	O - OBJECT
-	K - OBJECT
-	M - OBJECT
-	P - OBJECT
-	H - OBJECT
-	G - OBJECT
-	L - OBJECT
-	Q - OBJECT
 )
 (:htn
 	:tasks (and

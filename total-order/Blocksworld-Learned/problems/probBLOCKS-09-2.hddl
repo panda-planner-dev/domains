@@ -10,15 +10,6 @@
 	G - BLOCK
 	F - BLOCK
 	H - BLOCK
-	B - OBJECT
-	I - OBJECT
-	C - OBJECT
-	E - OBJECT
-	D - OBJECT
-	A - OBJECT
-	G - OBJECT
-	F - OBJECT
-	H - OBJECT
 )
 (:htn
 	:tasks (and
