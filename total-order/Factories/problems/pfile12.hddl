@@ -2,21 +2,21 @@
   (problem p)
   (:domain d)
   (:objects
-    factory0 - sort_for_factory0
-    factory1 - sort_for_factory1
-    factory10 - sort_for_factory10
-    factory11 - sort_for_factory11
-    factory12 - sort_for_factory12
-    factory2 - sort_for_factory2
-    factory3 - sort_for_factory3
-    factory4 - sort_for_factory4
-    factory5 - sort_for_factory5
-    factory6 - sort_for_factory6
-    factory7 - sort_for_factory7
-    factory8 - sort_for_factory8
-    factory9 - sort_for_factory9
-    last_factory - sort_for_last_factory
-    last_location - sort_for_last_location
+    factory0 - artificial_sort_for_factory0
+    factory1 - artificial_sort_for_factory1
+    factory10 - artificial_sort_for_factory10
+    factory11 - artificial_sort_for_factory11
+    factory12 - artificial_sort_for_factory12
+    factory2 - artificial_sort_for_factory2
+    factory3 - artificial_sort_for_factory3
+    factory4 - artificial_sort_for_factory4
+    factory5 - artificial_sort_for_factory5
+    factory6 - artificial_sort_for_factory6
+    factory7 - artificial_sort_for_factory7
+    factory8 - artificial_sort_for_factory8
+    factory9 - artificial_sort_for_factory9
+    last_factory - artificial_sort_for_last_factory
+    last_location - artificial_sort_for_last_location
     location0 - location
     location1 - location
     location10 - location
@@ -30,19 +30,19 @@
     location7 - location
     location8 - location
     location9 - location
-    resource0 - sort_for_resource0
-    resource1 - sort_for_resource1
-    resource10 - sort_for_resource10
-    resource11 - sort_for_resource11
-    resource12 - sort_for_resource12
-    resource2 - sort_for_resource2
-    resource3 - sort_for_resource3
-    resource4 - sort_for_resource4
-    resource5 - sort_for_resource5
-    resource6 - sort_for_resource6
-    resource7 - sort_for_resource7
-    resource8 - sort_for_resource8
-    resource9 - sort_for_resource9
+    resource0 - artificial_sort_for_resource0
+    resource1 - artificial_sort_for_resource1
+    resource10 - artificial_sort_for_resource10
+    resource11 - artificial_sort_for_resource11
+    resource12 - artificial_sort_for_resource12
+    resource2 - artificial_sort_for_resource2
+    resource3 - artificial_sort_for_resource3
+    resource4 - artificial_sort_for_resource4
+    resource5 - artificial_sort_for_resource5
+    resource6 - artificial_sort_for_resource6
+    resource7 - artificial_sort_for_resource7
+    resource8 - artificial_sort_for_resource8
+    resource9 - artificial_sort_for_resource9
   )
   (:htn
     :parameters ()

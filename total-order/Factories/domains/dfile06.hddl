@@ -5,20 +5,20 @@
     factory - master_sort
     location - master_sort
     resource - master_sort
-    sort_for_factory0 - factory
-    sort_for_factory1 - factory
-    sort_for_factory2 - factory
-    sort_for_factory3 - factory
-    sort_for_factory4 - factory
-    sort_for_factory5 - factory
-    sort_for_last_factory - factory
-    sort_for_last_location - location
-    sort_for_resource0 - resource
-    sort_for_resource1 - resource
-    sort_for_resource2 - resource
-    sort_for_resource3 - resource
-    sort_for_resource4 - resource
-    sort_for_resource5 - resource
+    artificial_sort_for_factory0 - factory
+    artificial_sort_for_factory1 - factory
+    artificial_sort_for_factory2 - factory
+    artificial_sort_for_factory3 - factory
+    artificial_sort_for_factory4 - factory
+    artificial_sort_for_factory5 - factory
+    artificial_sort_for_last_factory - factory
+    artificial_sort_for_last_location - location
+    artificial_sort_for_resource0 - resource
+    artificial_sort_for_resource1 - resource
+    artificial_sort_for_resource2 - resource
+    artificial_sort_for_resource3 - resource
+    artificial_sort_for_resource4 - resource
+    artificial_sort_for_resource5 - resource
   )
 
   (:predicates
@@ -31,112 +31,112 @@
     (truckMINUS_at ?var0 - location)
     (connected ?var0 - location ?var1 - location)
     (multi_stage_execution_guard)
-    (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (do_apply___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (not_apply___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (do_apply___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (not_apply___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (do_apply___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (not_apply___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (do_apply___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (not_apply___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (do_apply___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (not_apply___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (do_apply___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (not_apply___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - sort_for_resource0 ?var4 - sort_for_resource1 ?var5 - sort_for_resource2 ?var6 - sort_for_resource3 ?var7 - sort_for_resource4 ?var8 - sort_for_resource5)
-    (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (do_apply___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (not_apply___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (do_apply___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (not_apply___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (do_apply___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (not_apply___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (do_apply___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (not_apply___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (do_apply___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (not_apply___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (do_apply___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
-    (not_apply___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - sort_for_resource0 ?var3 - sort_for_resource1 ?var4 - sort_for_resource2 ?var5 - sort_for_resource3 ?var6 - sort_for_resource4 ?var7 - sort_for_resource5)
+    (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (do_apply___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (not_apply___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (do_apply___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (not_apply___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (do_apply___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (not_apply___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (do_apply___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (not_apply___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (do_apply___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (not_apply___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (do_apply___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (not_apply___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - resource ?var2 - location ?var3 - artificial_sort_for_resource0 ?var4 - artificial_sort_for_resource1 ?var5 - artificial_sort_for_resource2 ?var6 - artificial_sort_for_resource3 ?var7 - artificial_sort_for_resource4 ?var8 - artificial_sort_for_resource5)
+    (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (do_apply___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (not_apply___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (do_apply___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (not_apply___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (do_apply___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (not_apply___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (do_apply___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (not_apply___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (do_apply___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (not_apply___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (do_apply___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
+    (not_apply___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?var0 - factory ?var1 - location ?var2 - artificial_sort_for_resource0 ?var3 - artificial_sort_for_resource1 ?var4 - artificial_sort_for_resource2 ?var5 - artificial_sort_for_resource3 ?var6 - artificial_sort_for_resource4 ?var7 - artificial_sort_for_resource5)
     (doing_action___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?var0 - factory ?var1 - location)
   )
 
 
   (:task US__formulaMINUS_rootproduceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location))
   (:task US__formula_and_0_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location))
-  (:task US__formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_0 - sort_for_resource0))
-  (:task US__formula_or_2_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_0 - sort_for_resource0))
-  (:task US__formula_or_2_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_0 - sort_for_resource0))
-  (:task US__formula_forall_1_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_1 - sort_for_resource1))
-  (:task US__formula_or_5_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_1 - sort_for_resource1))
-  (:task US__formula_or_5_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_1 - sort_for_resource1))
-  (:task US__formula_forall_1_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_2 - sort_for_resource2))
-  (:task US__formula_or_8_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_2 - sort_for_resource2))
-  (:task US__formula_or_8_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_2 - sort_for_resource2))
-  (:task US__formula_forall_1_3_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_3 - sort_for_resource3))
-  (:task US__formula_or_11_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_3 - sort_for_resource3))
-  (:task US__formula_or_11_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_3 - sort_for_resource3))
-  (:task US__formula_forall_1_4_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_4 - sort_for_resource4))
-  (:task US__formula_or_14_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_4 - sort_for_resource4))
-  (:task US__formula_or_14_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_4 - sort_for_resource4))
-  (:task US__formula_forall_1_5_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_5 - sort_for_resource5))
-  (:task US__formula_or_17_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_5 - sort_for_resource5))
-  (:task US__formula_or_17_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_5 - sort_for_resource5))
+  (:task US__formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_0 - artificial_sort_for_resource0))
+  (:task US__formula_or_2_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_0 - artificial_sort_for_resource0))
+  (:task US__formula_or_2_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_0 - artificial_sort_for_resource0))
+  (:task US__formula_forall_1_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_1 - artificial_sort_for_resource1))
+  (:task US__formula_or_5_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_1 - artificial_sort_for_resource1))
+  (:task US__formula_or_5_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_1 - artificial_sort_for_resource1))
+  (:task US__formula_forall_1_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_2 - artificial_sort_for_resource2))
+  (:task US__formula_or_8_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_2 - artificial_sort_for_resource2))
+  (:task US__formula_or_8_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_2 - artificial_sort_for_resource2))
+  (:task US__formula_forall_1_3_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_3 - artificial_sort_for_resource3))
+  (:task US__formula_or_11_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_3 - artificial_sort_for_resource3))
+  (:task US__formula_or_11_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_3 - artificial_sort_for_resource3))
+  (:task US__formula_forall_1_4_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_4 - artificial_sort_for_resource4))
+  (:task US__formula_or_14_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_4 - artificial_sort_for_resource4))
+  (:task US__formula_or_14_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_4 - artificial_sort_for_resource4))
+  (:task US__formula_forall_1_5_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?rr_5 - artificial_sort_for_resource5))
+  (:task US__formula_or_17_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?rr_5 - artificial_sort_for_resource5))
+  (:task US__formula_or_17_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?rr_5 - artificial_sort_for_resource5))
   (:task US__formula_and_0_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource))
   (:task US__formula_and_0_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location))
-  (:task US__ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_3_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_4_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_5_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5))
+  (:task US__ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_0_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_1_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_2_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_3_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_4_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_5_produceBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5))
   (:task produce :parameters (?f - factory ?r - resource ?l - location))
   (:task US__formulaMINUS_rootbuildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location))
   (:task US__formula_and_0_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory))
   (:task US__formula_and_0_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location))
-  (:task US__formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0))
-  (:task US__formula_or_3_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_0 - sort_for_resource0))
-  (:task US__formula_or_3_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_0 - sort_for_resource0))
-  (:task US__formula_forall_2_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_1 - sort_for_resource1))
-  (:task US__formula_or_6_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_1 - sort_for_resource1))
-  (:task US__formula_or_6_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_1 - sort_for_resource1))
-  (:task US__formula_forall_2_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_2 - sort_for_resource2))
-  (:task US__formula_or_9_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_2 - sort_for_resource2))
-  (:task US__formula_or_9_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_2 - sort_for_resource2))
-  (:task US__formula_forall_2_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_3 - sort_for_resource3))
-  (:task US__formula_or_12_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_3 - sort_for_resource3))
-  (:task US__formula_or_12_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_3 - sort_for_resource3))
-  (:task US__formula_forall_2_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_4 - sort_for_resource4))
-  (:task US__formula_or_15_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_4 - sort_for_resource4))
-  (:task US__formula_or_15_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_4 - sort_for_resource4))
-  (:task US__formula_forall_2_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_5 - sort_for_resource5))
-  (:task US__formula_or_18_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_5 - sort_for_resource5))
-  (:task US__formula_or_18_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_5 - sort_for_resource5))
+  (:task US__formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0))
+  (:task US__formula_or_3_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_0 - artificial_sort_for_resource0))
+  (:task US__formula_or_3_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_0 - artificial_sort_for_resource0))
+  (:task US__formula_forall_2_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_1 - artificial_sort_for_resource1))
+  (:task US__formula_or_6_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_1 - artificial_sort_for_resource1))
+  (:task US__formula_or_6_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_1 - artificial_sort_for_resource1))
+  (:task US__formula_forall_2_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_2 - artificial_sort_for_resource2))
+  (:task US__formula_or_9_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_2 - artificial_sort_for_resource2))
+  (:task US__formula_or_9_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_2 - artificial_sort_for_resource2))
+  (:task US__formula_forall_2_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_3 - artificial_sort_for_resource3))
+  (:task US__formula_or_12_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_3 - artificial_sort_for_resource3))
+  (:task US__formula_or_12_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_3 - artificial_sort_for_resource3))
+  (:task US__formula_forall_2_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_4 - artificial_sort_for_resource4))
+  (:task US__formula_or_15_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_4 - artificial_sort_for_resource4))
+  (:task US__formula_or_15_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_4 - artificial_sort_for_resource4))
+  (:task US__formula_forall_2_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_5 - artificial_sort_for_resource5))
+  (:task US__formula_or_18_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?r_5 - artificial_sort_for_resource5))
+  (:task US__formula_or_18_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?r_5 - artificial_sort_for_resource5))
   (:task US__formula_and_0_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location))
-  (:task US__formula_forall_21_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_0 - sort_for_factory0))
-  (:task US__formula_forall_21_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_1 - sort_for_factory1))
-  (:task US__formula_forall_21_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_2 - sort_for_factory2))
-  (:task US__formula_forall_21_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_3 - sort_for_factory3))
-  (:task US__formula_forall_21_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_4 - sort_for_factory4))
-  (:task US__formula_forall_21_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_5 - sort_for_factory5))
-  (:task US__formula_forall_21_6_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_6 - sort_for_last_factory))
-  (:task US__ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
-  (:task US__ce_apply_if_applicable_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5))
+  (:task US__formula_forall_21_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_0 - artificial_sort_for_factory0))
+  (:task US__formula_forall_21_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_1 - artificial_sort_for_factory1))
+  (:task US__formula_forall_21_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_2 - artificial_sort_for_factory2))
+  (:task US__formula_forall_21_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_3 - artificial_sort_for_factory3))
+  (:task US__formula_forall_21_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_4 - artificial_sort_for_factory4))
+  (:task US__formula_forall_21_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_5 - artificial_sort_for_factory5))
+  (:task US__formula_forall_21_6_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?l - location ?ff_6 - artificial_sort_for_last_factory))
+  (:task US__ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_0_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_1_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_2_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_3_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_4_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
+  (:task US__ce_apply_if_applicable_5_buildBAR_ce_base_actionBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5))
   (:task build :parameters (?f - factory ?l - location))
   (:task construct_factory :parameters (?f - factory ?l - location))
   (:task produce_resource :parameters (?r - resource))
@@ -146,29 +146,29 @@
   (:task US__top :parameters ())
   (:task US__formulaMINUS_root__method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location))
   (:task US__formula_and_0_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location))
-  (:task US__formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0))
-  (:task US__formula_or_2_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_0 - sort_for_resource0))
-  (:task US__formula_or_2_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_0 - sort_for_resource0))
-  (:task US__formula_forall_1_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_1 - sort_for_resource1))
-  (:task US__formula_or_5_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_1 - sort_for_resource1))
-  (:task US__formula_or_5_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_1 - sort_for_resource1))
-  (:task US__formula_forall_1_2___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_2 - sort_for_resource2))
-  (:task US__formula_or_8_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_2 - sort_for_resource2))
-  (:task US__formula_or_8_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_2 - sort_for_resource2))
-  (:task US__formula_forall_1_3___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_3 - sort_for_resource3))
-  (:task US__formula_or_11_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_3 - sort_for_resource3))
-  (:task US__formula_or_11_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_3 - sort_for_resource3))
-  (:task US__formula_forall_1_4___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_4 - sort_for_resource4))
-  (:task US__formula_or_14_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_4 - sort_for_resource4))
-  (:task US__formula_or_14_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_4 - sort_for_resource4))
-  (:task US__formula_forall_1_5___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_5 - sort_for_resource5))
-  (:task US__formula_or_17_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_5 - sort_for_resource5))
-  (:task US__formula_or_17_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_5 - sort_for_resource5))
+  (:task US__formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0))
+  (:task US__formula_or_2_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_0 - artificial_sort_for_resource0))
+  (:task US__formula_or_2_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_0 - artificial_sort_for_resource0))
+  (:task US__formula_forall_1_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_1 - artificial_sort_for_resource1))
+  (:task US__formula_or_5_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_1 - artificial_sort_for_resource1))
+  (:task US__formula_or_5_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_1 - artificial_sort_for_resource1))
+  (:task US__formula_forall_1_2___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_2 - artificial_sort_for_resource2))
+  (:task US__formula_or_8_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_2 - artificial_sort_for_resource2))
+  (:task US__formula_or_8_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_2 - artificial_sort_for_resource2))
+  (:task US__formula_forall_1_3___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_3 - artificial_sort_for_resource3))
+  (:task US__formula_or_11_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_3 - artificial_sort_for_resource3))
+  (:task US__formula_or_11_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_3 - artificial_sort_for_resource3))
+  (:task US__formula_forall_1_4___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_4 - artificial_sort_for_resource4))
+  (:task US__formula_or_14_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_4 - artificial_sort_for_resource4))
+  (:task US__formula_or_14_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_4 - artificial_sort_for_resource4))
+  (:task US__formula_forall_1_5___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?l - location ?r_5 - artificial_sort_for_resource5))
+  (:task US__formula_or_17_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?f - factory ?r_5 - artificial_sort_for_resource5))
+  (:task US__formula_or_17_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec :parameters (?l - location ?r_5 - artificial_sort_for_resource5))
   (:task US__method_precondition_m_all_resources_there :parameters (?f - factory ?l - location))
   (:task construct_factory_splitted_1 :parameters (?fr - factory))
 
   (:method US__formula_or_2_0___formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_0 - sort_for_resource0)
+    :parameters (?f - factory ?l - location ?rr_0 - artificial_sort_for_resource0)
     :task (US__formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_0)
     :subtasks (and
       (xid0 (US__formula_or_2_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_0))
@@ -176,7 +176,7 @@
   )
 
   (:method US__formula_not_atom_demands_3__formula_or_2_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_0 - sort_for_resource0)
+    :parameters (?f - factory ?rr_0 - artificial_sort_for_resource0)
     :task (US__formula_or_2_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_0)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_3produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_0))
@@ -184,7 +184,7 @@
   )
 
   (:method US__formula_or_2_1___formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_0 - sort_for_resource0)
+    :parameters (?f - factory ?l - location ?rr_0 - artificial_sort_for_resource0)
     :task (US__formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_0)
     :subtasks (and
       (xid0 (US__formula_or_2_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_0))
@@ -192,7 +192,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_4__formula_or_2_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_0 - sort_for_resource0)
+    :parameters (?l - location ?rr_0 - artificial_sort_for_resource0)
     :task (US__formula_or_2_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_0)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_4produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_0))
@@ -200,7 +200,7 @@
   )
 
   (:method US__formula_or_5_0___formula_forall_1_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_1 - sort_for_resource1)
+    :parameters (?f - factory ?l - location ?rr_1 - artificial_sort_for_resource1)
     :task (US__formula_forall_1_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_1)
     :subtasks (and
       (xid0 (US__formula_or_5_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_1))
@@ -208,7 +208,7 @@
   )
 
   (:method US__formula_not_atom_demands_6__formula_or_5_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_1 - sort_for_resource1)
+    :parameters (?f - factory ?rr_1 - artificial_sort_for_resource1)
     :task (US__formula_or_5_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_1)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_6produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_1))
@@ -216,7 +216,7 @@
   )
 
   (:method US__formula_or_5_1___formula_forall_1_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_1 - sort_for_resource1)
+    :parameters (?f - factory ?l - location ?rr_1 - artificial_sort_for_resource1)
     :task (US__formula_forall_1_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_1)
     :subtasks (and
       (xid0 (US__formula_or_5_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_1))
@@ -224,7 +224,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_7__formula_or_5_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_1 - sort_for_resource1)
+    :parameters (?l - location ?rr_1 - artificial_sort_for_resource1)
     :task (US__formula_or_5_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_1)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_7produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_1))
@@ -232,7 +232,7 @@
   )
 
   (:method US__formula_or_8_0___formula_forall_1_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_2 - sort_for_resource2)
+    :parameters (?f - factory ?l - location ?rr_2 - artificial_sort_for_resource2)
     :task (US__formula_forall_1_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_2)
     :subtasks (and
       (xid0 (US__formula_or_8_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_2))
@@ -240,7 +240,7 @@
   )
 
   (:method US__formula_not_atom_demands_9__formula_or_8_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_2 - sort_for_resource2)
+    :parameters (?f - factory ?rr_2 - artificial_sort_for_resource2)
     :task (US__formula_or_8_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_2)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_9produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_2))
@@ -248,7 +248,7 @@
   )
 
   (:method US__formula_or_8_1___formula_forall_1_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_2 - sort_for_resource2)
+    :parameters (?f - factory ?l - location ?rr_2 - artificial_sort_for_resource2)
     :task (US__formula_forall_1_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_2)
     :subtasks (and
       (xid0 (US__formula_or_8_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_2))
@@ -256,7 +256,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_10__formula_or_8_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_2 - sort_for_resource2)
+    :parameters (?l - location ?rr_2 - artificial_sort_for_resource2)
     :task (US__formula_or_8_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_2)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_10produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_2))
@@ -264,7 +264,7 @@
   )
 
   (:method US__formula_or_11_0___formula_forall_1_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_3 - sort_for_resource3)
+    :parameters (?f - factory ?l - location ?rr_3 - artificial_sort_for_resource3)
     :task (US__formula_forall_1_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_3)
     :subtasks (and
       (xid0 (US__formula_or_11_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_3))
@@ -272,7 +272,7 @@
   )
 
   (:method US__formula_not_atom_demands_12__formula_or_11_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_3 - sort_for_resource3)
+    :parameters (?f - factory ?rr_3 - artificial_sort_for_resource3)
     :task (US__formula_or_11_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_3)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_12produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_3))
@@ -280,7 +280,7 @@
   )
 
   (:method US__formula_or_11_1___formula_forall_1_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_3 - sort_for_resource3)
+    :parameters (?f - factory ?l - location ?rr_3 - artificial_sort_for_resource3)
     :task (US__formula_forall_1_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_3)
     :subtasks (and
       (xid0 (US__formula_or_11_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_3))
@@ -288,7 +288,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_13__formula_or_11_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_3 - sort_for_resource3)
+    :parameters (?l - location ?rr_3 - artificial_sort_for_resource3)
     :task (US__formula_or_11_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_3)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_13produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_3))
@@ -296,7 +296,7 @@
   )
 
   (:method US__formula_or_14_0___formula_forall_1_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_4 - sort_for_resource4)
+    :parameters (?f - factory ?l - location ?rr_4 - artificial_sort_for_resource4)
     :task (US__formula_forall_1_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_4)
     :subtasks (and
       (xid0 (US__formula_or_14_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_4))
@@ -304,7 +304,7 @@
   )
 
   (:method US__formula_not_atom_demands_15__formula_or_14_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_4 - sort_for_resource4)
+    :parameters (?f - factory ?rr_4 - artificial_sort_for_resource4)
     :task (US__formula_or_14_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_4)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_15produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_4))
@@ -312,7 +312,7 @@
   )
 
   (:method US__formula_or_14_1___formula_forall_1_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_4 - sort_for_resource4)
+    :parameters (?f - factory ?l - location ?rr_4 - artificial_sort_for_resource4)
     :task (US__formula_forall_1_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_4)
     :subtasks (and
       (xid0 (US__formula_or_14_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_4))
@@ -320,7 +320,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_16__formula_or_14_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_4 - sort_for_resource4)
+    :parameters (?l - location ?rr_4 - artificial_sort_for_resource4)
     :task (US__formula_or_14_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_4)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_16produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_4))
@@ -328,7 +328,7 @@
   )
 
   (:method US__formula_or_17_0___formula_forall_1_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?rr_5 - artificial_sort_for_resource5)
     :task (US__formula_forall_1_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_5)
     :subtasks (and
       (xid0 (US__formula_or_17_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_5))
@@ -336,7 +336,7 @@
   )
 
   (:method US__formula_not_atom_demands_18__formula_or_17_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?rr_5 - artificial_sort_for_resource5)
     :task (US__formula_or_17_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_5)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_18produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?rr_5))
@@ -344,7 +344,7 @@
   )
 
   (:method US__formula_or_17_1___formula_forall_1_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?rr_5 - artificial_sort_for_resource5)
     :task (US__formula_forall_1_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_5)
     :subtasks (and
       (xid0 (US__formula_or_17_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_5))
@@ -352,7 +352,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_19__formula_or_17_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_5 - sort_for_resource5)
+    :parameters (?l - location ?rr_5 - artificial_sort_for_resource5)
     :task (US__formula_or_17_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_5)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_19produceBAR_ce_base_actionBAR_disjunctive_prec ?l ?rr_5))
@@ -360,7 +360,7 @@
   )
 
   (:method US__formula_forall_1__formula_and_0_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__formula_and_0_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l)
     :subtasks (and
       (xid0 (US__formula_forall_1_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?rr_0))
@@ -421,7 +421,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_yes_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -429,7 +429,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_no_0_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -437,7 +437,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_apply_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -445,7 +445,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -453,7 +453,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_yes_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -461,7 +461,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_no_1_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -469,7 +469,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_apply_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -477,7 +477,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -485,7 +485,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_yes_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -493,7 +493,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_no_2_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -501,7 +501,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_apply_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -509,7 +509,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -517,7 +517,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_yes_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -525,7 +525,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_no_3_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -533,7 +533,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_apply_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -541,7 +541,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -549,7 +549,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_yes_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -557,7 +557,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_no_4_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -565,7 +565,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_apply_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -573,7 +573,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -581,7 +581,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_yes_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -589,7 +589,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_no_5_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -597,7 +597,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_apply_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -605,7 +605,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -613,7 +613,7 @@
   )
 
   (:method US_method_for_multiple_expansions_of_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :task (produce ?f ?r ?l)
     :subtasks (and
       (xid_main (produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5))
@@ -750,7 +750,7 @@
   )
 
   (:method US__formula_or_3_0___formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0)
     :subtasks (and
       (xid0 (US__formula_or_3_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_0))
@@ -758,7 +758,7 @@
   )
 
   (:method US__formula_not_atom_demands_4__formula_or_3_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_or_3_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_0)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_4buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_0))
@@ -766,7 +766,7 @@
   )
 
   (:method US__formula_or_3_1___formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0)
     :subtasks (and
       (xid0 (US__formula_or_3_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_0))
@@ -774,7 +774,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_5__formula_or_3_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_0 - sort_for_resource0)
+    :parameters (?l - location ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_or_3_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_0)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_5buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_0))
@@ -782,7 +782,7 @@
   )
 
   (:method US__formula_or_6_0___formula_forall_2_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?l - location ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_forall_2_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_1)
     :subtasks (and
       (xid0 (US__formula_or_6_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_1))
@@ -790,7 +790,7 @@
   )
 
   (:method US__formula_not_atom_demands_7__formula_or_6_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_or_6_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_1)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_7buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_1))
@@ -798,7 +798,7 @@
   )
 
   (:method US__formula_or_6_1___formula_forall_2_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?l - location ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_forall_2_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_1)
     :subtasks (and
       (xid0 (US__formula_or_6_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_1))
@@ -806,7 +806,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_8__formula_or_6_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_1 - sort_for_resource1)
+    :parameters (?l - location ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_or_6_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_1)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_8buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_1))
@@ -814,7 +814,7 @@
   )
 
   (:method US__formula_or_9_0___formula_forall_2_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?l - location ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_forall_2_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_2)
     :subtasks (and
       (xid0 (US__formula_or_9_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_2))
@@ -822,7 +822,7 @@
   )
 
   (:method US__formula_not_atom_demands_10__formula_or_9_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_or_9_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_2)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_10buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_2))
@@ -830,7 +830,7 @@
   )
 
   (:method US__formula_or_9_1___formula_forall_2_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?l - location ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_forall_2_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_2)
     :subtasks (and
       (xid0 (US__formula_or_9_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_2))
@@ -838,7 +838,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_11__formula_or_9_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_2 - sort_for_resource2)
+    :parameters (?l - location ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_or_9_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_2)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_11buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_2))
@@ -846,7 +846,7 @@
   )
 
   (:method US__formula_or_12_0___formula_forall_2_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?l - location ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_forall_2_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_3)
     :subtasks (and
       (xid0 (US__formula_or_12_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_3))
@@ -854,7 +854,7 @@
   )
 
   (:method US__formula_not_atom_demands_13__formula_or_12_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_or_12_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_3)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_13buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_3))
@@ -862,7 +862,7 @@
   )
 
   (:method US__formula_or_12_1___formula_forall_2_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?l - location ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_forall_2_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_3)
     :subtasks (and
       (xid0 (US__formula_or_12_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_3))
@@ -870,7 +870,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_14__formula_or_12_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_3 - sort_for_resource3)
+    :parameters (?l - location ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_or_12_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_3)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_14buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_3))
@@ -878,7 +878,7 @@
   )
 
   (:method US__formula_or_15_0___formula_forall_2_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?l - location ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_forall_2_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_4)
     :subtasks (and
       (xid0 (US__formula_or_15_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_4))
@@ -886,7 +886,7 @@
   )
 
   (:method US__formula_not_atom_demands_16__formula_or_15_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_or_15_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_4)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_16buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_4))
@@ -894,7 +894,7 @@
   )
 
   (:method US__formula_or_15_1___formula_forall_2_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?l - location ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_forall_2_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_4)
     :subtasks (and
       (xid0 (US__formula_or_15_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_4))
@@ -902,7 +902,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_17__formula_or_15_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_4 - sort_for_resource4)
+    :parameters (?l - location ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_or_15_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_4)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_17buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_4))
@@ -910,7 +910,7 @@
   )
 
   (:method US__formula_or_18_0___formula_forall_2_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_forall_2_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_5)
     :subtasks (and
       (xid0 (US__formula_or_18_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_5))
@@ -918,7 +918,7 @@
   )
 
   (:method US__formula_not_atom_demands_19__formula_or_18_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_or_18_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_5)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_19buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?r_5))
@@ -926,7 +926,7 @@
   )
 
   (:method US__formula_or_18_1___formula_forall_2_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_forall_2_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_5)
     :subtasks (and
       (xid0 (US__formula_or_18_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_5))
@@ -934,7 +934,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_20__formula_or_18_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_5 - sort_for_resource5)
+    :parameters (?l - location ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_or_18_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_5)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_20buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?r_5))
@@ -942,7 +942,7 @@
   )
 
   (:method US__formula_forall_2__formula_and_0_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_and_0_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l)
     :subtasks (and
       (xid0 (US__formula_forall_2_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0))
@@ -972,7 +972,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_22__formula_forall_21_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_0 - sort_for_factory0)
+    :parameters (?l - location ?ff_0 - artificial_sort_for_factory0)
     :task (US__formula_forall_21_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_0)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_22buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_0))
@@ -980,7 +980,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_23__formula_forall_21_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_1 - sort_for_factory1)
+    :parameters (?l - location ?ff_1 - artificial_sort_for_factory1)
     :task (US__formula_forall_21_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_1)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_23buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_1))
@@ -988,7 +988,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_24__formula_forall_21_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_2 - sort_for_factory2)
+    :parameters (?l - location ?ff_2 - artificial_sort_for_factory2)
     :task (US__formula_forall_21_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_2)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_24buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_2))
@@ -996,7 +996,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_25__formula_forall_21_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_3 - sort_for_factory3)
+    :parameters (?l - location ?ff_3 - artificial_sort_for_factory3)
     :task (US__formula_forall_21_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_3)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_25buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_3))
@@ -1004,7 +1004,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_26__formula_forall_21_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_4 - sort_for_factory4)
+    :parameters (?l - location ?ff_4 - artificial_sort_for_factory4)
     :task (US__formula_forall_21_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_4)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_26buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_4))
@@ -1012,7 +1012,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_27__formula_forall_21_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_5 - sort_for_factory5)
+    :parameters (?l - location ?ff_5 - artificial_sort_for_factory5)
     :task (US__formula_forall_21_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_5)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_27buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_5))
@@ -1020,7 +1020,7 @@
   )
 
   (:method US__formula_not_atom_factoryMINUS_at_28__formula_forall_21_6_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_6 - sort_for_last_factory)
+    :parameters (?l - location ?ff_6 - artificial_sort_for_last_factory)
     :task (US__formula_forall_21_6_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_6)
     :subtasks (and
       (xid0 (US__formula_not_atom_factoryMINUS_at_28buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_6))
@@ -1028,7 +1028,7 @@
   )
 
   (:method US__formula_forall_21__formula_and_0_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_0 - sort_for_factory0 ?ff_1 - sort_for_factory1 ?ff_2 - sort_for_factory2 ?ff_3 - sort_for_factory3 ?ff_4 - sort_for_factory4 ?ff_5 - sort_for_factory5 ?ff_6 - sort_for_last_factory)
+    :parameters (?l - location ?ff_0 - artificial_sort_for_factory0 ?ff_1 - artificial_sort_for_factory1 ?ff_2 - artificial_sort_for_factory2 ?ff_3 - artificial_sort_for_factory3 ?ff_4 - artificial_sort_for_factory4 ?ff_5 - artificial_sort_for_factory5 ?ff_6 - artificial_sort_for_last_factory)
     :task (US__formula_and_0_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?l)
     :subtasks (and
       (xid0 (US__formula_forall_21_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?l ?ff_0))
@@ -1080,7 +1080,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_yes_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1088,7 +1088,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_no_0_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1096,7 +1096,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_apply_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1104,7 +1104,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1112,7 +1112,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_yes_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1120,7 +1120,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_no_1_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1128,7 +1128,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_apply_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1136,7 +1136,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1144,7 +1144,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_yes_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1152,7 +1152,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_no_2_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1160,7 +1160,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_apply_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1168,7 +1168,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1176,7 +1176,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_yes_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1184,7 +1184,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_no_3_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1192,7 +1192,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_apply_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1200,7 +1200,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1208,7 +1208,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_yes_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1216,7 +1216,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_no_4_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1224,7 +1224,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_apply_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1232,7 +1232,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1240,7 +1240,7 @@
   )
 
   (:method US_method_for_ce_yes___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_yes_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1248,7 +1248,7 @@
   )
 
   (:method US_method_for_ce_no_0__ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_no_5_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1256,7 +1256,7 @@
   )
 
   (:method US_method_for_ce_do_apply___ce_apply_if_applicable_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_apply_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1264,7 +1264,7 @@
   )
 
   (:method US_method_for_ce_not_do_apply___ce_apply_if_applicable_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__ce_apply_if_applicable_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     :subtasks (and
       (xid0 (US__ce_not_apply_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1272,7 +1272,7 @@
   )
 
   (:method US_method_for_multiple_expansions_of_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (build ?f ?l)
     :subtasks (and
       (xid_main (buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5))
@@ -1401,7 +1401,7 @@
   )
 
   (:method US__top_method
-    :parameters (?var_for_last_factory_1 - sort_for_last_factory ?var_for_last_location_2 - sort_for_last_location)
+    :parameters (?var_for_last_factory_1 - artificial_sort_for_last_factory ?var_for_last_location_2 - artificial_sort_for_last_location)
     :task (US__top)
     :subtasks (and
       (xUS__t_id_12 (construct_factory ?var_for_last_factory_1 ?var_for_last_location_2))
@@ -1477,7 +1477,7 @@
   )
 
   (:method US__formula_or_2_0___formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_0)
     :subtasks (and
       (xid0 (US__formula_or_2_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_0))
@@ -1485,7 +1485,7 @@
   )
 
   (:method US__formula_not_atom_demands_3__formula_or_2_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_or_2_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_0)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_3__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_0))
@@ -1493,7 +1493,7 @@
   )
 
   (:method US__formula_or_2_1___formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_0)
     :subtasks (and
       (xid0 (US__formula_or_2_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_0))
@@ -1501,7 +1501,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_4__formula_or_2_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_0 - sort_for_resource0)
+    :parameters (?l - location ?r_0 - artificial_sort_for_resource0)
     :task (US__formula_or_2_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_0)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_4__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_0))
@@ -1509,7 +1509,7 @@
   )
 
   (:method US__formula_or_5_0___formula_forall_1_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?l - location ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_forall_1_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_1)
     :subtasks (and
       (xid0 (US__formula_or_5_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_1))
@@ -1517,7 +1517,7 @@
   )
 
   (:method US__formula_not_atom_demands_6__formula_or_5_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_or_5_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_1)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_6__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_1))
@@ -1525,7 +1525,7 @@
   )
 
   (:method US__formula_or_5_1___formula_forall_1_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?l - location ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_forall_1_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_1)
     :subtasks (and
       (xid0 (US__formula_or_5_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_1))
@@ -1533,7 +1533,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_7__formula_or_5_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_1 - sort_for_resource1)
+    :parameters (?l - location ?r_1 - artificial_sort_for_resource1)
     :task (US__formula_or_5_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_1)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_7__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_1))
@@ -1541,7 +1541,7 @@
   )
 
   (:method US__formula_or_8_0___formula_forall_1_2___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?l - location ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_forall_1_2___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_2)
     :subtasks (and
       (xid0 (US__formula_or_8_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_2))
@@ -1549,7 +1549,7 @@
   )
 
   (:method US__formula_not_atom_demands_9__formula_or_8_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_or_8_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_2)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_9__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_2))
@@ -1557,7 +1557,7 @@
   )
 
   (:method US__formula_or_8_1___formula_forall_1_2___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?l - location ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_forall_1_2___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_2)
     :subtasks (and
       (xid0 (US__formula_or_8_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_2))
@@ -1565,7 +1565,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_10__formula_or_8_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_2 - sort_for_resource2)
+    :parameters (?l - location ?r_2 - artificial_sort_for_resource2)
     :task (US__formula_or_8_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_2)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_10__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_2))
@@ -1573,7 +1573,7 @@
   )
 
   (:method US__formula_or_11_0___formula_forall_1_3___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?l - location ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_forall_1_3___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_3)
     :subtasks (and
       (xid0 (US__formula_or_11_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_3))
@@ -1581,7 +1581,7 @@
   )
 
   (:method US__formula_not_atom_demands_12__formula_or_11_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_or_11_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_3)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_12__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_3))
@@ -1589,7 +1589,7 @@
   )
 
   (:method US__formula_or_11_1___formula_forall_1_3___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?l - location ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_forall_1_3___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_3)
     :subtasks (and
       (xid0 (US__formula_or_11_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_3))
@@ -1597,7 +1597,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_13__formula_or_11_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_3 - sort_for_resource3)
+    :parameters (?l - location ?r_3 - artificial_sort_for_resource3)
     :task (US__formula_or_11_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_3)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_13__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_3))
@@ -1605,7 +1605,7 @@
   )
 
   (:method US__formula_or_14_0___formula_forall_1_4___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?l - location ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_forall_1_4___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_4)
     :subtasks (and
       (xid0 (US__formula_or_14_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_4))
@@ -1613,7 +1613,7 @@
   )
 
   (:method US__formula_not_atom_demands_15__formula_or_14_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_or_14_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_4)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_15__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_4))
@@ -1621,7 +1621,7 @@
   )
 
   (:method US__formula_or_14_1___formula_forall_1_4___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?l - location ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_forall_1_4___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_4)
     :subtasks (and
       (xid0 (US__formula_or_14_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_4))
@@ -1629,7 +1629,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_16__formula_or_14_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_4 - sort_for_resource4)
+    :parameters (?l - location ?r_4 - artificial_sort_for_resource4)
     :task (US__formula_or_14_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_4)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_16__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_4))
@@ -1637,7 +1637,7 @@
   )
 
   (:method US__formula_or_17_0___formula_forall_1_5___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_forall_1_5___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_5)
     :subtasks (and
       (xid0 (US__formula_or_17_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_5))
@@ -1645,7 +1645,7 @@
   )
 
   (:method US__formula_not_atom_demands_18__formula_or_17_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_or_17_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_5)
     :subtasks (and
       (xid0 (US__formula_not_atom_demands_18__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?r_5))
@@ -1653,7 +1653,7 @@
   )
 
   (:method US__formula_or_17_1___formula_forall_1_5___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_forall_1_5___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_5)
     :subtasks (and
       (xid0 (US__formula_or_17_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_5))
@@ -1661,7 +1661,7 @@
   )
 
   (:method US__formula_atom_resourceMINUS_at_19__formula_or_17_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_5 - sort_for_resource5)
+    :parameters (?l - location ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_or_17_1___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_5)
     :subtasks (and
       (xid0 (US__formula_atom_resourceMINUS_at_19__method_precondition_m_all_resources_thereBAR_disjunctive_prec ?l ?r_5))
@@ -1669,7 +1669,7 @@
   )
 
   (:method US__formula_forall_1__formula_and_0_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :task (US__formula_and_0_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l)
     :subtasks (and
       (xid0 (US__formula_forall_1_0___method_precondition_m_all_resources_thereBAR_disjunctive_prec ?f ?l ?r_0))
@@ -1765,84 +1765,84 @@
   )
 
   (:action US__formula_not_atom_demands_3produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_0 - sort_for_resource0)
+    :parameters (?f - factory ?rr_0 - artificial_sort_for_resource0)
     :precondition (and
       (not (demands ?f ?rr_0))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_4produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_0 - sort_for_resource0)
+    :parameters (?l - location ?rr_0 - artificial_sort_for_resource0)
     :precondition (and
       (resourceMINUS_at ?rr_0 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_6produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_1 - sort_for_resource1)
+    :parameters (?f - factory ?rr_1 - artificial_sort_for_resource1)
     :precondition (and
       (not (demands ?f ?rr_1))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_7produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_1 - sort_for_resource1)
+    :parameters (?l - location ?rr_1 - artificial_sort_for_resource1)
     :precondition (and
       (resourceMINUS_at ?rr_1 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_9produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_2 - sort_for_resource2)
+    :parameters (?f - factory ?rr_2 - artificial_sort_for_resource2)
     :precondition (and
       (not (demands ?f ?rr_2))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_10produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_2 - sort_for_resource2)
+    :parameters (?l - location ?rr_2 - artificial_sort_for_resource2)
     :precondition (and
       (resourceMINUS_at ?rr_2 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_12produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_3 - sort_for_resource3)
+    :parameters (?f - factory ?rr_3 - artificial_sort_for_resource3)
     :precondition (and
       (not (demands ?f ?rr_3))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_13produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_3 - sort_for_resource3)
+    :parameters (?l - location ?rr_3 - artificial_sort_for_resource3)
     :precondition (and
       (resourceMINUS_at ?rr_3 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_15produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_4 - sort_for_resource4)
+    :parameters (?f - factory ?rr_4 - artificial_sort_for_resource4)
     :precondition (and
       (not (demands ?f ?rr_4))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_16produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_4 - sort_for_resource4)
+    :parameters (?l - location ?rr_4 - artificial_sort_for_resource4)
     :precondition (and
       (resourceMINUS_at ?rr_4 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_18produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_5))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_19produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?rr_5 - sort_for_resource5)
+    :parameters (?l - location ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (resourceMINUS_at ?rr_5 ?l)
     )
@@ -1863,7 +1863,7 @@
   )
 
   (:action US__ce_yes_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?rr_0)
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -1874,7 +1874,7 @@
   )
 
   (:action US__ce_no_0_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_0))
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -1885,7 +1885,7 @@
   )
 
   (:action US__ce_apply_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -1896,7 +1896,7 @@
   )
 
   (:action US__ce_not_apply_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_0_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -1906,7 +1906,7 @@
   )
 
   (:action US__ce_yes_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?rr_1)
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -1917,7 +1917,7 @@
   )
 
   (:action US__ce_no_1_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_1))
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -1928,7 +1928,7 @@
   )
 
   (:action US__ce_apply_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -1939,7 +1939,7 @@
   )
 
   (:action US__ce_not_apply_1_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_1_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -1949,7 +1949,7 @@
   )
 
   (:action US__ce_yes_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?rr_2)
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -1960,7 +1960,7 @@
   )
 
   (:action US__ce_no_2_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_2))
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -1971,7 +1971,7 @@
   )
 
   (:action US__ce_apply_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -1982,7 +1982,7 @@
   )
 
   (:action US__ce_not_apply_2_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_2_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -1992,7 +1992,7 @@
   )
 
   (:action US__ce_yes_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?rr_3)
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -2003,7 +2003,7 @@
   )
 
   (:action US__ce_no_3_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_3))
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -2014,7 +2014,7 @@
   )
 
   (:action US__ce_apply_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2025,7 +2025,7 @@
   )
 
   (:action US__ce_not_apply_3_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_3_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2035,7 +2035,7 @@
   )
 
   (:action US__ce_yes_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?rr_4)
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -2046,7 +2046,7 @@
   )
 
   (:action US__ce_no_4_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_4))
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -2057,7 +2057,7 @@
   )
 
   (:action US__ce_apply_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2068,7 +2068,7 @@
   )
 
   (:action US__ce_not_apply_4_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_4_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2078,7 +2078,7 @@
   )
 
   (:action US__ce_yes_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?rr_5)
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -2089,7 +2089,7 @@
   )
 
   (:action US__ce_no_5_cond_0_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?rr_5))
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
@@ -2100,7 +2100,7 @@
   )
 
   (:action US__ce_apply_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2111,7 +2111,7 @@
   )
 
   (:action US__ce_not_apply_5_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_5_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2121,7 +2121,7 @@
   )
 
   (:action US_main_adds_produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (doing_action_produceBAR_ce_base_actionBAR_disjunctive_prec ?f ?r ?l ?rr_0 ?rr_1 ?rr_2 ?rr_3 ?rr_4 ?rr_5)
     )
@@ -2133,7 +2133,7 @@
   )
 
   (:action produceBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - sort_for_resource0 ?rr_1 - sort_for_resource1 ?rr_2 - sort_for_resource2 ?rr_3 - sort_for_resource3 ?rr_4 - sort_for_resource4 ?rr_5 - sort_for_resource5)
+    :parameters (?f - factory ?r - resource ?l - location ?rr_0 - artificial_sort_for_resource0 ?rr_1 - artificial_sort_for_resource1 ?rr_2 - artificial_sort_for_resource2 ?rr_3 - artificial_sort_for_resource3 ?rr_4 - artificial_sort_for_resource4 ?rr_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (multi_stage_execution_guard))
     )
@@ -2187,140 +2187,140 @@
   )
 
   (:action US__formula_not_atom_demands_4buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?r_0 - artificial_sort_for_resource0)
     :precondition (and
       (not (demands ?f ?r_0))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_5buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_0 - sort_for_resource0)
+    :parameters (?l - location ?r_0 - artificial_sort_for_resource0)
     :precondition (and
       (resourceMINUS_at ?r_0 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_7buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?r_1 - artificial_sort_for_resource1)
     :precondition (and
       (not (demands ?f ?r_1))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_8buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_1 - sort_for_resource1)
+    :parameters (?l - location ?r_1 - artificial_sort_for_resource1)
     :precondition (and
       (resourceMINUS_at ?r_1 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_10buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?r_2 - artificial_sort_for_resource2)
     :precondition (and
       (not (demands ?f ?r_2))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_11buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_2 - sort_for_resource2)
+    :parameters (?l - location ?r_2 - artificial_sort_for_resource2)
     :precondition (and
       (resourceMINUS_at ?r_2 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_13buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?r_3 - artificial_sort_for_resource3)
     :precondition (and
       (not (demands ?f ?r_3))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_14buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_3 - sort_for_resource3)
+    :parameters (?l - location ?r_3 - artificial_sort_for_resource3)
     :precondition (and
       (resourceMINUS_at ?r_3 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_16buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?r_4 - artificial_sort_for_resource4)
     :precondition (and
       (not (demands ?f ?r_4))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_17buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_4 - sort_for_resource4)
+    :parameters (?l - location ?r_4 - artificial_sort_for_resource4)
     :precondition (and
       (resourceMINUS_at ?r_4 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_19buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_5))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_20buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?r_5 - sort_for_resource5)
+    :parameters (?l - location ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (resourceMINUS_at ?r_5 ?l)
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_22buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_0 - sort_for_factory0)
+    :parameters (?l - location ?ff_0 - artificial_sort_for_factory0)
     :precondition (and
       (not (factoryMINUS_at ?ff_0 ?l))
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_23buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_1 - sort_for_factory1)
+    :parameters (?l - location ?ff_1 - artificial_sort_for_factory1)
     :precondition (and
       (not (factoryMINUS_at ?ff_1 ?l))
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_24buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_2 - sort_for_factory2)
+    :parameters (?l - location ?ff_2 - artificial_sort_for_factory2)
     :precondition (and
       (not (factoryMINUS_at ?ff_2 ?l))
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_25buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_3 - sort_for_factory3)
+    :parameters (?l - location ?ff_3 - artificial_sort_for_factory3)
     :precondition (and
       (not (factoryMINUS_at ?ff_3 ?l))
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_26buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_4 - sort_for_factory4)
+    :parameters (?l - location ?ff_4 - artificial_sort_for_factory4)
     :precondition (and
       (not (factoryMINUS_at ?ff_4 ?l))
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_27buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_5 - sort_for_factory5)
+    :parameters (?l - location ?ff_5 - artificial_sort_for_factory5)
     :precondition (and
       (not (factoryMINUS_at ?ff_5 ?l))
     )
   )
 
   (:action US__formula_not_atom_factoryMINUS_at_28buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?l - location ?ff_6 - sort_for_last_factory)
+    :parameters (?l - location ?ff_6 - artificial_sort_for_last_factory)
     :precondition (and
       (not (factoryMINUS_at ?ff_6 ?l))
     )
   )
 
   (:action US__ce_yes_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?r_0)
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2331,7 +2331,7 @@
   )
 
   (:action US__ce_no_0_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_0))
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2342,7 +2342,7 @@
   )
 
   (:action US__ce_apply_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2353,7 +2353,7 @@
   )
 
   (:action US__ce_not_apply_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_0_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2363,7 +2363,7 @@
   )
 
   (:action US__ce_yes_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?r_1)
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2374,7 +2374,7 @@
   )
 
   (:action US__ce_no_1_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_1))
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2385,7 +2385,7 @@
   )
 
   (:action US__ce_apply_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2396,7 +2396,7 @@
   )
 
   (:action US__ce_not_apply_1_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_1_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2406,7 +2406,7 @@
   )
 
   (:action US__ce_yes_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?r_2)
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2417,7 +2417,7 @@
   )
 
   (:action US__ce_no_2_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_2))
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2428,7 +2428,7 @@
   )
 
   (:action US__ce_apply_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2439,7 +2439,7 @@
   )
 
   (:action US__ce_not_apply_2_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_2_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2449,7 +2449,7 @@
   )
 
   (:action US__ce_yes_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?r_3)
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2460,7 +2460,7 @@
   )
 
   (:action US__ce_no_3_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_3))
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2471,7 +2471,7 @@
   )
 
   (:action US__ce_apply_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2482,7 +2482,7 @@
   )
 
   (:action US__ce_not_apply_3_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_3_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2492,7 +2492,7 @@
   )
 
   (:action US__ce_yes_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?r_4)
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2503,7 +2503,7 @@
   )
 
   (:action US__ce_no_4_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_4))
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2514,7 +2514,7 @@
   )
 
   (:action US__ce_apply_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2525,7 +2525,7 @@
   )
 
   (:action US__ce_not_apply_4_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_4_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2535,7 +2535,7 @@
   )
 
   (:action US__ce_yes_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (demands ?f ?r_5)
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2546,7 +2546,7 @@
   )
 
   (:action US__ce_no_5_cond_0_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_5))
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
@@ -2557,7 +2557,7 @@
   )
 
   (:action US__ce_apply_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (do_apply___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2568,7 +2568,7 @@
   )
 
   (:action US__ce_not_apply_5_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not_apply___ce_check_5_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2578,7 +2578,7 @@
   )
 
   (:action US_main_adds_buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (doing_action_buildBAR_ce_base_actionBAR_disjunctive_prec ?f ?l ?r_0 ?r_1 ?r_2 ?r_3 ?r_4 ?r_5)
     )
@@ -2591,7 +2591,7 @@
   )
 
   (:action buildBAR_ce_base_actionBAR_disjunctive_prec
-    :parameters (?f - factory ?l - location ?r_0 - sort_for_resource0 ?r_1 - sort_for_resource1 ?r_2 - sort_for_resource2 ?r_3 - sort_for_resource3 ?r_4 - sort_for_resource4 ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?l - location ?r_0 - artificial_sort_for_resource0 ?r_1 - artificial_sort_for_resource1 ?r_2 - artificial_sort_for_resource2 ?r_3 - artificial_sort_for_resource3 ?r_4 - artificial_sort_for_resource4 ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (multi_stage_execution_guard))
     )
@@ -2626,84 +2626,84 @@
   )
 
   (:action US__formula_not_atom_demands_3__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_0 - sort_for_resource0)
+    :parameters (?f - factory ?r_0 - artificial_sort_for_resource0)
     :precondition (and
       (not (demands ?f ?r_0))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_4__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_0 - sort_for_resource0)
+    :parameters (?l - location ?r_0 - artificial_sort_for_resource0)
     :precondition (and
       (resourceMINUS_at ?r_0 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_6__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_1 - sort_for_resource1)
+    :parameters (?f - factory ?r_1 - artificial_sort_for_resource1)
     :precondition (and
       (not (demands ?f ?r_1))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_7__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_1 - sort_for_resource1)
+    :parameters (?l - location ?r_1 - artificial_sort_for_resource1)
     :precondition (and
       (resourceMINUS_at ?r_1 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_9__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_2 - sort_for_resource2)
+    :parameters (?f - factory ?r_2 - artificial_sort_for_resource2)
     :precondition (and
       (not (demands ?f ?r_2))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_10__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_2 - sort_for_resource2)
+    :parameters (?l - location ?r_2 - artificial_sort_for_resource2)
     :precondition (and
       (resourceMINUS_at ?r_2 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_12__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_3 - sort_for_resource3)
+    :parameters (?f - factory ?r_3 - artificial_sort_for_resource3)
     :precondition (and
       (not (demands ?f ?r_3))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_13__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_3 - sort_for_resource3)
+    :parameters (?l - location ?r_3 - artificial_sort_for_resource3)
     :precondition (and
       (resourceMINUS_at ?r_3 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_15__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_4 - sort_for_resource4)
+    :parameters (?f - factory ?r_4 - artificial_sort_for_resource4)
     :precondition (and
       (not (demands ?f ?r_4))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_16__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_4 - sort_for_resource4)
+    :parameters (?l - location ?r_4 - artificial_sort_for_resource4)
     :precondition (and
       (resourceMINUS_at ?r_4 ?l)
     )
   )
 
   (:action US__formula_not_atom_demands_18__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?f - factory ?r_5 - sort_for_resource5)
+    :parameters (?f - factory ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (not (demands ?f ?r_5))
     )
   )
 
   (:action US__formula_atom_resourceMINUS_at_19__method_precondition_m_all_resources_thereBAR_disjunctive_prec
-    :parameters (?l - location ?r_5 - sort_for_resource5)
+    :parameters (?l - location ?r_5 - artificial_sort_for_resource5)
     :precondition (and
       (resourceMINUS_at ?r_5 ?l)
     )

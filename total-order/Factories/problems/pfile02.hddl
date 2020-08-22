@@ -2,17 +2,17 @@
   (problem p)
   (:domain d)
   (:objects
-    factory0 - sort_for_factory0
-    factory1 - sort_for_factory1
-    factory2 - sort_for_factory2
-    last_factory - sort_for_last_factory
-    last_location - sort_for_last_location
+    factory0 - artificial_sort_for_factory0
+    factory1 - artificial_sort_for_factory1
+    factory2 - artificial_sort_for_factory2
+    last_factory - artificial_sort_for_last_factory
+    last_location - artificial_sort_for_last_location
     location0 - location
     location1 - location
     location2 - location
-    resource0 - sort_for_resource0
-    resource1 - sort_for_resource1
-    resource2 - sort_for_resource2
+    resource0 - artificial_sort_for_resource0
+    resource1 - artificial_sort_for_resource1
+    resource2 - artificial_sort_for_resource2
   )
   (:htn
     :parameters ()
