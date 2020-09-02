@@ -574,6 +574,9 @@
 		 (task0 (set_up_cones ?from ?to))
 		 (task1 (get_to ?police ?from))
 		)
+                :ordering (and
+                   (task0 < task1)
+                )
 	)
 
 	(:method m_unblock_road
@@ -747,6 +750,9 @@
 		 (task0 (ccall ebs))
 		 (task1 (ccall police_chief))
 		)
+                :ordering (and
+                   (task0 < task1)
+                )
 	)
 
 	(:method m_generate_temp_electricity
@@ -802,6 +808,9 @@
 		 (task0 (pay ?ss))
 		 (task1 (pump_gas_into ?ss ?obj))
 		)
+                :ordering (and
+                   (task0 < task1)
+                )
 	)
 
 	(:method m_repair_line_with_tree
@@ -818,6 +827,7 @@
 		:ordering (and
 			(task5 < task0)
 			(task0 < task1)
+                        (task1 < task2)
 			(task0 < task2)
 			(task1 < task3)
 			(task2 < task3)
