@@ -1101,7 +1101,7 @@
 
 	(:method regular_4
 		:parameters (?from - point ?h_compiled_1_ps2 - hazardousness ?hazard_team - hazard_team ?to - point)
-		:task (cclean_hazard ?hazard_team ?from ?to)
+		:task (cclean_hazard ?hazard_team ?from ?to ?h_compiled_1_ps2)
 		:subtasks (and
 		 (task0 (clean_hazard ?hazard_team ?from ?to ?h_compiled_1_ps2))
 		)
@@ -1210,7 +1210,7 @@
 
 	(:method prefix_8
 		:parameters (?from - point ?h_compiled_2_ps2 - hazardousness ?hazard_team - hazard_team ?to - point)
-		:task (cclean_hazard ?hazard_team ?from ?to)
+		:task (cclean_hazard ?hazard_team ?from ?to ?h_compiled_2_ps2)
 		:precondition (and
 			(= ?hazard_team ht2)
 			(= ?from rochester_general)
