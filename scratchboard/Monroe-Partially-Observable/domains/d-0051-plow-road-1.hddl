@@ -908,14 +908,14 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?loc - point ?person - plowdriver ?veh - snowplow)
 		:task (cnavegate_snowplow ?person ?veh ?loc)
 		:subtasks (and
 		 (task0 (navegate_snowplow ?person ?veh ?loc))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - plowdriver ?veh - snowplow)
 		:task (cnavegate_snowplow ?person ?veh ?loc)
 		:precondition (and

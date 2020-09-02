@@ -908,14 +908,14 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
 		 (task0 (place_cones ?police))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and

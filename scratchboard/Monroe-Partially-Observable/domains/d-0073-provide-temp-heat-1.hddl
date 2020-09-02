@@ -908,14 +908,14 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?gen - generator ?loc - service_station)
 		:task (cpump_gas_into ?loc ?gen)
 		:subtasks (and
 		 (task0 (pump_gas_into ?loc ?gen))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?gen - generator ?loc - service_station)
 		:task (cpump_gas_into ?loc ?gen)
 		:precondition (and

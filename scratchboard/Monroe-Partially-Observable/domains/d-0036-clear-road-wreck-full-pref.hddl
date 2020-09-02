@@ -953,49 +953,49 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
 		 (task0 (navegate_vehicle ?person ?veh ?loc ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_2
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:subtasks (and
 		 (task0 (climb_out ?obj ?veh ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_3
 		:parameters (?police - work_crew)
 		:task (cpickup_cones ?police)
 		:subtasks (and
 		 (task0 (pickup_cones ?police))
 		)
 	)
-	(:method new_method
+	(:method regular_4
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 		:task (chook_to_tow_truck ?ttruck ?veh)
 		:subtasks (and
 		 (task0 (hook_to_tow_truck ?ttruck ?veh))
 		)
 	)
-	(:method new_method
+	(:method regular_5
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
 		 (task0 (place_cones ?police))
 		)
 	)
-	(:method new_method
+	(:method regular_6
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 		:task (cunhook_from_tow_truck ?ttruck ?veh)
 		:subtasks (and
 		 (task0 (unhook_from_tow_truck ?ttruck ?veh))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1008,7 +1008,7 @@
 		 (task0 (p_1Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_2
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and
@@ -1018,7 +1018,7 @@
 		 (task0 (p_2Place_cones))
 		)
 	)
-	(:method some_method
+	(:method prefix_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1031,7 +1031,7 @@
 		 (task0 (p_3Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_4
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 		:task (chook_to_tow_truck ?ttruck ?veh)
 		:precondition (and
@@ -1042,7 +1042,7 @@
 		 (task0 (p_4Hook_to_tow_truck))
 		)
 	)
-	(:method some_method
+	(:method prefix_5
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1055,7 +1055,7 @@
 		 (task0 (p_5Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_6
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 		:task (cunhook_from_tow_truck ?ttruck ?veh)
 		:precondition (and
@@ -1066,7 +1066,7 @@
 		 (task0 (p_6Unhook_from_tow_truck))
 		)
 	)
-	(:method some_method
+	(:method prefix_7
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:precondition (and
@@ -1078,7 +1078,7 @@
 		 (task0 (p_7Climb_out))
 		)
 	)
-	(:method some_method
+	(:method prefix_8
 		:parameters (?police - work_crew)
 		:task (cpickup_cones ?police)
 		:precondition (and

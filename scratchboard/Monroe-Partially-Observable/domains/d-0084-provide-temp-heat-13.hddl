@@ -960,28 +960,28 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?obj - object ?objloc - point ?person - person ?veh - vehicle)
 		:task (cload ?person ?obj ?veh ?objloc)
 		:subtasks (and
 		 (task0 (load ?person ?obj ?veh ?objloc))
 		)
 	)
-	(:method new_method
+	(:method regular_2
 		:parameters (?obj - object ?person - person ?veh - vehicle ?vehloc - point)
 		:task (cunload ?person ?obj ?veh ?vehloc)
 		:subtasks (and
 		 (task0 (unload ?person ?obj ?veh ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
 		 (task0 (navegate_vehicle ?person ?veh ?loc ?vehloc))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -994,7 +994,7 @@
 		 (task0 (p_1Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_2
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1007,7 +1007,7 @@
 		 (task0 (p_2Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_3
 		:parameters (?obj - object ?objloc - point ?person - person ?veh - vehicle)
 		:task (cload ?person ?obj ?veh ?objloc)
 		:precondition (and
@@ -1020,7 +1020,7 @@
 		 (task0 (p_3Load))
 		)
 	)
-	(:method some_method
+	(:method prefix_4
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1033,7 +1033,7 @@
 		 (task0 (p_4Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_5
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1046,7 +1046,7 @@
 		 (task0 (p_5Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_6
 		:parameters (?obj - object ?person - person ?veh - vehicle ?vehloc - point)
 		:task (cunload ?person ?obj ?veh ?vehloc)
 		:precondition (and
@@ -1059,7 +1059,7 @@
 		 (task0 (p_6Unload))
 		)
 	)
-	(:method some_method
+	(:method prefix_7
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1072,7 +1072,7 @@
 		 (task0 (p_7Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_8
 		:parameters (?obj - object ?objloc - point ?person - person ?veh - vehicle)
 		:task (cload ?person ?obj ?veh ?objloc)
 		:precondition (and
@@ -1085,7 +1085,7 @@
 		 (task0 (p_8Load))
 		)
 	)
-	(:method some_method
+	(:method prefix_9
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and

@@ -908,14 +908,14 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:subtasks (and
 		 (task0 (call ?place))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and

@@ -1018,7 +1018,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?gen - generator ?loc - service_station)
 		:task (cpump_gas_into ?loc ?gen)
 		:subtasks (and
@@ -1026,7 +1026,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?loc - service_station)
 		:task (cpay ?loc)
 		:subtasks (and
@@ -1034,7 +1034,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - service_station)
 		:task (cpay ?loc)
 		:precondition (and
@@ -1045,7 +1045,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?gen - generator ?loc - service_station)
 		:task (cpump_gas_into ?loc ?gen)
 		:precondition (and

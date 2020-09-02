@@ -1008,70 +1008,70 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?obj - object ?person - person ?veh - vehicle ?vehloc - point)
 		:task (cunload ?person ?obj ?veh ?vehloc)
 		:subtasks (and
 		 (task0 (unload ?person ?obj ?veh ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_2
 		:parameters (?gen - generator ?loc - point)
 		:task (chook_up ?gen ?loc)
 		:subtasks (and
 		 (task0 (hook_up ?gen ?loc))
 		)
 	)
-	(:method new_method
+	(:method regular_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
 		 (task0 (navegate_vehicle ?person ?veh ?loc ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_4
 		:parameters (?gen - generator ?loc - service_station)
 		:task (cpump_gas_into ?loc ?gen)
 		:subtasks (and
 		 (task0 (pump_gas_into ?loc ?gen))
 		)
 	)
-	(:method new_method
+	(:method regular_5
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:subtasks (and
 		 (task0 (climb_in ?obj ?veh ?objloc))
 		)
 	)
-	(:method new_method
+	(:method regular_6
 		:parameters (?loc - point)
 		:task (cturn_on_heat ?loc)
 		:subtasks (and
 		 (task0 (turn_on_heat ?loc))
 		)
 	)
-	(:method new_method
+	(:method regular_7
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:subtasks (and
 		 (task0 (climb_out ?obj ?veh ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_8
 		:parameters (?obj - object ?objloc - point ?person - person ?veh - vehicle)
 		:task (cload ?person ?obj ?veh ?objloc)
 		:subtasks (and
 		 (task0 (load ?person ?obj ?veh ?objloc))
 		)
 	)
-	(:method new_method
+	(:method regular_9
 		:parameters (?loc - service_station)
 		:task (cpay ?loc)
 		:subtasks (and
 		 (task0 (pay ?loc))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1084,7 +1084,7 @@
 		 (task0 (p_1Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_2
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1097,7 +1097,7 @@
 		 (task0 (p_2Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_3
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:precondition (and
@@ -1109,7 +1109,7 @@
 		 (task0 (p_3Climb_in))
 		)
 	)
-	(:method some_method
+	(:method prefix_4
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1122,7 +1122,7 @@
 		 (task0 (p_4Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_5
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:precondition (and
@@ -1134,7 +1134,7 @@
 		 (task0 (p_5Climb_out))
 		)
 	)
-	(:method some_method
+	(:method prefix_6
 		:parameters (?obj - object ?objloc - point ?person - person ?veh - vehicle)
 		:task (cload ?person ?obj ?veh ?objloc)
 		:precondition (and
@@ -1147,7 +1147,7 @@
 		 (task0 (p_6Load))
 		)
 	)
-	(:method some_method
+	(:method prefix_7
 		:parameters (?loc - service_station)
 		:task (cpay ?loc)
 		:precondition (and
@@ -1157,7 +1157,7 @@
 		 (task0 (p_7Pay))
 		)
 	)
-	(:method some_method
+	(:method prefix_8
 		:parameters (?gen - generator ?loc - service_station)
 		:task (cpump_gas_into ?loc ?gen)
 		:precondition (and
@@ -1168,7 +1168,7 @@
 		 (task0 (p_8Pump_gas_into))
 		)
 	)
-	(:method some_method
+	(:method prefix_9
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:precondition (and
@@ -1180,7 +1180,7 @@
 		 (task0 (p_9Climb_in))
 		)
 	)
-	(:method some_method
+	(:method prefix_10
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1193,7 +1193,7 @@
 		 (task0 (p_10Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_11
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:precondition (and
@@ -1205,7 +1205,7 @@
 		 (task0 (p_11Climb_out))
 		)
 	)
-	(:method some_method
+	(:method prefix_12
 		:parameters (?obj - object ?objloc - point ?person - person ?veh - vehicle)
 		:task (cload ?person ?obj ?veh ?objloc)
 		:precondition (and
@@ -1218,7 +1218,7 @@
 		 (task0 (p_12Load))
 		)
 	)
-	(:method some_method
+	(:method prefix_13
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1231,7 +1231,7 @@
 		 (task0 (p_13Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_14
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1244,7 +1244,7 @@
 		 (task0 (p_14Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_15
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:precondition (and
@@ -1256,7 +1256,7 @@
 		 (task0 (p_15Climb_in))
 		)
 	)
-	(:method some_method
+	(:method prefix_16
 		:parameters (?obj - object ?person - person ?veh - vehicle ?vehloc - point)
 		:task (cunload ?person ?obj ?veh ?vehloc)
 		:precondition (and
@@ -1269,7 +1269,7 @@
 		 (task0 (p_16Unload))
 		)
 	)
-	(:method some_method
+	(:method prefix_17
 		:parameters (?gen - generator ?loc - point)
 		:task (chook_up ?gen ?loc)
 		:precondition (and
@@ -1280,7 +1280,7 @@
 		 (task0 (p_17Hook_up))
 		)
 	)
-	(:method some_method
+	(:method prefix_18
 		:parameters (?loc - point)
 		:task (cturn_on_heat ?loc)
 		:precondition (and

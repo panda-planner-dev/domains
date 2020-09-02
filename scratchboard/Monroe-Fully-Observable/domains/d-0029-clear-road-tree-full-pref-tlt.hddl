@@ -1046,7 +1046,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?police - work_crew)
 		:task (cpickup_cones ?police)
 		:subtasks (and
@@ -1054,7 +1054,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
@@ -1062,7 +1062,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
@@ -1070,7 +1070,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_4
 		:parameters (?crew - work_crew ?stuff - tree)
 		:task (ccarry_blockage_out_of_way ?crew ?stuff)
 		:subtasks (and
@@ -1078,7 +1078,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_5
 		:parameters (?crew - tree_crew ?tree - tree)
 		:task (ccut_tree ?crew ?tree)
 		:subtasks (and
@@ -1086,7 +1086,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1100,7 +1100,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and
@@ -1111,7 +1111,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_3
 		:parameters (?crew - tree_crew ?tree - tree)
 		:task (ccut_tree ?crew ?tree)
 		:precondition (and
@@ -1123,7 +1123,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_4
 		:parameters (?crew - work_crew ?stuff - tree)
 		:task (ccarry_blockage_out_of_way ?crew ?stuff)
 		:precondition (and
@@ -1135,7 +1135,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_5
 		:parameters (?police - work_crew)
 		:task (cpickup_cones ?police)
 		:precondition (and

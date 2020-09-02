@@ -1036,7 +1036,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
@@ -1044,7 +1044,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
@@ -1052,7 +1052,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_3
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 		:task (chook_to_tow_truck ?ttruck ?veh)
 		:subtasks (and
@@ -1060,7 +1060,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and
@@ -1071,7 +1071,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 		:task (chook_to_tow_truck ?ttruck ?veh)
 		:precondition (and
@@ -1083,7 +1083,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and

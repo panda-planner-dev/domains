@@ -1091,7 +1091,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:subtasks (and
@@ -1099,7 +1099,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:subtasks (and
@@ -1107,7 +1107,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_3
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:subtasks (and
@@ -1115,7 +1115,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_4
 		:parameters (?police - work_crew)
 		:task (cpickup_cones ?police)
 		:subtasks (and
@@ -1123,7 +1123,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_5
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
@@ -1131,7 +1131,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_6
 		:parameters (?backhoe - backhoe ?place - point)
 		:task (cdig ?backhoe ?place)
 		:subtasks (and
@@ -1139,7 +1139,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_7
 		:parameters (?crew - water_crew ?from - point ?to - point)
 		:task (creplace_pipe ?crew ?from ?to)
 		:subtasks (and
@@ -1147,7 +1147,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_8
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
@@ -1155,7 +1155,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_9
 		:parameters (?backhoe - backhoe ?place - point)
 		:task (cfill_in ?backhoe ?place)
 		:subtasks (and
@@ -1163,7 +1163,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and
@@ -1174,7 +1174,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1188,7 +1188,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1202,7 +1202,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_4
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:precondition (and
@@ -1215,7 +1215,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_5
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1229,7 +1229,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_6
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
 		:task (cclimb_out ?obj ?veh ?vehloc)
 		:precondition (and
@@ -1242,7 +1242,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_7
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and
@@ -1253,7 +1253,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_8
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1267,7 +1267,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_9
 		:parameters (?backhoe - backhoe ?place - point)
 		:task (cdig ?backhoe ?place)
 		:precondition (and
@@ -1279,7 +1279,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_10
 		:parameters (?crew - water_crew ?from - point ?to - point)
 		:task (creplace_pipe ?crew ?from ?to)
 		:precondition (and
@@ -1292,7 +1292,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_11
 		:parameters (?backhoe - backhoe ?place - point)
 		:task (cfill_in ?backhoe ?place)
 		:precondition (and
@@ -1304,7 +1304,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_12
 		:parameters (?police - work_crew)
 		:task (cpickup_cones ?police)
 		:precondition (and
@@ -1315,7 +1315,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_13
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and

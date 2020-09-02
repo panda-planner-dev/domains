@@ -1013,7 +1013,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
@@ -1021,7 +1021,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and

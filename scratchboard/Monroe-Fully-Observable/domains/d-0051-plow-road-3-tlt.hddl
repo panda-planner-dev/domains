@@ -1019,7 +1019,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?person - plowdriver ?plow - snowplow)
 		:task (cengage_plow ?person ?plow)
 		:subtasks (and
@@ -1027,7 +1027,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?loc - point ?person - plowdriver ?veh - snowplow)
 		:task (cnavegate_snowplow ?person ?veh ?loc)
 		:subtasks (and
@@ -1035,7 +1035,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - plowdriver ?veh - snowplow)
 		:task (cnavegate_snowplow ?person ?veh ?loc)
 		:precondition (and
@@ -1048,7 +1048,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?person - plowdriver ?plow - snowplow)
 		:task (cengage_plow ?person ?plow)
 		:precondition (and
@@ -1060,7 +1060,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_3
 		:parameters (?loc - point ?person - plowdriver ?veh - snowplow)
 		:task (cnavegate_snowplow ?person ?veh ?loc)
 		:precondition (and

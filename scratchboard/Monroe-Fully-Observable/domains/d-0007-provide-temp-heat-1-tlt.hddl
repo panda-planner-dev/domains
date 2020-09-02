@@ -1013,7 +1013,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?loc - service_station)
 		:task (cpay ?loc)
 		:subtasks (and
@@ -1021,7 +1021,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - service_station)
 		:task (cpay ?loc)
 		:precondition (and

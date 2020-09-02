@@ -1038,7 +1038,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:subtasks (and
@@ -1046,7 +1046,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?police - police_unit)
 		:task (cset_up_barricades ?police)
 		:subtasks (and
@@ -1054,7 +1054,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
@@ -1062,7 +1062,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and
@@ -1073,7 +1073,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and
@@ -1084,7 +1084,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_3
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1098,7 +1098,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_4
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1112,7 +1112,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_5
 		:parameters (?police - police_unit)
 		:task (cset_up_barricades ?police)
 		:precondition (and

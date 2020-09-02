@@ -941,28 +941,28 @@
 			(task0 < task1)
 		)
 	)
-	(:method new_method
+	(:method regular_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
 		 (task0 (navegate_vehicle ?person ?veh ?loc ?vehloc))
 		)
 	)
-	(:method new_method
+	(:method regular_2
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:subtasks (and
 		 (task0 (climb_in ?obj ?veh ?objloc))
 		)
 	)
-	(:method new_method
+	(:method regular_3
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:subtasks (and
 		 (task0 (place_cones ?police))
 		)
 	)
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -975,7 +975,7 @@
 		 (task0 (p_1Navegate_vehicle))
 		)
 	)
-	(:method some_method
+	(:method prefix_2
 		:parameters (?police - work_crew)
 		:task (cplace_cones ?police)
 		:precondition (and
@@ -985,7 +985,7 @@
 		 (task0 (p_2Place_cones))
 		)
 	)
-	(:method some_method
+	(:method prefix_3
 		:parameters (?obj - person ?objloc - point ?veh - vehicle)
 		:task (cclimb_in ?obj ?veh ?objloc)
 		:precondition (and
@@ -997,7 +997,7 @@
 		 (task0 (p_3Climb_in))
 		)
 	)
-	(:method some_method
+	(:method prefix_4
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and

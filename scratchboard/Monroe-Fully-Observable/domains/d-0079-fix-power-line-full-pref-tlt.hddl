@@ -1042,7 +1042,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_1
 		:parameters (?crew - power_crew ?lineloc - point)
 		:task (cstring_wire ?crew ?lineloc)
 		:subtasks (and
@@ -1050,7 +1050,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_2
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:subtasks (and
@@ -1058,7 +1058,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_3
 		:parameters (?crew - power_crew ?lineloc - point)
 		:task (cremove_wire ?crew ?lineloc)
 		:subtasks (and
@@ -1066,7 +1066,7 @@
 		)
 	)
 
-	(:method new_method
+	(:method regular_4
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:subtasks (and
@@ -1074,7 +1074,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_1
 		:parameters (?loc - point ?person - adult ?veh - vehicle ?vehloc - point)
 		:task (cnavegate_vehicle ?person ?veh ?loc ?vehloc)
 		:precondition (and
@@ -1088,7 +1088,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_2
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and
@@ -1099,7 +1099,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_3
 		:parameters (?crew - power_crew ?lineloc - point)
 		:task (cremove_wire ?crew ?lineloc)
 		:precondition (and
@@ -1111,7 +1111,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_4
 		:parameters (?crew - power_crew ?lineloc - point)
 		:task (cstring_wire ?crew ?lineloc)
 		:precondition (and
@@ -1123,7 +1123,7 @@
 		)
 	)
 
-	(:method some_method
+	(:method prefix_5
 		:parameters (?place - callable)
 		:task (ccall ?place)
 		:precondition (and
