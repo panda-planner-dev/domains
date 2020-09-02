@@ -97,10 +97,6 @@
 		(l25)
 	)
 
-	(:task mtlt
-		:parameters ()
-	)
-
 	(:task tlt
 		:parameters ()
 	)
@@ -350,22 +346,6 @@
 
 	(:task cturn_on
 		:parameters (?gen - generator)
-	)
-
-	(:method m_multiple_tlt
-		:parameters ()
-		:task (mtlt)
-		:subtasks (and
-		 (task0 (mtlt))
-		 (task1 (tlt))
-		)
-	)
-
-	(:method m_del_mtlt
-		:parameters ()
-		:task (mtlt)
-		:subtasks (
-		)
 	)
 
 	(:method m_tlt_set_up_shelter

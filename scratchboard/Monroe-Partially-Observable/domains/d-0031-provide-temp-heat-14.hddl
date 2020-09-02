@@ -82,10 +82,6 @@
 		(l10)
 		(l11)
 	)
-	(:task mtlt
-		:parameters ()
-	)
-	(:task tlt
 		:parameters ()
 	)
 	(:task set_up_shelter
@@ -279,22 +275,6 @@
 	(:task cpay
 		:parameters (?loc - service_station)
 	)
-	(:method m_multiple_tlt
-		:parameters ()
-		:task (mtlt)
-		:subtasks (and
-		 (task0 (mtlt))
-		 (task1 (tlt))
-		)
-	)
-	(:method m_del_mtlt
-		:parameters ()
-		:task (mtlt)
-		:subtasks (
-		)
-	)
-	(:method m_tlt_set_up_shelter
-		:parameters (?p0 - point)
 		:task (tlt)
 		:subtasks (and
 		 (task0 (set_up_shelter ?p0))
