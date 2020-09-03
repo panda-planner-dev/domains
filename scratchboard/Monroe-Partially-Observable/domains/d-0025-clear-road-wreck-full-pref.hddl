@@ -89,7 +89,8 @@
 		(l9)
 		(l10)
 	)
-		:parameters ()
+		(:task tlt
+    :parameters ()
 	)
 	(:task set_up_shelter
 		:parameters (?p0 - point)
@@ -257,7 +258,10 @@
 	(:task chook_to_tow_truck
 		:parameters (?ttruck - tow_truck ?veh - vehicle)
 	)
-		:task (tlt)
+		
+(:method m_tlt_set_up_shelter
+    :parameters (?p0 - point)
+    :task (tlt)
 		:subtasks (and
 		 (task0 (set_up_shelter ?p0))
 		)

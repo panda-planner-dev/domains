@@ -81,7 +81,8 @@
 		(l1)
 		(l2)
 	)
-		:parameters ()
+		(:task tlt
+    :parameters ()
 	)
 	(:task set_up_shelter
 		:parameters (?p0 - point)
@@ -200,7 +201,10 @@
 	(:task cnavegate_snowplow
 		:parameters (?person - plowdriver ?veh - snowplow ?loc - point)
 	)
-		:task (tlt)
+		
+(:method m_tlt_set_up_shelter
+    :parameters (?p0 - point)
+    :task (tlt)
 		:subtasks (and
 		 (task0 (set_up_shelter ?p0))
 		)

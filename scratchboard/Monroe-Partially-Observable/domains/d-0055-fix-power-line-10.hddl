@@ -87,7 +87,8 @@
 		(l7)
 		(l8)
 	)
-		:parameters ()
+		(:task tlt
+    :parameters ()
 	)
 	(:task set_up_shelter
 		:parameters (?p0 - point)
@@ -255,7 +256,10 @@
 	(:task cremove_wire
 		:parameters (?crew - power_crew ?lineloc - point)
 	)
-		:task (tlt)
+		
+(:method m_tlt_set_up_shelter
+    :parameters (?p0 - point)
+    :task (tlt)
 		:subtasks (and
 		 (task0 (set_up_shelter ?p0))
 		)

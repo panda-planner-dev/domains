@@ -93,7 +93,8 @@
 		(l13)
 		(l14)
 	)
-		:parameters ()
+		(:task tlt
+    :parameters ()
 	)
 	(:task set_up_shelter
 		:parameters (?p0 - point)
@@ -265,7 +266,10 @@
 	(:task cturn_on
 		:parameters (?gen - generator)
 	)
-		:task (tlt)
+		
+(:method m_tlt_set_up_shelter
+    :parameters (?p0 - point)
+    :task (tlt)
 		:subtasks (and
 		 (task0 (set_up_shelter ?p0))
 		)
