@@ -54,6 +54,12 @@
 		person - object
 	)
         (:constants
+		pvan2 - police_van
+		pu2 - police_unit
+
+		henrietta_dump - garbage_dump
+
+		brighton_dump - garbage_dump
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -205,19 +211,6 @@
 	)
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 		
 (:method m_tlt_set_up_shelter
@@ -486,6 +479,9 @@
 		 (task0 (set_up_cones ?from ?to))
 		 (task1 (get_to ?police ?from))
 		)
+                :ordering (and
+                   (< task0 task1)
+                )
 	)
 	(:method m_unblock_road
 		:parameters (?from - point ?to - point)
@@ -645,6 +641,9 @@
 		 (task0 (ccall ebs))
 		 (task1 (ccall police_chief))
 		)
+                :ordering (and
+                   (< task0 task1)
+                )
 	)
 	(:method m_generate_temp_electricity
 		:parameters (?gen - generator ?loc - point)
@@ -696,6 +695,9 @@
 		 (task0 (pay ?ss))
 		 (task1 (pump_gas_into ?ss ?obj))
 		)
+                :ordering (and
+                   (< task0 task1)
+                )
 	)
 	(:method m_repair_line_with_tree
 		:parameters (?crew - power_crew ?lineloc - point ?tree - tree)
@@ -711,6 +713,7 @@
 		:ordering (and
 			(< task5 task0)
 			(< task0 task1)
+                        (< task1 task2)
 			(< task0 task2)
 			(< task1 task3)
 			(< task2 task3)

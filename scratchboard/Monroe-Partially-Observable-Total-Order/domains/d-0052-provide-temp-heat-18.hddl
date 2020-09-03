@@ -54,6 +54,23 @@
 		person - object
 	)
         (:constants
+		wtruck1 - water_truck
+		wcrew1 - water_crew
+		twelve_corners - point
+		ttruck1 - tow_truck
+		ttdriver1 - tow_truck_driver
+		texaco1 - service_station
+		strong - hospital
+		pvan2 - police_van
+		pu2 - police_unit
+		pittsford_plaza - point
+		ht2 - hazard_team
+		henrietta_dump - garbage_dump
+		gen1 - generator
+		ccrew1 - construction_crew
+		bus1 - bus
+		brighton_dump - garbage_dump
+		bdriver1 - bus_driver
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -213,68 +230,21 @@
 	)
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 	(:task cclimb_in
 		:parameters (?obj - person ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(fit_in ?obj ?veh)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cpump_gas_into
 		:parameters (?loc - service_station ?gen - generator)
 	)
 	(:task cload
 		:parameters (?person - person ?obj - object ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(atloc ?person ?objloc)
-				(fit_in ?obj ?veh)
-				(can_lift ?person ?obj)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cpay
 		:parameters (?loc - service_station)
 	)
 	(:task cclimb_out
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 		
 (:method m_tlt_set_up_shelter
@@ -543,6 +513,9 @@
 		 (task0 (set_up_cones ?from ?to))
 		 (task1 (get_to ?police ?from))
 		)
+                :ordering (and
+                   (< task0 task1)
+                )
 	)
 	(:method m_unblock_road
 		:parameters (?from - point ?to - point)
@@ -702,6 +675,9 @@
 		 (task0 (call ebs))
 		 (task1 (call police_chief))
 		)
+                :ordering (and
+                   (< task0 task1)
+                )
 	)
 	(:method m_generate_temp_electricity
 		:parameters (?gen - generator ?loc - point)
@@ -753,6 +729,9 @@
 		 (task0 (cpay ?ss))
 		 (task1 (cpump_gas_into ?ss ?obj))
 		)
+                :ordering (and
+                   (< task0 task1)
+                )
 	)
 	(:method m_repair_line_with_tree
 		:parameters (?crew - power_crew ?lineloc - point ?tree - tree)
@@ -768,6 +747,7 @@
 		:ordering (and
 			(< task5 task0)
 			(< task0 task1)
+                        (< task1 task2)
 			(< task0 task2)
 			(< task1 task3)
 			(< task2 task3)
