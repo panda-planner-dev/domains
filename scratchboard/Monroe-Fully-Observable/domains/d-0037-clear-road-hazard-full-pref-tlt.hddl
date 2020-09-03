@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,16 @@
 		person - object
 	)
         (:constants
+		van1 - power_van
+		texaco1 - service_station
+		tcrew1 - tree_crew
+		strong - hospital
+		pvan1 - police_van
+		pu1 - police_unit
+		pcrew1 - power_crew
+		park_ridge - hospital
+		ht2 - hazard_team
+		airport - transport_hub
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -246,43 +256,14 @@
 
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 
 	(:task cclean_hazard
 		:parameters (?hazard_team - hazard_team ?from - point ?to - point ?h_compiled_3 - hazardousness)
-		:precondition 
-			(and
-				(hazard_seriousness ?from ?to ?h_compiled_3)
-				(not (hazard_seriousness ?from ?to very_hazardous))
-			)
 	)
 
 	(:task cclimb_in
 		:parameters (?obj - person ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(fit_in ?obj ?veh)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 
 	(:task cpickup_cones
@@ -291,16 +272,6 @@
 
 	(:task cclimb_out
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 
 	(:task cplace_cones

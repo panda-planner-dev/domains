@@ -8,12 +8,9 @@
 		sleader1 - shelter_leader
 		ccrew1 - construction_crew
 		brighton_high - school
-		van1 - power_van
 		airport - transport_hub
-		texaco1 - service_station
 		normal_hazardous - hazardousness
 		medium_hazardous - hazardousness
-		ttruck1 - tow_truck
 		mendon - town
 		sweeden - town
 		henrietta - town
@@ -47,7 +44,6 @@
 		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
-		pcrew1 - power_crew
 		amb1 - ambulance
 		tcrew1 - tree_crew
 		head_injury - condition
@@ -66,19 +62,15 @@
 		pdriver1 - plowdriver
 		gen2 - generator
 		gen1 - generator
-		ttdriver1 - tow_truck_driver
 		wtruck1 - water_truck
 		rge - powerco
 		mendon_ge - powerco
 		monroe_ge - powerco
-		vehicle_318950 - vehicle
 		park_ridge - hospital
 		strong - hospital
-		rochester_general - hospital
 		roch_water - waterco
 		monroe_water - waterco
 		mendon_water - waterco
-		mendon_pond - park
 		pu2 - police_unit
 		pu1 - police_unit
 		food1 - food

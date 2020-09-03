@@ -56,12 +56,10 @@
 		light_burn - condition
 		bruises - condition
 		bdriver1 - bus_driver
-		dtruck1 - dump_truck
 		backhoe1 - backhoe
 		emt1 - emt_crew
 		ht2 - hazard_team
 		ht1 - hazard_team
-		tdriver1 - truck_driver
 		pdriver2 - plowdriver
 		pdriver1 - plowdriver
 		gen2 - generator
@@ -73,8 +71,6 @@
 		monroe_ge - powerco
 		vehicle_109489 - vehicle
 		park_ridge - hospital
-		strong - hospital
-		rochester_general - hospital
 		roch_water - waterco
 		monroe_water - waterco
 		mendon_water - waterco
@@ -88,7 +84,6 @@
 		henrietta_dump - garbage_dump
 		pittsford_plaza - point
 		twelve_corners - point
-		wcrew1 - water_crew
 	)
 	(:htn
 ;;		:subtasks (and

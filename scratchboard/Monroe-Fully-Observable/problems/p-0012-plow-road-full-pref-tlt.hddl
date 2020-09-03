@@ -44,8 +44,6 @@
 		scottsville - town
 		pvan2 - police_van
 		pvan1 - police_van
-		marketplace - mall
-		plow2 - snowplow
 		plow1 - snowplow
 		pcrew1 - power_crew
 		amb1 - ambulance
@@ -61,8 +59,6 @@
 		emt1 - emt_crew
 		ht2 - hazard_team
 		ht1 - hazard_team
-		tdriver1 - truck_driver
-		pdriver2 - plowdriver
 		pdriver1 - plowdriver
 		gen2 - generator
 		gen1 - generator
@@ -83,10 +79,7 @@
 		food1 - food
 		food2 - food
 		food3 - food
-		brighton_dump - garbage_dump
-		henrietta_dump - garbage_dump
 		pittsford_plaza - point
-		twelve_corners - point
 		wcrew1 - water_crew
 	)
 	(:htn

@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,19 @@
 		person - object
 	)
         (:constants
+		wtruck1 - water_truck
+		wcrew1 - water_crew
+		vehicle_456973 - vehicle
+		twelve_corners - point
+		ttruck1 - tow_truck
+		ttdriver1 - tow_truck_driver
+		texaco1 - service_station
+		rochester_general - hospital
+		ht2 - hazard_team
+		ccrew1 - construction_crew
+		brighton_dump - garbage_dump
+		backhoe1 - backhoe
+		airport - transport_hub
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -248,34 +261,10 @@
 
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 
 	(:task cclimb_in
 		:parameters (?obj - person ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(fit_in ?obj ?veh)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 
 	(:task cunhook_from_tow_truck

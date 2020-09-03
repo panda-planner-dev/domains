@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,24 @@
 		person - object
 	)
         (:constants
+		wtruck1 - water_truck
+		wcrew1 - water_crew
+		van1 - power_van
+		ttruck1 - tow_truck
+		ttdriver1 - tow_truck_driver
+		tree_133716 - tree
+		texaco1 - service_station
+		tdriver1 - truck_driver
+		tcrew1 - tree_crew
+		strong - hospital
+		pvan2 - police_van
+		pu2 - police_unit
+		pcrew1 - power_crew
+		mendon_pond - park
+		henrietta_dump - garbage_dump
+		dtruck1 - dump_truck
+		ccrew1 - construction_crew
+		airport - transport_hub
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -212,80 +230,21 @@
 	)
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 	(:task cclimb_in
 		:parameters (?obj - person ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(fit_in ?obj ?veh)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cload
 		:parameters (?person - person ?obj - object ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(atloc ?person ?objloc)
-				(fit_in ?obj ?veh)
-				(can_lift ?person ?obj)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cunload
 		:parameters (?person - person ?obj - object ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_lift ?person ?obj)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 	(:task cplace_cones
 		:parameters (?police - work_crew)
 	)
 	(:task cclimb_out
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 		
 (:method m_tlt_set_up_shelter

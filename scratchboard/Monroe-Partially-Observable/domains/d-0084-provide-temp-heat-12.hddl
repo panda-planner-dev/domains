@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,22 @@
 		person - object
 	)
         (:constants
+		wtruck1 - water_truck
+		wcrew1 - water_crew
+		van1 - power_van
+		twelve_corners - point
+		texaco1 - service_station
+		rochester_general - hospital
+		pcrew1 - power_crew
+		mendon_pond - park
+		gen2 - generator
+		dtruck1 - dump_truck
+		ccrew1 - construction_crew
+		bus1 - bus
+		brighton_high - school
+		bdriver1 - bus_driver
+		backhoe1 - backhoe
+		airport - transport_hub
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -207,50 +223,12 @@
 	)
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 	(:task cload
 		:parameters (?person - person ?obj - object ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(atloc ?person ?objloc)
-				(fit_in ?obj ?veh)
-				(can_lift ?person ?obj)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cunload
 		:parameters (?person - person ?obj - object ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_lift ?person ?obj)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 		
 (:method m_tlt_set_up_shelter

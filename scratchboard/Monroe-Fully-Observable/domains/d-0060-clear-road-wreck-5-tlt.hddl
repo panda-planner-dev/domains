@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,15 @@
 		person - object
 	)
         (:constants
+		vehicle_318950 - vehicle
+		van1 - power_van
+		ttruck1 - tow_truck
+		ttdriver1 - tow_truck_driver
+		texaco1 - service_station
+		rochester_general - hospital
+		pcrew1 - power_crew
+		mendon_pond - park
+		brighton_dump - garbage_dump
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -244,19 +253,6 @@
 
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 
 	(:task cplace_cones

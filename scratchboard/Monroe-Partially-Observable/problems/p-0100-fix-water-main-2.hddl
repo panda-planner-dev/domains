@@ -67,14 +67,11 @@
 		gen2 - generator
 		gen1 - generator
 		ttdriver1 - tow_truck_driver
-		wtruck1 - water_truck
 		rge - powerco
 		mendon_ge - powerco
 		monroe_ge - powerco
 		park_ridge - hospital
 		strong - hospital
-		rochester_general - hospital
-		roch_water - waterco
 		monroe_water - waterco
 		mendon_water - waterco
 		mendon_pond - park
@@ -85,9 +82,7 @@
 		food3 - food
 		brighton_dump - garbage_dump
 		henrietta_dump - garbage_dump
-		pittsford_plaza - point
 		twelve_corners - point
-		wcrew1 - water_crew
 	)
 	(:htn
 ;;		:subtasks (and

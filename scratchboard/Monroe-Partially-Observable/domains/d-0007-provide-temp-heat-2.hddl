@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,8 @@
 		person - object
 	)
         (:constants
+		texaco1 - service_station
+		gen2 - generator
                 fema - callable
                 ebs - callable
                 police_chief - callable

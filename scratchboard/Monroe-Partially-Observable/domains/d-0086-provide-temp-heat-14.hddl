@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,19 @@
 		person - object
 	)
         (:constants
+		twelve_corners - point
+		texaco1 - service_station
+		tdriver1 - truck_driver
+		tcrew1 - tree_crew
+		rochester_general - hospital
+		pvan2 - police_van
+		pu2 - police_unit
+		mendon_pond - park
+		marketplace - mall
+		ht2 - hazard_team
+		gen1 - generator
+		dtruck1 - dump_truck
+		brighton_high - school
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -209,65 +222,18 @@
 	)
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 	(:task cclimb_in
 		:parameters (?obj - person ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(fit_in ?obj ?veh)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cpump_gas_into
 		:parameters (?loc - service_station ?gen - generator)
 	)
 	(:task cload
 		:parameters (?person - person ?obj - object ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(atloc ?person ?objloc)
-				(fit_in ?obj ?veh)
-				(can_lift ?person ?obj)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cclimb_out
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 	(:task cpay
 		:parameters (?loc - service_station)

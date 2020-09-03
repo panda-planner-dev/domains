@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierarchy :negative-preconditions :universal-preconditions)
+	(:requirements :method-preconditions :equality :typing :hierarchy :negative-preconditions :universal-preconditions)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -54,6 +54,12 @@
 		person - object
 	)
         (:constants
+		texaco1 - service_station
+		pvan2 - police_van
+		pu2 - police_unit
+		pu1 - police_unit
+		park_ridge - hospital
+		marketplace - mall
                 fema - callable
                 ebs - callable
                 police_chief - callable
@@ -203,46 +209,12 @@
 	)
 	(:task cnavegate_vehicle
 		:parameters (?person - adult ?veh - vehicle ?loc - point ?vehloc - point)
-		:precondition 
-			(and
-				(atloc ?veh ?vehloc)
-				(atloc ?person ?vehloc)
-				(can_drive ?person ?veh)
-			)
-		:effect
-			(and
-				(atloc ?veh ?loc)
-				(atloc ?person ?loc)
-				(not (atloc ?veh ?vehloc))
-				(not (atloc ?person ?vehloc))
-			)
 	)
 	(:task cclimb_in
 		:parameters (?obj - person ?veh - vehicle ?objloc - point)
-		:precondition 
-			(and
-				(atloc ?obj ?objloc)
-				(atloc ?veh ?objloc)
-				(fit_in ?obj ?veh)
-			)
-		:effect
-			(and
-				(in_vehicle ?obj ?veh)
-				(not (atloc ?obj ?objloc))
-			)
 	)
 	(:task cclimb_out
 		:parameters (?obj - person ?veh - vehicle ?vehloc - point)
-		:precondition 
-			(and
-				(in_vehicle ?obj ?veh)
-				(atloc ?veh ?vehloc)
-			)
-		:effect
-			(and
-				(atloc ?obj ?vehloc)
-				(not (in_vehicle ?obj ?veh))
-			)
 	)
 		
 (:method m_tlt_set_up_shelter
