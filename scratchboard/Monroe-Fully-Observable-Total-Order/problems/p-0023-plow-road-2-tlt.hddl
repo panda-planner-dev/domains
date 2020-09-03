@@ -14,7 +14,6 @@
 		very_hazardous - hazardousness
 		normal_hazardous - hazardousness
 		medium_hazardous - hazardousness
-		ttruck1 - tow_truck
 		mendon - town
 		sweeden - town
 		henrietta - town
@@ -45,7 +44,6 @@
 		scottsville - town
 		pvan2 - police_van
 		pvan1 - police_van
-		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
 		pcrew1 - power_crew
@@ -64,10 +62,8 @@
 		ht1 - hazard_team
 		tdriver1 - truck_driver
 		pdriver2 - plowdriver
-		pdriver1 - plowdriver
 		gen2 - generator
 		gen1 - generator
-		ttdriver1 - tow_truck_driver
 		wtruck1 - water_truck
 		rge - powerco
 		mendon_ge - powerco
@@ -81,7 +77,6 @@
 		fema - callable
 		ebs - callable
 		police_chief - callable
-		mendon_pond - park
 		pu2 - police_unit
 		pu1 - police_unit
 		food1 - food

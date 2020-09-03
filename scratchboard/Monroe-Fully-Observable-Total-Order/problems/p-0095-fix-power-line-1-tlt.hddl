@@ -7,9 +7,6 @@
 		sleader3 - shelter_leader
 		sleader1 - shelter_leader
 		ccrew1 - construction_crew
-		brighton_high - school
-		van1 - power_van
-		airport - transport_hub
 		texaco1 - service_station
 		very_hazardous - hazardousness
 		normal_hazardous - hazardousness
@@ -49,7 +46,6 @@
 		plow2 - snowplow
 		plow1 - snowplow
 		tree_539807 - tree
-		pcrew1 - power_crew
 		amb1 - ambulance
 		tcrew1 - tree_crew
 		head_injury - condition

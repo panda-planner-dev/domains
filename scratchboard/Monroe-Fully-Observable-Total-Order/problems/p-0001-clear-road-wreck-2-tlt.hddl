@@ -10,7 +10,6 @@
 		brighton_high - school
 		van1 - power_van
 		airport - transport_hub
-		texaco1 - service_station
 		very_hazardous - hazardousness
 		normal_hazardous - hazardousness
 		medium_hazardous - hazardousness
@@ -50,7 +49,6 @@
 		plow1 - snowplow
 		pcrew1 - power_crew
 		amb1 - ambulance
-		tcrew1 - tree_crew
 		head_injury - condition
 		broken_leg - condition
 		heart_attack - condition
@@ -68,7 +66,6 @@
 		gen2 - generator
 		gen1 - generator
 		ttdriver1 - tow_truck_driver
-		wtruck1 - water_truck
 		rge - powerco
 		mendon_ge - powerco
 		monroe_ge - powerco
@@ -88,11 +85,9 @@
 		food1 - food
 		food2 - food
 		food3 - food
-		brighton_dump - garbage_dump
 		henrietta_dump - garbage_dump
 		pittsford_plaza - point
 		twelve_corners - point
-		wcrew1 - water_crew
 	)
 	(:htn
 ;;		:subtasks (and

@@ -2,7 +2,6 @@
 	(problem someProblem)
 	(:domain  someDomain)
 	(:objects
-		bus1 - bus
 		sleader2 - shelter_leader
 		sleader3 - shelter_leader
 		sleader1 - shelter_leader
@@ -63,7 +62,6 @@
 		ht2 - hazard_team
 		ht1 - hazard_team
 		tdriver1 - truck_driver
-		pdriver2 - plowdriver
 		pdriver1 - plowdriver
 		gen2 - generator
 		gen1 - generator
@@ -74,7 +72,6 @@
 		monroe_ge - powerco
 		park_ridge - hospital
 		strong - hospital
-		rochester_general - hospital
 		roch_water - waterco
 		monroe_water - waterco
 		mendon_water - waterco

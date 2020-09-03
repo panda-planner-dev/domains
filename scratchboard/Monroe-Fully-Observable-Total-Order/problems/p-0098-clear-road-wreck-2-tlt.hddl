@@ -14,7 +14,6 @@
 		very_hazardous - hazardousness
 		normal_hazardous - hazardousness
 		medium_hazardous - hazardousness
-		ttruck1 - tow_truck
 		mendon - town
 		sweeden - town
 		henrietta - town
@@ -50,7 +49,6 @@
 		plow1 - snowplow
 		pcrew1 - power_crew
 		amb1 - ambulance
-		tcrew1 - tree_crew
 		head_injury - condition
 		broken_leg - condition
 		heart_attack - condition
@@ -72,7 +70,6 @@
 		rge - powerco
 		mendon_ge - powerco
 		monroe_ge - powerco
-		vehicle_555305 - vehicle
 		park_ridge - hospital
 		strong - hospital
 		rochester_general - hospital

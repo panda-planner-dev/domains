@@ -80,7 +80,6 @@
 		mendon_water - waterco
 		fema - callable
 		ebs - callable
-		police_chief - callable
 		mendon_pond - park
 		pu2 - police_unit
 		pu1 - police_unit

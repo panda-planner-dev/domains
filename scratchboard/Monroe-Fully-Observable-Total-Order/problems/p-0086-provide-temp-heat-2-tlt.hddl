@@ -43,9 +43,7 @@
 		irondequoit - town
 		perinton - town
 		scottsville - town
-		pvan2 - police_van
 		pvan1 - police_van
-		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
 		pcrew1 - power_crew
@@ -57,12 +55,10 @@
 		light_burn - condition
 		bruises - condition
 		bdriver1 - bus_driver
-		dtruck1 - dump_truck
 		backhoe1 - backhoe
 		emt1 - emt_crew
 		ht2 - hazard_team
 		ht1 - hazard_team
-		tdriver1 - truck_driver
 		pdriver2 - plowdriver
 		pdriver1 - plowdriver
 		gen2 - generator
@@ -74,15 +70,12 @@
 		monroe_ge - powerco
 		park_ridge - hospital
 		strong - hospital
-		rochester_general - hospital
 		roch_water - waterco
 		monroe_water - waterco
 		mendon_water - waterco
 		fema - callable
 		ebs - callable
 		police_chief - callable
-		mendon_pond - park
-		pu2 - police_unit
 		pu1 - police_unit
 		food1 - food
 		food2 - food
@@ -90,7 +83,6 @@
 		brighton_dump - garbage_dump
 		henrietta_dump - garbage_dump
 		pittsford_plaza - point
-		twelve_corners - point
 		wcrew1 - water_crew
 		person_472953 - person
 	)

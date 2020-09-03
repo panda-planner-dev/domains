@@ -3,7 +3,6 @@
 	(:domain  someDomain)
 	(:objects
 		bus1 - bus
-		sleader2 - shelter_leader
 		sleader3 - shelter_leader
 		sleader1 - shelter_leader
 		ccrew1 - construction_crew
@@ -45,7 +44,6 @@
 		scottsville - town
 		pvan2 - police_van
 		pvan1 - police_van
-		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
 		pcrew1 - power_crew
@@ -68,7 +66,6 @@
 		gen2 - generator
 		gen1 - generator
 		ttdriver1 - tow_truck_driver
-		wtruck1 - water_truck
 		rge - powerco
 		mendon_ge - powerco
 		monroe_ge - powerco
@@ -87,11 +84,8 @@
 		food1 - food
 		food2 - food
 		food3 - food
-		brighton_dump - garbage_dump
 		henrietta_dump - garbage_dump
 		pittsford_plaza - point
-		twelve_corners - point
-		wcrew1 - water_crew
 	)
 	(:htn
 ;;		:subtasks (and

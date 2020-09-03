@@ -6,8 +6,6 @@
 		sleader2 - shelter_leader
 		sleader3 - shelter_leader
 		sleader1 - shelter_leader
-		ccrew1 - construction_crew
-		brighton_high - school
 		van1 - power_van
 		airport - transport_hub
 		texaco1 - service_station
@@ -45,7 +43,6 @@
 		scottsville - town
 		pvan2 - police_van
 		pvan1 - police_van
-		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
 		pcrew1 - power_crew
@@ -58,7 +55,6 @@
 		bruises - condition
 		bdriver1 - bus_driver
 		dtruck1 - dump_truck
-		backhoe1 - backhoe
 		emt1 - emt_crew
 		ht2 - hazard_team
 		ht1 - hazard_team

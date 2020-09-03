@@ -7,7 +7,6 @@
 		sleader3 - shelter_leader
 		sleader1 - shelter_leader
 		ccrew1 - construction_crew
-		brighton_high - school
 		van1 - power_van
 		airport - transport_hub
 		texaco1 - service_station
@@ -43,7 +42,6 @@
 		irondequoit - town
 		perinton - town
 		scottsville - town
-		pvan2 - police_van
 		pvan1 - police_van
 		marketplace - mall
 		plow2 - snowplow
@@ -63,7 +61,6 @@
 		ht2 - hazard_team
 		ht1 - hazard_team
 		tdriver1 - truck_driver
-		pdriver2 - plowdriver
 		pdriver1 - plowdriver
 		gen2 - generator
 		gen1 - generator

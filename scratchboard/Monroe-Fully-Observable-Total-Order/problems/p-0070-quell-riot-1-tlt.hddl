@@ -79,7 +79,6 @@
 		monroe_water - waterco
 		mendon_water - waterco
 		fema - callable
-		ebs - callable
 		police_chief - callable
 		mendon_pond - park
 		pu2 - police_unit

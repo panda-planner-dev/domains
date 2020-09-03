@@ -10,7 +10,6 @@
 		brighton_high - school
 		van1 - power_van
 		airport - transport_hub
-		texaco1 - service_station
 		very_hazardous - hazardousness
 		normal_hazardous - hazardousness
 		medium_hazardous - hazardousness
@@ -45,7 +44,6 @@
 		scottsville - town
 		pvan2 - police_van
 		pvan1 - police_van
-		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
 		pcrew1 - power_crew
@@ -60,7 +58,6 @@
 		dtruck1 - dump_truck
 		backhoe1 - backhoe
 		emt1 - emt_crew
-		ht2 - hazard_team
 		ht1 - hazard_team
 		tdriver1 - truck_driver
 		pdriver2 - plowdriver
@@ -68,7 +65,6 @@
 		gen2 - generator
 		gen1 - generator
 		ttdriver1 - tow_truck_driver
-		wtruck1 - water_truck
 		rge - powerco
 		mendon_ge - powerco
 		monroe_ge - powerco
@@ -92,7 +88,6 @@
 		henrietta_dump - garbage_dump
 		pittsford_plaza - point
 		twelve_corners - point
-		wcrew1 - water_crew
 	)
 	(:htn
 ;;		:subtasks (and

@@ -44,7 +44,6 @@
 		perinton - town
 		scottsville - town
 		pvan2 - police_van
-		pvan1 - police_van
 		marketplace - mall
 		plow2 - snowplow
 		plow1 - snowplow
@@ -89,10 +88,8 @@
 		food3 - food
 		brighton_dump - garbage_dump
 		henrietta_dump - garbage_dump
-		pittsford_plaza - point
 		twelve_corners - point
 		wcrew1 - water_crew
-		person_349616 - person
 	)
 	(:htn
 ;;		:subtasks (and

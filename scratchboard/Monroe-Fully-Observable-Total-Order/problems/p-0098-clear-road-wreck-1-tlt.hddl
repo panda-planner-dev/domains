@@ -50,7 +50,6 @@
 		plow1 - snowplow
 		pcrew1 - power_crew
 		amb1 - ambulance
-		tcrew1 - tree_crew
 		head_injury - condition
 		broken_leg - condition
 		heart_attack - condition
