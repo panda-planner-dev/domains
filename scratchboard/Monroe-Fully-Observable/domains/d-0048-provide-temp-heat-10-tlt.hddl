@@ -1,5 +1,5 @@
 (define (domain someDomain)
-	(:requirements :typing :hierachie)
+	(:requirements :typing :hierarchy :universal-precondition)
 	(:types
 		bus - vehicle
 		shelter_leader - adult
@@ -415,8 +415,8 @@
 		 (task2 (get_to ?food ?loc))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -429,8 +429,8 @@
 		 (task2 (turn_on_water ?from ?to))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -443,8 +443,8 @@
 		 (task2 (unblock_road ?from ?to))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -457,8 +457,8 @@
 		 (task2 (take_down_cones ?from ?to))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -472,9 +472,9 @@
 		 (task3 (SHOP_methodm_clear_road_tree_precondition ?from ?to ?tree))
 		)
 		:ordering (and
-			(task3 < task0)
-			(task0 < task1)
-			(task1 < task2)
+			(< task3 task0)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -490,11 +490,11 @@
 		 (task5 (SHOP_methodm_plow_road_precondition ?from ?to ?plow ?plowloc))
 		)
 		:ordering (and
-			(task5 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
-			(task3 < task4)
+			(< task5 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
+			(< task3 task4)
 		)
 	)
 
@@ -510,11 +510,11 @@
 		 (task5 (SHOP_methodm_quell_riot_precondition ?loc ?town))
 		)
 		:ordering (and
-			(task5 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
-			(task3 < task4)
+			(< task5 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
+			(< task3 task4)
 		)
 		:constraints (and
 			(not (= ?p1 ?p2))
@@ -538,8 +538,8 @@
 		 (task2 (SHOP_methodm_provide_temp_heat_local_electricity_precondition ?person ?ploc))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
@@ -552,8 +552,8 @@
 		 (task2 (repair_line ?crew ?lineloc))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -566,8 +566,8 @@
 		 (task2 (SHOP_methodm_provide_medical_attention_in_hospital_precondition ?person ?cond ?hosp))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
@@ -579,7 +579,7 @@
 		 (task1 (SHOP_methodm_provide_medical_attention_simple_on_site_precondition ?person ?cond))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -591,7 +591,7 @@
 		 (task1 (SHOP_methodm_clean_up_hazard_very_hazardous_precondition ?from ?to very_hazardous))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -604,8 +604,8 @@
 		 (task2 (SHOP_methodm_clean_up_hazard_normal_precondition ?from ?to very_hazardous))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
@@ -642,7 +642,7 @@
 		 (task1 (SHOP_methodm_get_electricity_precondition ?loc))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -658,11 +658,11 @@
 		 (task5 (take_down_cones ?from ?to))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
-			(task3 < task4)
-			(task4 < task5)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
+			(< task3 task4)
+			(< task4 task5)
 		)
 	)
 
@@ -674,7 +674,7 @@
 		 (task1 (dig ?backhoe ?from))
 		)
 		:ordering (and
-			(task0 < task1)
+			(< task0 task1)
 		)
 	)
 
@@ -686,7 +686,7 @@
 		 (task1 (fill_in ?backhoe ?from))
 		)
 		:ordering (and
-			(task0 < task1)
+			(< task0 task1)
 		)
 	)
 
@@ -698,7 +698,7 @@
 		 (task1 (place_cones ?crew))
 		)
 		:ordering (and
-			(task0 < task1)
+			(< task0 task1)
 		)
 	)
 
@@ -710,7 +710,7 @@
 		 (task1 (pickup_cones ?crew))
 		)
 		:ordering (and
-			(task0 < task1)
+			(< task0 task1)
 		)
 	)
 
@@ -722,7 +722,7 @@
 		 (task1 (SHOP_methodm_clear_wreck_precondition ?from ?to ?veh))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -737,10 +737,10 @@
 		 (task4 (SHOP_methodm_tow_to_precondition ?veh ?vehloc))
 		)
 		:ordering (and
-			(task4 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
+			(< task4 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
 		)
 	)
 
@@ -754,9 +754,9 @@
 		 (task3 (SHOP_methodm_clear_tree_precondition ?tree ?treeloc))
 		)
 		:ordering (and
-			(task3 < task0)
-			(task0 < task1)
-			(task1 < task2)
+			(< task3 task0)
+			(< task0 task1)
+			(< task1 task2)
 		)
 	)
 
@@ -769,8 +769,8 @@
 		 (task2 (SHOP_methodm_remove_blockage_move_to_side_of_street_precondition ?stuff ?loc))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
@@ -801,9 +801,9 @@
 		 (task3 (turn_on ?gen))
 		)
 		:ordering (and
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
 		)
 	)
 
@@ -818,10 +818,10 @@
 		 (task4 (SHOP_methodm_make_full_fuel_with_gas_can_precondition ?gen ?genloc))
 		)
 		:ordering (and
-			(task4 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
+			(< task4 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
 		)
 	)
 
@@ -833,12 +833,12 @@
 		 (task1 (add_fuel ?ss ?gen))
 		)
 		:ordering (and
-			(task0 < task1)
+			(< task0 task1)
 		)
 	)
 
 	(:method m_add_fuel
-		:parameters (?obj - object ?ss - service_station)
+		:parameters (?obj - generator ?ss - service_station)
 		:task (add_fuel ?ss ?obj)
 		:subtasks (and
 		 (task0 (cpay ?ss))
@@ -858,12 +858,12 @@
 		 (task5 (SHOP_methodm_repair_line_with_tree_precondition ?tree ?lineloc ?crew))
 		)
 		:ordering (and
-			(task5 < task0)
-			(task0 < task1)
-			(task0 < task2)
-			(task1 < task3)
-			(task2 < task3)
-			(task3 < task4)
+			(< task5 task0)
+			(< task0 task1)
+			(< task0 task2)
+			(< task1 task3)
+			(< task2 task3)
+			(< task3 task4)
 		)
 	)
 
@@ -878,10 +878,10 @@
 		 (task4 (SHOP_methodm_repair_line_without_tree_precondition ?lineloc ?crew))
 		)
 		:ordering (and
-			(task4 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
+			(< task4 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
 		)
 	)
 
@@ -893,7 +893,7 @@
 		 (task1 (SHOP_methodm_shut_off_power_precondition ?loc ?town ?powerco))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -905,7 +905,7 @@
 		 (task1 (SHOP_methodm_turn_on_power_precondition ?loc ?town ?powerco))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -917,7 +917,7 @@
 		 (task1 (SHOP_methodm_shut_off_water_precondition ?from ?town ?waterco))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -929,7 +929,7 @@
 		 (task1 (SHOP_methodm_turn_on_water_precondition ?from ?town ?waterco))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -942,8 +942,8 @@
 		 (task2 (SHOP_methodm_emt_treat_precondition ?person ?personloc))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
@@ -971,7 +971,7 @@
 		 (task1 (SHOP_methodm_get_to_person_drives_themself_precondition ?person ?place ?veh ?vehloc))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -983,7 +983,7 @@
 		 (task1 (SHOP_methodm_get_to_vehicle_gets_driven_precondition ?veh ?place ?vehloc ?person))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -998,10 +998,10 @@
 		 (task4 (SHOP_methodm_get_to_as_cargo_precondition ?obj ?place ?objloc ?veh))
 		)
 		:ordering (and
-			(task4 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
+			(< task4 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
 		)
 	)
 
@@ -1017,11 +1017,11 @@
 		 (task5 (SHOP_methodm_get_to_with_ambulance_precondition ?obj ?place ?objloc ?veh))
 		)
 		:ordering (and
-			(task5 < task0)
-			(task0 < task1)
-			(task1 < task2)
-			(task2 < task3)
-			(task3 < task4)
+			(< task5 task0)
+			(< task0 task1)
+			(< task1 task2)
+			(< task2 task3)
+			(< task3 task4)
 		)
 	)
 
@@ -1033,7 +1033,7 @@
 		 (task1 (SHOP_methodm_drive_to_precondition ?veh ?vehloc ?person))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -1045,7 +1045,7 @@
 		 (task1 (SHOP_methodm_get_in_ambulatory_person_precondition ?obj ?objloc ?veh))
 		)
 		:ordering (and
-			(task1 < task0)
+			(< task1 task0)
 		)
 	)
 
@@ -1058,8 +1058,8 @@
 		 (task2 (SHOP_methodm_get_in_load_in_precondition ?obj ?objloc ?veh ?person))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
@@ -1080,8 +1080,8 @@
 		 (task2 (SHOP_methodm_get_out_unload_precondition ?veh ?vehloc ?person ?obj))
 		)
 		:ordering (and
-			(task2 < task0)
-			(task0 < task1)
+			(< task2 task0)
+			(< task0 task1)
 		)
 	)
 
