@@ -1,0 +1,106 @@
+Damien wrote (27/10/20 um 5:29 am AUS-Zeit):
+To complete for (5) (6)  the authors are:
+- Humbert Fiorino <humbert.fiorino@univ-grenoble-alpes.fr>
+- Abdeldjalil Ramoul <abdeldjalil.ramoul@univ-grenoble-alpes.fr>
+- Damien Pellier <damien.pellier@univ-grenoble-alpes.fr>
+
+for (8) (9) the authors are:
+- Damien Pellier <damien.pellier@univ-grenoble-alpes.fr>
+- Humbert Fiorino <humbert.fiorino@univ-grenoble-alpes.fr> 
+- Arnaud Lequen <arnaud.lequen@ens-rennes.fr>
+
+
+
+Dominik wrote (Am 26/10/20 um 8:06 pm, AUS-Zeit)
+ * I did not design any of the domains (5), (6), (8), (9) (and do not
+   really understand how these happened to be attributed to myself
+   during the benchmark collection process). I DID write scripts which
+   add hierarchical information (i.e. the initial tasks) to classical
+   planning PDDL problem files for (5) and (6) (these scripts work more
+   or less syntactically except for making sure that the ordering of
+   initial tasks actually works for the problem).
+ * I wrote Arnaud Lequen (former intern working with Damien & Humbert)
+   and he agreed to write papers for (8) and (9) (or maybe one paper
+   for both).
+ * Regarding copyright, it's Malte Sönnichsen and myself for (7). For
+   (8) and (9) it's Arnaud Lequen, possibly together with Damien /
+   Humbert / Djalil / ??? (because Arnaud /improved/ the HTN domains
+   but did not create them from scratch – there's older (and worse)
+   versions of these domains). For the others I guess it's varying
+   people from the Grenoble group.
+
+
+
+Mail von Pascal:
+
+
+>> Dear Humbert, Damien, Dominik,
+>>
+>> So, as said before, I think it might be easiest to include just all of
+>> you, as we (= Gregor, Daniel, me) might not (yet) have the exact correct
+>> information on authorship for each domain. To prevent miscommunication
+>> and redundant emails I'll just fuse everything together in here. [I've
+>> also removed the history as I was mailing about the same thing in
+>> different threads/mails.]
+>>
+>> So, I will list below what our notes say regarding authorship (or
+>> benchmark submission in some cases?), but also what our notes are saying
+>> regarding whether a paper is planned or not per benchmark. As said: The
+>> ultimate goal would be to have each benchmark described by exactly one
+>> paper, but of course -- as you suggested as well -- multiple benchmarks
+>> can be described in the same paper for simplicity. Clearly, such a paper
+>> could be *much* longer (but we are flexible regarding length anyway,
+>> also for just a single domain). Also note that we are quite flexible
+>> regarding the deadline; in fact I am almost 100% sure that we will have
+>> to extend the finalization deadline.
+>>
+>> (all total order)
+>> (1) Barman
+>> (2) Childsnack
+>> (3) Rover-GTOHP
+>> (4) Satellite-GTOHP
+>> -->
+>> all by:
+>> - Damien Pellier <damien.pellier@univ-grenoble-alpes.fr>
+>> - Humbert Fiorino <humbert.fiorino@univ-grenoble-alpes.fr>
+>> - Abdeldjalil Ramoul <abdeldjalil.ramoul@cloud-temple.com>
+>> - Sylvie Pesty <sylvie.pesty@univ-grenoble-alpes.fr>
+>>
+>> AND:
+>>
+>> (again all total order)
+>> (all possibly by Dominik plus (at least) names mentioned next)
+>> (5) Blocksworld-GTOHP [with Damien Pellier]
+>> (6) Depots            [with Damien Pellier]
+>> (7) Factories         [with Malte Soennichsen] PAPER SUBMITTED
+>> (8) Gripper_new       [with Arnaud Legrand] (or Lequen? or both?)
+>> (9) Hiking            [with Arnaud Legrand] (or Lequen? or both?)
+>>
+>> ==>
+>>
+>> So, in conclusion: We have 9 domains so far, which all originate from at
+>> least one of you -- according to out notes. :) We already got a paper
+>> for (7), so eight are left! Though I believe Dominik is already in
+>> contact regarding some of the ones mentioned in the second block, so
+>> there might be updates I just don't have yet.
+>>
+>> Please also note that there are two things to consider, which are
+>> extremely closely related on the one hand, but still not identical on
+>> the other: [A] papers vs. [B] copyright/domain authorship.
+>>
+>> [A] does not at all concern us, because we will simply publish the
+>> papers we get, so there will be on it who ever will be on it :) by your
+>> consideration.
+>>
+>> Note, however, that we are also going to put all submissions online!
+>> This will be one of the most important achievements by this year's IPC I
+>> think: A decent repository! And each domain will of course mention a
+>> list of benchmark domain authors -- which is [B]. This can of course be
+>> different from the people who wrote a paper, for various reasons. Thus,
+>> it would also be great if we would not just have 1 to n papers for the n
+>> domains, but if you could provide a list of benchmark authors/copyright
+>> holders *per domain*, so we can make sure that the information in the
+>> IPC benchmark repository will be correct as well.
+>>
+>> Best regards, and thank you!
+>> Pascal
