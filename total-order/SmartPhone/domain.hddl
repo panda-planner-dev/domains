@@ -2,6 +2,7 @@
 	(:requirements :negative-preconditions
 	:hierarchy
 	:typing
+	:method-preconditions
 	)
 	(:types
 		Agenda - TransferableByEmailRegular
@@ -970,11 +971,11 @@
 	(:method method57
 		:parameters (?select_People_Favourite_WithPreviousSelection_instance_2_argument_0 - Contact ?select_People_Favourite_WithPreviousSelection_instance_2_argument_1 - Contact ?select_People_Favourite_WithPreviousSelection_instance_2_argument_2 - Contactable)
 		:task (select_People_Favourite ?select_People_Favourite_WithPreviousSelection_instance_2_argument_1 ?select_People_Favourite_WithPreviousSelection_instance_2_argument_2)
+		:precondition (and
+			(not (= ?select_People_Favourite_WithPreviousSelection_instance_2_argument_1 ?select_People_Favourite_WithPreviousSelection_instance_2_argument_0))
+		)
 		:subtasks (and
 		 (task0 (select_People_Favourite_WithPreviousSelection ?select_People_Favourite_WithPreviousSelection_instance_2_argument_0 ?select_People_Favourite_WithPreviousSelection_instance_2_argument_1 ?select_People_Favourite_WithPreviousSelection_instance_2_argument_2))
-		)
-		:constraints (and
-			(not (= ?select_People_Favourite_WithPreviousSelection_instance_2_argument_1 ?select_People_Favourite_WithPreviousSelection_instance_2_argument_0))
 		)
 	)
 
@@ -1023,11 +1024,11 @@
 	(:method method62
 		:parameters (?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_0 - EMailAccount ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_1 - EMailAccount)
 		:task (select_EMail_EMailAccount ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_1)
+		:precondition (and
+			(not (= ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_1 ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_0))
+		)
 		:subtasks (and
 		 (task0 (select_EMail_EMailAccount_WithPreviousSelection ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_0 ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_1))
-		)
-		:constraints (and
-			(not (= ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_1 ?select_EMail_EMailAccount_WithPreviousSelection_instance_2_argument_0))
 		)
 	)
 

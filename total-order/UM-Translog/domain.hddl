@@ -290,6 +290,9 @@
 	(:method method0
 		:parameters (?carry_instance_3_argument_2 - Location ?carry_instance_3_argument_3 - Location ?deliver_instance_4_argument_4 - Package)
 		:task (transport ?deliver_instance_4_argument_4 ?carry_instance_3_argument_2 ?carry_instance_3_argument_3)
+		:precondition (and
+			(not (= ?carry_instance_3_argument_2 ?carry_instance_3_argument_3))
+		)
 		:subtasks (and
 		 (task0 (pickup ?deliver_instance_4_argument_4))
 		 (task1 (carry ?deliver_instance_4_argument_4 ?carry_instance_3_argument_2 ?carry_instance_3_argument_3))
@@ -298,9 +301,6 @@
 		:ordering (and
 			(< task0 task1)
 			(< task1 task2)
-		)
-		:constraints (and
-			(not (= ?carry_instance_3_argument_2 ?carry_instance_3_argument_3))
 		)
 	)
 
@@ -369,11 +369,11 @@
 	(:method method7
 		:parameters (?carry_direct_instance_2_argument_0 - Package ?carry_direct_instance_2_argument_1 - Location ?carry_direct_instance_2_argument_2 - Location)
 		:task (carry ?carry_direct_instance_2_argument_0 ?carry_direct_instance_2_argument_1 ?carry_direct_instance_2_argument_2)
+		:precondition (and
+			(not (= ?carry_direct_instance_2_argument_1 ?carry_direct_instance_2_argument_2))
+		)
 		:subtasks (and
 		 (task0 (carry_direct ?carry_direct_instance_2_argument_0 ?carry_direct_instance_2_argument_1 ?carry_direct_instance_2_argument_2))
-		)
-		:constraints (and
-			(not (= ?carry_direct_instance_2_argument_1 ?carry_direct_instance_2_argument_2))
 		)
 	)
 
@@ -381,20 +381,22 @@
 		:parameters (?helper_carry_tt_instance_2_argument_0 - Package ?helper_carry_tt_instance_2_argument_1 - TCenter ?helper_carry_tt_instance_2_argument_2 - City ?helper_carry_tt_instance_2_argument_3 - TCenter ?helper_carry_tt_instance_2_argument_4 - City)
 		:task (carry ?helper_carry_tt_instance_2_argument_0 ?helper_carry_tt_instance_2_argument_1 ?helper_carry_tt_instance_2_argument_3)
 		:precondition (and
+			(not (= ?helper_carry_tt_instance_2_argument_1 ?helper_carry_tt_instance_2_argument_3))
 			(not (IsHub ?helper_carry_tt_instance_2_argument_1))
 			(not (IsHub ?helper_carry_tt_instance_2_argument_3))
 		)
 		:subtasks (and
 		 (task0 (helper_carry_tt ?helper_carry_tt_instance_2_argument_0 ?helper_carry_tt_instance_2_argument_1 ?helper_carry_tt_instance_2_argument_2 ?helper_carry_tt_instance_2_argument_3 ?helper_carry_tt_instance_2_argument_4))
 		)
-		:constraints (and
-			(not (= ?helper_carry_tt_instance_2_argument_1 ?helper_carry_tt_instance_2_argument_3))
-		)
 	)
 
 	(:method method9
 		:parameters (?carry_via_hub_instance_2_argument_0 - Package ?go_through_two_tcenters_tt_instance_3_argument_3 - TCenter ?go_through_two_tcenters_tt_instance_3_argument_4 - TCenter ?go_through_two_tcenters_tt_instance_3_argument_5 - City ?go_through_two_tcenters_tt_instance_3_argument_6 - City)
 		:task (helper_carry_tt ?carry_via_hub_instance_2_argument_0 ?go_through_two_tcenters_tt_instance_3_argument_3 ?go_through_two_tcenters_tt_instance_3_argument_5 ?go_through_two_tcenters_tt_instance_3_argument_4 ?go_through_two_tcenters_tt_instance_3_argument_6)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_tt_instance_3_argument_3 ?go_through_two_tcenters_tt_instance_3_argument_4))
+			(not (= ?go_through_two_tcenters_tt_instance_3_argument_5 ?go_through_two_tcenters_tt_instance_3_argument_6))
+		)
 		:subtasks (and
 		 (task0 (carry_via_hub ?carry_via_hub_instance_2_argument_0 ?go_through_two_tcenters_tt_instance_3_argument_3 ?go_through_two_tcenters_tt_instance_3_argument_4))
 		 (task1 (go_through_two_tcenters_tt ?go_through_two_tcenters_tt_instance_3_argument_3 ?go_through_two_tcenters_tt_instance_3_argument_4 ?go_through_two_tcenters_tt_instance_3_argument_5 ?go_through_two_tcenters_tt_instance_3_argument_6))
@@ -402,27 +404,26 @@
 		:ordering (and
 			(< task0 task1)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_tt_instance_3_argument_3 ?go_through_two_tcenters_tt_instance_3_argument_4))
-			(not (= ?go_through_two_tcenters_tt_instance_3_argument_5 ?go_through_two_tcenters_tt_instance_3_argument_6))
-		)
 	)
 
 	(:method method10
 		:parameters (?helper_carry_ott_instance_2_argument_0 - Package ?helper_carry_ott_instance_2_argument_1 - Not_TCenter ?helper_carry_ott_instance_2_argument_2 - City ?helper_carry_ott_instance_2_argument_3 - TCenter ?helper_carry_ott_instance_2_argument_4 - TCenter ?helper_carry_ott_instance_2_argument_5 - City)
 		:task (carry ?helper_carry_ott_instance_2_argument_0 ?helper_carry_ott_instance_2_argument_1 ?helper_carry_ott_instance_2_argument_4)
-		:subtasks (and
-		 (task0 (helper_carry_ott ?helper_carry_ott_instance_2_argument_0 ?helper_carry_ott_instance_2_argument_1 ?helper_carry_ott_instance_2_argument_2 ?helper_carry_ott_instance_2_argument_3 ?helper_carry_ott_instance_2_argument_4 ?helper_carry_ott_instance_2_argument_5))
-		)
-		:constraints (and
+		:precondition (and
 			(not (= ?helper_carry_ott_instance_2_argument_2 ?helper_carry_ott_instance_2_argument_5))
 			(not (= ?helper_carry_ott_instance_2_argument_1 ?helper_carry_ott_instance_2_argument_4))
+		)
+		:subtasks (and
+		 (task0 (helper_carry_ott ?helper_carry_ott_instance_2_argument_0 ?helper_carry_ott_instance_2_argument_1 ?helper_carry_ott_instance_2_argument_2 ?helper_carry_ott_instance_2_argument_3 ?helper_carry_ott_instance_2_argument_4 ?helper_carry_ott_instance_2_argument_5))
 		)
 	)
 
 	(:method method11
 		:parameters (?carry_between_tcenters_instance_4_argument_8 - Package ?go_through_two_tcenters_cities_ott_instance_3_argument_3 - City_Location ?go_through_two_tcenters_cities_ott_instance_3_argument_4 - City ?go_through_two_tcenters_cities_ott_instance_3_argument_5 - City ?go_through_two_tcenters_cities_ott_instance_3_argument_6 - TCenter ?go_through_two_tcenters_cities_ott_instance_3_argument_7 - TCenter)
 		:task (helper_carry_ott ?carry_between_tcenters_instance_4_argument_8 ?go_through_two_tcenters_cities_ott_instance_3_argument_3 ?go_through_two_tcenters_cities_ott_instance_3_argument_4 ?go_through_two_tcenters_cities_ott_instance_3_argument_6 ?go_through_two_tcenters_cities_ott_instance_3_argument_7 ?go_through_two_tcenters_cities_ott_instance_3_argument_5)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_cities_ott_instance_3_argument_4 ?go_through_two_tcenters_cities_ott_instance_3_argument_5))
+		)
 		:subtasks (and
 		 (task0 (carry_direct ?carry_between_tcenters_instance_4_argument_8 ?go_through_two_tcenters_cities_ott_instance_3_argument_3 ?go_through_two_tcenters_cities_ott_instance_3_argument_6))
 		 (task1 (go_through_two_tcenters_cities_ott ?go_through_two_tcenters_cities_ott_instance_3_argument_3 ?go_through_two_tcenters_cities_ott_instance_3_argument_4 ?go_through_two_tcenters_cities_ott_instance_3_argument_5 ?go_through_two_tcenters_cities_ott_instance_3_argument_6 ?go_through_two_tcenters_cities_ott_instance_3_argument_7))
@@ -432,27 +433,28 @@
 			(< task0 task1)
 			(< task1 task2)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_cities_ott_instance_3_argument_4 ?go_through_two_tcenters_cities_ott_instance_3_argument_5))
-		)
 	)
 
 	(:method method12
 		:parameters (?helper_carry_otd_instance_2_argument_0 - Package ?helper_carry_otd_instance_2_argument_1 - TCenter ?helper_carry_otd_instance_2_argument_2 - City ?helper_carry_otd_instance_2_argument_3 - TCenter ?helper_carry_otd_instance_2_argument_4 - Not_TCenter ?helper_carry_otd_instance_2_argument_5 - City)
 		:task (carry ?helper_carry_otd_instance_2_argument_0 ?helper_carry_otd_instance_2_argument_1 ?helper_carry_otd_instance_2_argument_4)
-		:subtasks (and
-		 (task0 (helper_carry_otd ?helper_carry_otd_instance_2_argument_0 ?helper_carry_otd_instance_2_argument_1 ?helper_carry_otd_instance_2_argument_2 ?helper_carry_otd_instance_2_argument_3 ?helper_carry_otd_instance_2_argument_4 ?helper_carry_otd_instance_2_argument_5))
-		)
-		:constraints (and
+		:precondition (and
 			(not (= ?helper_carry_otd_instance_2_argument_1 ?helper_carry_otd_instance_2_argument_4))
 			(not (= ?helper_carry_otd_instance_2_argument_1 ?helper_carry_otd_instance_2_argument_3))
 			(not (= ?helper_carry_otd_instance_2_argument_4 ?helper_carry_otd_instance_2_argument_3))
+		)
+		:subtasks (and
+		 (task0 (helper_carry_otd ?helper_carry_otd_instance_2_argument_0 ?helper_carry_otd_instance_2_argument_1 ?helper_carry_otd_instance_2_argument_2 ?helper_carry_otd_instance_2_argument_3 ?helper_carry_otd_instance_2_argument_4 ?helper_carry_otd_instance_2_argument_5))
 		)
 	)
 
 	(:method method13
 		:parameters (?carry_direct_instance_4_argument_8 - Package ?go_through_two_tcenters_cities_otd_instance_3_argument_3 - Not_TCenter ?go_through_two_tcenters_cities_otd_instance_3_argument_4 - City ?go_through_two_tcenters_cities_otd_instance_3_argument_5 - City ?go_through_two_tcenters_cities_otd_instance_3_argument_6 - TCenter ?go_through_two_tcenters_cities_otd_instance_3_argument_7 - TCenter)
 		:task (helper_carry_otd ?carry_direct_instance_4_argument_8 ?go_through_two_tcenters_cities_otd_instance_3_argument_6 ?go_through_two_tcenters_cities_otd_instance_3_argument_4 ?go_through_two_tcenters_cities_otd_instance_3_argument_7 ?go_through_two_tcenters_cities_otd_instance_3_argument_3 ?go_through_two_tcenters_cities_otd_instance_3_argument_5)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_cities_otd_instance_3_argument_4 ?go_through_two_tcenters_cities_otd_instance_3_argument_5))
+			(not (= ?go_through_two_tcenters_cities_otd_instance_3_argument_6 ?go_through_two_tcenters_cities_otd_instance_3_argument_7))
+		)
 		:subtasks (and
 		 (task0 (carry_between_tcenters ?carry_direct_instance_4_argument_8 ?go_through_two_tcenters_cities_otd_instance_3_argument_6 ?go_through_two_tcenters_cities_otd_instance_3_argument_7))
 		 (task1 (go_through_two_tcenters_cities_otd ?go_through_two_tcenters_cities_otd_instance_3_argument_3 ?go_through_two_tcenters_cities_otd_instance_3_argument_4 ?go_through_two_tcenters_cities_otd_instance_3_argument_5 ?go_through_two_tcenters_cities_otd_instance_3_argument_6 ?go_through_two_tcenters_cities_otd_instance_3_argument_7))
@@ -462,30 +464,31 @@
 			(< task0 task1)
 			(< task1 task2)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_cities_otd_instance_3_argument_4 ?go_through_two_tcenters_cities_otd_instance_3_argument_5))
-			(not (= ?go_through_two_tcenters_cities_otd_instance_3_argument_6 ?go_through_two_tcenters_cities_otd_instance_3_argument_7))
-		)
 	)
 
 	(:method method14
 		:parameters (?helper_carry_ottd_instance_2_argument_0 - Package ?helper_carry_ottd_instance_2_argument_1 - Not_TCenter ?helper_carry_ottd_instance_2_argument_2 - City ?helper_carry_ottd_instance_2_argument_3 - TCenter ?helper_carry_ottd_instance_2_argument_4 - TCenter ?helper_carry_ottd_instance_2_argument_5 - Not_TCenter ?helper_carry_ottd_instance_2_argument_6 - City)
 		:task (carry ?helper_carry_ottd_instance_2_argument_0 ?helper_carry_ottd_instance_2_argument_1 ?helper_carry_ottd_instance_2_argument_5)
-		:subtasks (and
-		 (task0 (helper_carry_ottd ?helper_carry_ottd_instance_2_argument_0 ?helper_carry_ottd_instance_2_argument_1 ?helper_carry_ottd_instance_2_argument_2 ?helper_carry_ottd_instance_2_argument_3 ?helper_carry_ottd_instance_2_argument_4 ?helper_carry_ottd_instance_2_argument_5 ?helper_carry_ottd_instance_2_argument_6))
-		)
-		:constraints (and
+		:precondition (and
 			(not (= ?helper_carry_ottd_instance_2_argument_1 ?helper_carry_ottd_instance_2_argument_5))
 			(not (= ?helper_carry_ottd_instance_2_argument_1 ?helper_carry_ottd_instance_2_argument_3))
 			(not (= ?helper_carry_ottd_instance_2_argument_5 ?helper_carry_ottd_instance_2_argument_3))
 			(not (= ?helper_carry_ottd_instance_2_argument_1 ?helper_carry_ottd_instance_2_argument_4))
 			(not (= ?helper_carry_ottd_instance_2_argument_5 ?helper_carry_ottd_instance_2_argument_4))
 		)
+		:subtasks (and
+		 (task0 (helper_carry_ottd ?helper_carry_ottd_instance_2_argument_0 ?helper_carry_ottd_instance_2_argument_1 ?helper_carry_ottd_instance_2_argument_2 ?helper_carry_ottd_instance_2_argument_3 ?helper_carry_ottd_instance_2_argument_4 ?helper_carry_ottd_instance_2_argument_5 ?helper_carry_ottd_instance_2_argument_6))
+		)
 	)
 
 	(:method method15
 		:parameters (?carry_direct_instance_5_argument_12 - Package ?go_through_two_tcenters_cities_ottd_instance_3_argument_3 - Not_TCenter ?go_through_two_tcenters_cities_ottd_instance_3_argument_4 - Not_TCenter ?go_through_two_tcenters_cities_ottd_instance_3_argument_5 - City ?go_through_two_tcenters_cities_ottd_instance_3_argument_6 - City ?go_through_two_tcenters_cities_ottd_instance_3_argument_7 - TCenter ?go_through_two_tcenters_cities_ottd_instance_3_argument_8 - TCenter)
 		:task (helper_carry_ottd ?carry_direct_instance_5_argument_12 ?go_through_two_tcenters_cities_ottd_instance_3_argument_3 ?go_through_two_tcenters_cities_ottd_instance_3_argument_5 ?go_through_two_tcenters_cities_ottd_instance_3_argument_7 ?go_through_two_tcenters_cities_ottd_instance_3_argument_8 ?go_through_two_tcenters_cities_ottd_instance_3_argument_4 ?go_through_two_tcenters_cities_ottd_instance_3_argument_6)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_cities_ottd_instance_3_argument_3 ?go_through_two_tcenters_cities_ottd_instance_3_argument_4))
+			(not (= ?go_through_two_tcenters_cities_ottd_instance_3_argument_7 ?go_through_two_tcenters_cities_ottd_instance_3_argument_8))
+			(not (= ?go_through_two_tcenters_cities_ottd_instance_3_argument_5 ?go_through_two_tcenters_cities_ottd_instance_3_argument_6))
+		)
 		:subtasks (and
 		 (task0 (carry_direct ?carry_direct_instance_5_argument_12 ?go_through_two_tcenters_cities_ottd_instance_3_argument_3 ?go_through_two_tcenters_cities_ottd_instance_3_argument_7))
 		 (task1 (go_through_two_tcenters_cities_ottd ?go_through_two_tcenters_cities_ottd_instance_3_argument_3 ?go_through_two_tcenters_cities_ottd_instance_3_argument_4 ?go_through_two_tcenters_cities_ottd_instance_3_argument_5 ?go_through_two_tcenters_cities_ottd_instance_3_argument_6 ?go_through_two_tcenters_cities_ottd_instance_3_argument_7 ?go_through_two_tcenters_cities_ottd_instance_3_argument_8))
@@ -497,27 +500,26 @@
 			(< task1 task2)
 			(< task2 task3)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_cities_ottd_instance_3_argument_3 ?go_through_two_tcenters_cities_ottd_instance_3_argument_4))
-			(not (= ?go_through_two_tcenters_cities_ottd_instance_3_argument_7 ?go_through_two_tcenters_cities_ottd_instance_3_argument_8))
-			(not (= ?go_through_two_tcenters_cities_ottd_instance_3_argument_5 ?go_through_two_tcenters_cities_ottd_instance_3_argument_6))
-		)
 	)
 
 	(:method method16
 		:parameters (?helper_carry_cc_instance_2_argument_0 - Package ?helper_carry_cc_instance_2_argument_1 - Not_TCenter ?helper_carry_cc_instance_2_argument_2 - City ?helper_carry_cc_instance_2_argument_3 - TCenter ?helper_carry_cc_instance_2_argument_4 - Not_TCenter ?helper_carry_cc_instance_2_argument_5 - City)
 		:task (carry ?helper_carry_cc_instance_2_argument_0 ?helper_carry_cc_instance_2_argument_1 ?helper_carry_cc_instance_2_argument_4)
+		:precondition (and
+			(not (= ?helper_carry_cc_instance_2_argument_1 ?helper_carry_cc_instance_2_argument_4))
+		)
 		:subtasks (and
 		 (task0 (helper_carry_cc ?helper_carry_cc_instance_2_argument_0 ?helper_carry_cc_instance_2_argument_1 ?helper_carry_cc_instance_2_argument_2 ?helper_carry_cc_instance_2_argument_3 ?helper_carry_cc_instance_2_argument_4 ?helper_carry_cc_instance_2_argument_5))
-		)
-		:constraints (and
-			(not (= ?helper_carry_cc_instance_2_argument_1 ?helper_carry_cc_instance_2_argument_4))
 		)
 	)
 
 	(:method method17
 		:parameters (?carry_direct_instance_4_argument_8 - Package ?go_through_tcenter_cc_instance_3_argument_3 - Not_TCenter ?go_through_tcenter_cc_instance_3_argument_4 - Not_TCenter ?go_through_tcenter_cc_instance_3_argument_5 - City ?go_through_tcenter_cc_instance_3_argument_6 - City ?go_through_tcenter_cc_instance_3_argument_7 - TCenter)
 		:task (helper_carry_cc ?carry_direct_instance_4_argument_8 ?go_through_tcenter_cc_instance_3_argument_3 ?go_through_tcenter_cc_instance_3_argument_5 ?go_through_tcenter_cc_instance_3_argument_7 ?go_through_tcenter_cc_instance_3_argument_4 ?go_through_tcenter_cc_instance_3_argument_6)
+		:precondition (and
+			(not (= ?go_through_tcenter_cc_instance_3_argument_3 ?go_through_tcenter_cc_instance_3_argument_4))
+			(not (= ?go_through_tcenter_cc_instance_3_argument_5 ?go_through_tcenter_cc_instance_3_argument_6))
+		)
 		:subtasks (and
 		 (task0 (carry_direct ?carry_direct_instance_4_argument_8 ?go_through_tcenter_cc_instance_3_argument_3 ?go_through_tcenter_cc_instance_3_argument_7))
 		 (task1 (go_through_tcenter_cc ?go_through_tcenter_cc_instance_3_argument_3 ?go_through_tcenter_cc_instance_3_argument_4 ?go_through_tcenter_cc_instance_3_argument_5 ?go_through_tcenter_cc_instance_3_argument_6 ?go_through_tcenter_cc_instance_3_argument_7))
@@ -527,15 +529,14 @@
 			(< task0 task1)
 			(< task1 task2)
 		)
-		:constraints (and
-			(not (= ?go_through_tcenter_cc_instance_3_argument_3 ?go_through_tcenter_cc_instance_3_argument_4))
-			(not (= ?go_through_tcenter_cc_instance_3_argument_5 ?go_through_tcenter_cc_instance_3_argument_6))
-		)
 	)
 
 	(:method method18
 		:parameters (?carry_direct_instance_3_argument_2 - Package ?go_through_two_tcenters_instance_2_argument_0 - TCenter ?go_through_two_tcenters_instance_2_argument_1 - TCenter)
 		:task (carry_between_tcenters ?carry_direct_instance_3_argument_2 ?go_through_two_tcenters_instance_2_argument_0 ?go_through_two_tcenters_instance_2_argument_1)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_instance_2_argument_0 ?go_through_two_tcenters_instance_2_argument_1))
+		)
 		:subtasks (and
 		 (task0 (go_through_two_tcenters ?go_through_two_tcenters_instance_2_argument_0 ?go_through_two_tcenters_instance_2_argument_1))
 		 (task1 (carry_direct ?carry_direct_instance_3_argument_2 ?go_through_two_tcenters_instance_2_argument_0 ?go_through_two_tcenters_instance_2_argument_1))
@@ -543,23 +544,18 @@
 		:ordering (and
 			(< task1 task0)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_instance_2_argument_0 ?go_through_two_tcenters_instance_2_argument_1))
-		)
 	)
 
 	(:method method19
 		:parameters (?carry_via_hub_instance_2_argument_0 - Package ?carry_via_hub_instance_2_argument_1 - TCenter ?carry_via_hub_instance_2_argument_2 - TCenter)
 		:task (carry_between_tcenters ?carry_via_hub_instance_2_argument_0 ?carry_via_hub_instance_2_argument_1 ?carry_via_hub_instance_2_argument_2)
 		:precondition (and
+			(not (= ?carry_via_hub_instance_2_argument_1 ?carry_via_hub_instance_2_argument_2))
 			(not (IsHub ?carry_via_hub_instance_2_argument_1))
 			(not (IsHub ?carry_via_hub_instance_2_argument_2))
 		)
 		:subtasks (and
 		 (task0 (carry_via_hub ?carry_via_hub_instance_2_argument_0 ?carry_via_hub_instance_2_argument_1 ?carry_via_hub_instance_2_argument_2))
-		)
-		:constraints (and
-			(not (= ?carry_via_hub_instance_2_argument_1 ?carry_via_hub_instance_2_argument_2))
 		)
 	)
 
@@ -567,21 +563,26 @@
 		:parameters (?helper_carry_via_hub_not_hazardous_instance_2_argument_0 - Package ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 - TCenter ?helper_carry_via_hub_not_hazardous_instance_2_argument_2 - City ?helper_carry_via_hub_not_hazardous_instance_2_argument_3 - Region ?helper_carry_via_hub_not_hazardous_instance_2_argument_4 - Hub ?helper_carry_via_hub_not_hazardous_instance_2_argument_5 - TCenter ?helper_carry_via_hub_not_hazardous_instance_2_argument_6 - City ?helper_carry_via_hub_not_hazardous_instance_2_argument_7 - Region)
 		:task (carry_via_hub ?helper_carry_via_hub_not_hazardous_instance_2_argument_0 ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 ?helper_carry_via_hub_not_hazardous_instance_2_argument_5)
 		:precondition (and
+			(not (= ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 ?helper_carry_via_hub_not_hazardous_instance_2_argument_5))
+			(not (= ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 ?helper_carry_via_hub_not_hazardous_instance_2_argument_4))
+			(not (= ?helper_carry_via_hub_not_hazardous_instance_2_argument_5 ?helper_carry_via_hub_not_hazardous_instance_2_argument_4))
 			(not (IsHazardous ?helper_carry_via_hub_not_hazardous_instance_2_argument_0))
 		)
 		:subtasks (and
 		 (task0 (helper_carry_via_hub_not_hazardous ?helper_carry_via_hub_not_hazardous_instance_2_argument_0 ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 ?helper_carry_via_hub_not_hazardous_instance_2_argument_2 ?helper_carry_via_hub_not_hazardous_instance_2_argument_3 ?helper_carry_via_hub_not_hazardous_instance_2_argument_4 ?helper_carry_via_hub_not_hazardous_instance_2_argument_5 ?helper_carry_via_hub_not_hazardous_instance_2_argument_6 ?helper_carry_via_hub_not_hazardous_instance_2_argument_7))
-		)
-		:constraints (and
-			(not (= ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 ?helper_carry_via_hub_not_hazardous_instance_2_argument_5))
-			(not (= ?helper_carry_via_hub_not_hazardous_instance_2_argument_1 ?helper_carry_via_hub_not_hazardous_instance_2_argument_4))
-			(not (= ?helper_carry_via_hub_not_hazardous_instance_2_argument_5 ?helper_carry_via_hub_not_hazardous_instance_2_argument_4))
 		)
 	)
 
 	(:method method21
 		:parameters (?carry_direct_instance_4_argument_10 - Package ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 - TCenter ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4 - TCenter ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_5 - City ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_6 - City ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_7 - Region ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_8 - Region ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9 - Hub)
 		:task (helper_carry_via_hub_not_hazardous ?carry_direct_instance_4_argument_10 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_8)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4))
+			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9))
+			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4))
+			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_6))
+			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_8))
+		)
 		:subtasks (and
 		 (task0 (carry_direct ?carry_direct_instance_4_argument_10 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9))
 		 (task1 (go_through_two_tcenters_via_hub_not_hazardous ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_8 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9))
@@ -591,31 +592,33 @@
 			(< task0 task1)
 			(< task1 task2)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4))
-			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9))
-			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_4))
-			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_6))
-			(not (= ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_not_hazardous_instance_3_argument_8))
-		)
 	)
 
 	(:method method22
 		:parameters (?helper_carry_via_hub_hazardous_instance_2_argument_0 - Hazardous ?helper_carry_via_hub_hazardous_instance_2_argument_1 - TCenter ?helper_carry_via_hub_hazardous_instance_2_argument_2 - City ?helper_carry_via_hub_hazardous_instance_2_argument_3 - Region ?helper_carry_via_hub_hazardous_instance_2_argument_4 - Hub ?helper_carry_via_hub_hazardous_instance_2_argument_5 - City ?helper_carry_via_hub_hazardous_instance_2_argument_6 - TCenter ?helper_carry_via_hub_hazardous_instance_2_argument_7 - City ?helper_carry_via_hub_hazardous_instance_2_argument_8 - Region)
 		:task (carry_via_hub ?helper_carry_via_hub_hazardous_instance_2_argument_0 ?helper_carry_via_hub_hazardous_instance_2_argument_1 ?helper_carry_via_hub_hazardous_instance_2_argument_6)
-		:subtasks (and
-		 (task0 (helper_carry_via_hub_hazardous ?helper_carry_via_hub_hazardous_instance_2_argument_0 ?helper_carry_via_hub_hazardous_instance_2_argument_1 ?helper_carry_via_hub_hazardous_instance_2_argument_2 ?helper_carry_via_hub_hazardous_instance_2_argument_3 ?helper_carry_via_hub_hazardous_instance_2_argument_4 ?helper_carry_via_hub_hazardous_instance_2_argument_5 ?helper_carry_via_hub_hazardous_instance_2_argument_6 ?helper_carry_via_hub_hazardous_instance_2_argument_7 ?helper_carry_via_hub_hazardous_instance_2_argument_8))
-		)
-		:constraints (and
+		:precondition (and
 			(not (= ?helper_carry_via_hub_hazardous_instance_2_argument_1 ?helper_carry_via_hub_hazardous_instance_2_argument_6))
 			(not (= ?helper_carry_via_hub_hazardous_instance_2_argument_1 ?helper_carry_via_hub_hazardous_instance_2_argument_4))
 			(not (= ?helper_carry_via_hub_hazardous_instance_2_argument_6 ?helper_carry_via_hub_hazardous_instance_2_argument_4))
+		)
+		:subtasks (and
+		 (task0 (helper_carry_via_hub_hazardous ?helper_carry_via_hub_hazardous_instance_2_argument_0 ?helper_carry_via_hub_hazardous_instance_2_argument_1 ?helper_carry_via_hub_hazardous_instance_2_argument_2 ?helper_carry_via_hub_hazardous_instance_2_argument_3 ?helper_carry_via_hub_hazardous_instance_2_argument_4 ?helper_carry_via_hub_hazardous_instance_2_argument_5 ?helper_carry_via_hub_hazardous_instance_2_argument_6 ?helper_carry_via_hub_hazardous_instance_2_argument_7 ?helper_carry_via_hub_hazardous_instance_2_argument_8))
 		)
 	)
 
 	(:method method23
 		:parameters (?carry_direct_instance_4_argument_11 - Package ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_10 - Region ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 - TCenter ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4 - TCenter ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5 - Hub ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 - City ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7 - City ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8 - City ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_9 - Region)
 		:task (helper_carry_via_hub_hazardous ?carry_direct_instance_4_argument_11 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_10)
+		:precondition (and
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4))
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5))
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4))
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7))
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8))
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8))
+			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_10))
+		)
 		:subtasks (and
 		 (task0 (carry_direct ?carry_direct_instance_4_argument_11 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5))
 		 (task1 (go_through_two_tcenters_via_hub_hazardous ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_10))
@@ -625,31 +628,26 @@
 			(< task0 task1)
 			(< task1 task2)
 		)
-		:constraints (and
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4))
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_3 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5))
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_5 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_4))
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7))
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_6 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8))
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_7 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_8))
-			(not (= ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_9 ?go_through_two_tcenters_via_hub_hazardous_instance_3_argument_10))
-		)
 	)
 
 	(:method method24
 		:parameters (?helper_carry_direct_instance_2_argument_0 - Vehicle ?helper_carry_direct_instance_2_argument_1 - Package ?helper_carry_direct_instance_2_argument_2 - Location ?helper_carry_direct_instance_2_argument_3 - Location)
 		:task (carry_direct ?helper_carry_direct_instance_2_argument_1 ?helper_carry_direct_instance_2_argument_2 ?helper_carry_direct_instance_2_argument_3)
+		:precondition (and
+			(not (= ?helper_carry_direct_instance_2_argument_2 ?helper_carry_direct_instance_2_argument_3))
+		)
 		:subtasks (and
 		 (task0 (helper_carry_direct ?helper_carry_direct_instance_2_argument_0 ?helper_carry_direct_instance_2_argument_1 ?helper_carry_direct_instance_2_argument_2 ?helper_carry_direct_instance_2_argument_3))
-		)
-		:constraints (and
-			(not (= ?helper_carry_direct_instance_2_argument_2 ?helper_carry_direct_instance_2_argument_3))
 		)
 	)
 
 	(:method method25
 		:parameters (?move_instance_2_argument_1 - Location ?move_instance_4_argument_7 - Location ?unload_top_instance_5_argument_10 - Vehicle ?unload_top_instance_5_argument_11 - Location ?unload_top_instance_5_argument_9 - Package)
 		:task (helper_carry_direct ?unload_top_instance_5_argument_10 ?unload_top_instance_5_argument_9 ?move_instance_4_argument_7 ?unload_top_instance_5_argument_11)
+		:precondition (and
+			(not (= ?move_instance_2_argument_1 ?move_instance_4_argument_7))
+			(not (= ?move_instance_4_argument_7 ?unload_top_instance_5_argument_11))
+		)
 		:subtasks (and
 		 (task0 (move ?unload_top_instance_5_argument_10 ?move_instance_2_argument_1 ?move_instance_4_argument_7))
 		 (task1 (load_top ?unload_top_instance_5_argument_9 ?unload_top_instance_5_argument_10 ?move_instance_4_argument_7))
@@ -661,15 +659,14 @@
 			(< task1 task2)
 			(< task2 task3)
 		)
-		:constraints (and
-			(not (= ?move_instance_2_argument_1 ?move_instance_4_argument_7))
-			(not (= ?move_instance_4_argument_7 ?unload_top_instance_5_argument_11))
-		)
 	)
 
 	(:method method26
 		:parameters (?move_instance_3_argument_4 - Location ?unload_top_instance_4_argument_6 - Package ?unload_top_instance_4_argument_7 - Vehicle ?unload_top_instance_4_argument_8 - Location)
 		:task (helper_carry_direct ?unload_top_instance_4_argument_7 ?unload_top_instance_4_argument_6 ?move_instance_3_argument_4 ?unload_top_instance_4_argument_8)
+		:precondition (and
+			(not (= ?move_instance_3_argument_4 ?unload_top_instance_4_argument_8))
+		)
 		:subtasks (and
 		 (task0 (load_top ?unload_top_instance_4_argument_6 ?unload_top_instance_4_argument_7 ?move_instance_3_argument_4))
 		 (task1 (move ?unload_top_instance_4_argument_7 ?move_instance_3_argument_4 ?unload_top_instance_4_argument_8))
@@ -679,39 +676,38 @@
 			(< task0 task1)
 			(< task1 task2)
 		)
-		:constraints (and
-			(not (= ?move_instance_3_argument_4 ?unload_top_instance_4_argument_8))
-		)
 	)
 
 	(:method method27
 		:parameters (?move_vehicle_no_traincar_instance_2_argument_0 - Vehicle ?move_vehicle_no_traincar_instance_2_argument_1 - Location ?move_vehicle_no_traincar_instance_2_argument_2 - Route ?move_vehicle_no_traincar_instance_2_argument_3 - Location)
 		:task (move ?move_vehicle_no_traincar_instance_2_argument_0 ?move_vehicle_no_traincar_instance_2_argument_1 ?move_vehicle_no_traincar_instance_2_argument_3)
 		:precondition (and
+			(not (= ?move_vehicle_no_traincar_instance_2_argument_1 ?move_vehicle_no_traincar_instance_2_argument_3))
 			(not (IsTraincar ?move_vehicle_no_traincar_instance_2_argument_0))
 		)
 		:subtasks (and
 		 (task0 (move_vehicle_no_traincar ?move_vehicle_no_traincar_instance_2_argument_0 ?move_vehicle_no_traincar_instance_2_argument_1 ?move_vehicle_no_traincar_instance_2_argument_2 ?move_vehicle_no_traincar_instance_2_argument_3))
-		)
-		:constraints (and
-			(not (= ?move_vehicle_no_traincar_instance_2_argument_1 ?move_vehicle_no_traincar_instance_2_argument_3))
 		)
 	)
 
 	(:method method28
 		:parameters (?helper_move_traincar_instance_2_argument_0 - Traincar ?helper_move_traincar_instance_2_argument_1 - Train ?helper_move_traincar_instance_2_argument_2 - Location ?helper_move_traincar_instance_2_argument_3 - Location)
 		:task (move ?helper_move_traincar_instance_2_argument_0 ?helper_move_traincar_instance_2_argument_2 ?helper_move_traincar_instance_2_argument_3)
+		:precondition (and
+			(not (= ?helper_move_traincar_instance_2_argument_2 ?helper_move_traincar_instance_2_argument_3))
+		)
 		:subtasks (and
 		 (task0 (helper_move_traincar ?helper_move_traincar_instance_2_argument_0 ?helper_move_traincar_instance_2_argument_1 ?helper_move_traincar_instance_2_argument_2 ?helper_move_traincar_instance_2_argument_3))
-		)
-		:constraints (and
-			(not (= ?helper_move_traincar_instance_2_argument_2 ?helper_move_traincar_instance_2_argument_3))
 		)
 	)
 
 	(:method method29
 		:parameters (?detach_train_car_instance_5_argument_10 - Traincar ?detach_train_car_instance_5_argument_11 - Location ?detach_train_car_instance_5_argument_9 - Train ?move_instance_2_argument_1 - Location ?move_instance_4_argument_7 - Location)
 		:task (helper_move_traincar ?detach_train_car_instance_5_argument_10 ?detach_train_car_instance_5_argument_9 ?move_instance_4_argument_7 ?detach_train_car_instance_5_argument_11)
+		:precondition (and
+			(not (= ?move_instance_4_argument_7 ?detach_train_car_instance_5_argument_11))
+			(not (= ?move_instance_2_argument_1 ?move_instance_4_argument_7))
+		)
 		:subtasks (and
 		 (task0 (move ?detach_train_car_instance_5_argument_9 ?move_instance_2_argument_1 ?move_instance_4_argument_7))
 		 (task1 (attach_train_car ?detach_train_car_instance_5_argument_9 ?detach_train_car_instance_5_argument_10 ?move_instance_4_argument_7))
@@ -723,15 +719,14 @@
 			(< task1 task2)
 			(< task2 task3)
 		)
-		:constraints (and
-			(not (= ?move_instance_4_argument_7 ?detach_train_car_instance_5_argument_11))
-			(not (= ?move_instance_2_argument_1 ?move_instance_4_argument_7))
-		)
 	)
 
 	(:method method30
 		:parameters (?detach_train_car_instance_4_argument_6 - Train ?detach_train_car_instance_4_argument_7 - Traincar ?detach_train_car_instance_4_argument_8 - Location ?move_instance_3_argument_4 - Location)
 		:task (helper_move_traincar ?detach_train_car_instance_4_argument_7 ?detach_train_car_instance_4_argument_6 ?move_instance_3_argument_4 ?detach_train_car_instance_4_argument_8)
+		:precondition (and
+			(not (= ?move_instance_3_argument_4 ?detach_train_car_instance_4_argument_8))
+		)
 		:subtasks (and
 		 (task0 (attach_train_car ?detach_train_car_instance_4_argument_6 ?detach_train_car_instance_4_argument_7 ?move_instance_3_argument_4))
 		 (task1 (move ?detach_train_car_instance_4_argument_6 ?move_instance_3_argument_4 ?detach_train_car_instance_4_argument_8))
@@ -740,9 +735,6 @@
 		:ordering (and
 			(< task0 task1)
 			(< task1 task2)
-		)
-		:constraints (and
-			(not (= ?move_instance_3_argument_4 ?detach_train_car_instance_4_argument_8))
 		)
 	)
 
