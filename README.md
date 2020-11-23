@@ -1,7 +1,7 @@
 # domains
-This is a repository containing domain and problem instances for Hierarchical Task Network (HTN) planning. At the time being (November 2020), the domains and problem instances contained in this repository were submitted for the [International Planning Competition (IPC) 2020](ipc2020.hierarchical-task.net), which was devoted exclusively to HTN planning. These domains and instances were not used for a range of different reasons. Please refer to the IPC booklet (to appear) for further information on these domains and problem instances.
+This is a repository containing domain and problem instances for Hierarchical Task Network (HTN) planning. At the time being (November 2020), the domains and problem instances contained in this repository were submitted for the [International Planning Competition (IPC) 2020](http://ipc2020.hierarchical-task.net), which was devoted exclusively to HTN planning. These domains and instances were not used for a range of different reasons. Please refer to the IPC booklet (to appear) for further information on these domains and problem instances.
 
-All domains and problem instances are described in HDDL, the hierarchical domain description language [1].
+All domains and problem instances are described in HDDL, the hierarchical domain description language [1] [(PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/6542/6398).
 
 Newer domains and problem instances are likely to be added. If you have an interesting HTN domain, please contact us so we can consider adding it!
 
