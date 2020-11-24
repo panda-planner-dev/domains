@@ -1,10 +1,7 @@
-## Author
-Bastian Seegebarth <no known mail>
-
-Bernd Schattenberg <mail@berndschattenberg.de>
-
-Pascal Bercher <pascal.bercher@alumni.uni-ulm.de>
-
+## Authors
+Bastian Seegebarth <no known mail>  
+Bernd Schattenberg <mail@berndschattenberg.de>  
+Pascal Bercher <pascal.bercher@alumni.uni-ulm.de>  
 Susanne Biundo <susanne.biundo@uni-ulm.de>
 
 edited (removed "hybrid" features and converted to TO domain) by Gregor Behnke <behnkeg@informatik.uni-freiburg.de>
@@ -27,5 +24,7 @@ edited (removed "hybrid" features and converted to TO domain) by Gregor Behnke <
 }
 ```
 
+[PDF](https://hierarchical-task.net/pb/2011/Biundo2011AdvancedAssistance.pdf)
+
 The domain was converted to a totally ordered domain for the following paper:
-totSAT-Totally-ordered hierarchical planning through SAT, Gregor Behnke, Daniel Höller, Susanne Biundo, AAAI, 2018
+totSAT-Totally-ordered hierarchical planning through SAT, Gregor Behnke, Daniel Höller, Susanne Biundo, AAAI, 2018. [PDF](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16820/16181)

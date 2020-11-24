@@ -1,10 +1,7 @@
-## Author
-Bastian Seegebarth <no known mail>
-
-Bernd Schattenberg <mail@berndschattenberg.de>
-
-Pascal Bercher <pascal.bercher@alumni.uni-ulm.de>
-
+## Authors
+Bastian Seegebarth <no known mail>  
+Bernd Schattenberg <mail@berndschattenberg.de>  
+Pascal Bercher <pascal.bercher@alumni.uni-ulm.de>  
 Susanne Biundo <susanne.biundo@uni-ulm.de>
 
 edited (removed "hybrid" features) by Gregor Behnke <behnkeg@informatik.uni-freiburg.de>
@@ -26,3 +23,5 @@ edited (removed "hybrid" features) by Gregor Behnke <behnkeg@informatik.uni-frei
   doi       = {10.1016/j.cogsys.2010.12.005}
 }
 ```
+
+[PDF](https://hierarchical-task.net/pb/2011/Biundo2011AdvancedAssistance.pdf)
