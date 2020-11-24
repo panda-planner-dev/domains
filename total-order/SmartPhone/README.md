@@ -11,6 +11,7 @@ edited (removed "hybrid" features and converted to TO domain) by Gregor Behnke <
 
 ## Paper
 
+```bibtex
 @Article{Biundo11CognitiveSystems,
   author    = {Susanne Biundo and Pascal Bercher and Thomas Geier and Felix M\"uller and Bernd Schattenberg},
   title     = {Advanced user assistance based on {AI} planning},
@@ -24,6 +25,7 @@ edited (removed "hybrid" features and converted to TO domain) by Gregor Behnke <
   note      = {Special Issue on Complex Cognition},
   doi       = {10.1016/j.cogsys.2010.12.005}
 }
+```
 
 The domain was converted to a totally ordered domain for the following paper:
 totSAT-Totally-ordered hierarchical planning through SAT, Gregor Behnke, Daniel Höller, Susanne Biundo, AAAI, 2018

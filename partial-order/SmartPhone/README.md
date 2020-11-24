@@ -11,6 +11,7 @@ edited (removed "hybrid" features) by Gregor Behnke <behnkeg@informatik.uni-frei
 
 ## Paper
 
+```bibtex
 @Article{Biundo11CognitiveSystems,
   author    = {Susanne Biundo and Pascal Bercher and Thomas Geier and Felix M\"uller and Bernd Schattenberg},
   title     = {Advanced user assistance based on {AI} planning},
@@ -24,3 +25,4 @@ edited (removed "hybrid" features) by Gregor Behnke <behnkeg@informatik.uni-frei
   note      = {Special Issue on Complex Cognition},
   doi       = {10.1016/j.cogsys.2010.12.005}
 }
+```
