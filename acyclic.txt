@@ -1,4 +1,4 @@
-The following domains are wholly acyclic:
+The following domains are completely acyclic:
 
 partial-order/Satellite
 partial-order/Woodworking

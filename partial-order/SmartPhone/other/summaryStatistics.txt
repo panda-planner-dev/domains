@@ -1,0 +1,61 @@
+01:
+
+- Domain contains 8 actions.
+- Domain contains 10 tasks.
+- Domain contains 3 methods.
+- The problem is acyclic
+- Instance is totally-ordered: no 
+
+
+02:
+
+- Domain contains 16 actions.
+- Domain contains 22 tasks.
+- Domain contains 25 methods.
+- The problem is cyclic
+- Instance is totally-ordered: no 
+
+
+03: 
+
+- Domain contains 57 actions.
+- Domain contains 74 tasks.
+- Domain contains 77 methods.
+- The problem is cyclic
+- Instance is totally-ordered: no 
+
+
+04:
+
+- Domain contains 231 actions.
+- Domain contains 281 tasks.
+- Domain contains 344 methods.
+- The problem is cyclic
+- Instance is totally-ordered: no 
+
+
+05:
+
+- Domain contains 21 actions.
+- Domain contains 26 tasks.
+- Domain contains 12 methods.
+- The problem is acyclic
+- Instance is totally-ordered: no 
+
+
+06:
+
+- Domain contains 8 actions.
+- Domain contains 10 tasks.
+- Domain contains 3 methods.
+- The problem is acyclic
+- Instance is totally-ordered: no 
+
+
+07 
+
+- Domain contains 18 actions.
+- Domain contains 23 tasks.
+- Domain contains 9 methods.
+- The problem is acyclic
+- Instance is totally-ordered: yes
