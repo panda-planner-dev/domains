@@ -20,3 +20,5 @@ The IPC 2020 was organized by Gregor Behnke, Daniel Höller, and Pascal Bercher.
    doi       = {10.1609/aaai.v34i06.6542}
 } 
 ```
+## IPC 2023
+The International Planning Competition 2023 added four more new domains that can be found in their [repo](https://github.com/ipc2023-htn/ipc2023-domains). Apart from that the IPC2023 only used domains that were already part of the IPC 2020 benchmark set.
