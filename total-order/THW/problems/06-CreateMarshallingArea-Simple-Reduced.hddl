@@ -1,0 +1,76 @@
+(define
+	(problem p06_CreateMarshallingArea_Simple_Reduced)
+	(:domain  THW)
+	(:objects
+		Emergency_Accommodation - Emergency_Accommodation
+		A1 - Road
+		A2 - Road
+		A3 - Road
+		A4 - Road
+		THW_Command1 - THW_Group_Command_Communication
+		THW_DrinkingWater1 - THW_Group_Drinking_Water
+		THW_Group_Water_Dangers1 - THW_Group_Water_Dangers
+		Marshalling_Area - Marshalling_Area
+		Bigwater - River
+		THW_Electricity1 - THW_Group_Electricity
+		Oldtown - City
+		Easttown - City
+		Safe_Harbour - City
+		Supertown - City
+		Supertown_Suburb - Village
+		Operation_Management - Operation_Management
+		THW_Clearing1 - THW_Group_Clearing
+		Command_Post - Command_Post
+		Supertown_South - District
+		Easttown_North - District
+		Easttown_South - District
+		Supertown_West - District
+	)
+	(:htn
+		:parameters (?Create_Marshalling_Area_CFMA_Facility - Marshalling_Area)
+		:subtasks (and
+		 (task0 (Create_Facility_Marshalling_Area ?Create_Marshalling_Area_CFMA_Facility))
+		)
+	)
+	(:init
+		(threatened_by Supertown_Suburb Bigwater)
+		(connected A1 Supertown_South)
+		(connected Supertown_South A1)
+		(connected A1 Easttown_North)
+		(connected Easttown_North A1)
+		(connected A4 Easttown_South)
+		(connected Easttown_South A4)
+		(connected A4 Safe_Harbour)
+		(connected Safe_Harbour A4)
+		(connected A3 Safe_Harbour)
+		(connected Safe_Harbour A3)
+		(connected A3 Supertown_South)
+		(connected Supertown_South A3)
+		(connected A2 Oldtown)
+		(connected Oldtown A2)
+		(connected A2 Safe_Harbour)
+		(connected Safe_Harbour A2)
+		(threatened_by Easttown_North Bigwater)
+		(suitable_for Safe_Harbour Emergency_Accommodation)
+		(suitable_for Safe_Harbour Marshalling_Area)
+		(suitable_for Safe_Harbour Operation_Management)
+		(suitable_for Safe_Harbour Command_Post)
+		(blocked A3)
+		(flooded A1)
+		(threatened_by A1 Bigwater)
+		(at THW_Command1 Oldtown)
+		(available THW_Command1)
+		(at THW_DrinkingWater1 Oldtown)
+		(available THW_DrinkingWater1)
+		(at THW_Electricity1 Oldtown)
+		(available THW_Electricity1)
+		(at THW_Clearing1 Oldtown)
+		(available THW_Clearing1)
+		(flooded Supertown_West)
+		(threatened_by Supertown_South Bigwater)
+		(at THW_Group_Water_Dangers1 Oldtown)
+		(available THW_Group_Water_Dangers1)
+		(supplied_with_electricity Safe_Harbour)
+		(supplied_with_drinking_water Safe_Harbour)
+	)
+)

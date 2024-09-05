@@ -1,0 +1,2 @@
+Number of causal links: 17
+Number of non-totally ordered methods: 0 of 18

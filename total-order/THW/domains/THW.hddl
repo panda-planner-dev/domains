@@ -1,0 +1,848 @@
+(define (domain THW)
+	(:requirements :typing :hierachie)
+	(:types
+		Emergency_Accommodation - THW_Facility
+		Truck - (either Transporter_Mobile Vehicle_Land)
+		Sandbags - (either Flood_Countermeasure Material)
+		THW_Group_Water_Damage_Pump - (either Pump Pumping_Work THW_Group)
+		Civilian - Person
+		Power_Source - Role
+		Logistic - Role
+		Road - Location_Land
+		THW_Group_Command_Communication - (either Facility_Handling THW_Group)
+		THW_Group_Drinking_Water - (either Provider_Drinking_Water THW_Group)
+		Truck_Long - (either Transporter_Large Vehicle_Land)
+		Building - Location_Land
+		Water_Damage - Role
+		THW_Group_Water_Dangers - (either Mobile_On_Water THW_Group)
+		Excavator - Clearing_Gear_Heavy
+		Bus - (either Passenger_Transporter Vehicle_Land)
+		Lake - Location_Water
+		Wheel_Loader - (either Clearing_Gear Vehicle_Land)
+		Marshalling_Area - THW_Facility
+		Positioning - Role
+		THW_Group_Infrastructure - (either Infrastructural_Work Facility_Handling Electrical_Power_Engineering_Building THW_Group)
+		River - Location_Water
+		Trailer - (either Transporter Thing Movable_Object)
+		THW_Group_Electricity - (either Electrical_Power_Engineering_HighLevel Provider_Electricity_HighVoltage THW_Group)
+		City - (either Town Location_Land)
+		Village - Town
+		Operation_Management - THW_Facility
+		Earthwork - Role
+		Bridge_Work - Role
+		THW_Group_Rescue_2 - (either Provider_Electricity THW_Group)
+		Multi_Purpose_Pontoon - (either Transporter_Water Boat)
+		THW_Group_Clearing - (either Clearing_Heavy THW_Group)
+		Command_Post - THW_Facility
+		Pump - (either Flood_Countermeasure Role)
+		Passenger_Transporter - Transporter_Mobile
+		Infrastructural_Work - Role
+		Clearing_Gear_Heavy - Clearing_Gear
+		Transporter_Large - Transporter_Mobile
+		THW_Group - (either Thing Mobile_On_Land Role Vehicle_Land)
+		THW_Facility - (either Location_Land Role)
+		Facility_Handling - Role
+		Person - (either Mobile_Object Thing Transportable)
+		Provider_Drinking_Water - Role
+		Electrical_Power_Engineering_Building - Electrical_Power_Engineering
+		Material - (either Thing Transportable)
+		Pumping_Work - Role
+		Provider_Electricity_HighVoltage - Provider_Electricity
+		Clearing_Heavy - Clearing
+		Electrical_Power_Engineering_HighLevel - Electrical_Power_Engineering
+		Transporter_Water - Transporter_Mobile
+		Location_Water - (either Path Location)
+		Town - Location_Land
+		District - Location_Land
+		Boat - (either Mobile_On_Water Vehicle_Water)
+		Electrical_Power_Engineering - Role
+		Transporter_Mobile - (either Transporter Mobile_Object)
+		Mobile_On_Land - (either Movable_On_Land Mobile_Object)
+		Vehicle_Water - Vehicle
+		Flood_Countermeasure - Role
+		Provider_Electricity - Role
+		Mobile_On_Water - (either Movable_On_Water Mobile_Object)
+		Clearing - Role
+		Location_Land - (either Path Location)
+		Vehicle_Land - (either Mobile_Object Thing Vehicle)
+		Clearing_Gear - (either Gear Role)
+		Path - Location
+		Transporter - (either Role Movable_Object)
+		Gear - (either Thing Transportable)
+		Location - Thing
+		Transportable - (either Movable_On_Water Movable_On_Land Movable_Object)
+		Movable_On_Water - Movable_Object
+		Movable_On_Land - Movable_Object
+		Role - Idea
+		Mobile_Object - Movable_Object
+		Movable_Object - Thing
+		Thing - Idea
+	)
+	(:predicates
+		(available ?arg0 - Role)
+		(at ?arg0 - Idea ?arg1 - Location)
+		(threatened_by_flood ?arg0 - Location)
+		(sublocation_of ?arg0 - Location ?arg1 - Location)
+		(secure ?arg0 - Town)
+		(has_endangered_civilians ?arg0 - Location)
+		(threatened_by ?arg0 - Location_Land ?arg1 - Location_Water)
+		(accessible ?arg0 - Location)
+		(flooded ?arg0 - Location)
+		(assigned ?arg0 - Location ?arg1 - THW_Facility)
+		(set_up ?arg0 - Location ?arg1 - THW_Facility)
+		(prepared ?arg0 - Location ?arg1 - THW_Facility)
+		(blocked_heavily ?arg0 - Path)
+		(assigned_to ?arg0 - Gear ?arg1 - THW_Group)
+		(has_loaded ?arg0 - Transporter ?arg1 - Transportable)
+		(blocked ?arg0 - Path)
+		(supplied_with_drinking_water ?arg0 - Location)
+		(supplied_with_electricity ?arg0 - Location)
+		(has_infrastructure_for_drinking_water ?arg0 - Location)
+		(has_infrastructure_for_elictricity ?arg0 - Location)
+		(suitable_for ?arg0 - Location ?arg1 - THW_Facility)
+		(attached_to ?arg0 - Trailer ?arg1 - Vehicle_Land)
+		(has_attached_trailer ?arg0 - Vehicle_Land)
+		(attached ?arg0 - Trailer)
+		(connected ?arg0 - Location ?arg1 - Location)
+	)
+
+	(:task Clear_Heavily_Blocked_Road
+		:parameters (?CHR_Road - Road)
+		:precondition 
+			(and
+				(blocked_heavily ?CHR_Road)
+			)
+		:effect
+			(and
+				(not (blocked_heavily ?CHR_Road))
+			)
+	)
+
+	(:task Provide_Electricity
+		:parameters (?PE_Location - Location)
+		:precondition 
+			(and
+				(not (supplied_with_electricity ?PE_Location))
+			)
+		:effect
+			(and
+				(supplied_with_electricity ?PE_Location)
+			)
+	)
+
+	(:task Provide_Drinking_Water
+		:parameters (?PDW_Location - Location)
+		:precondition 
+			(and
+				(not (supplied_with_drinking_water ?PDW_Location))
+			)
+		:effect
+			(and
+				(supplied_with_drinking_water ?PDW_Location)
+			)
+	)
+
+	(:task Clear_Blocked_Road
+		:parameters (?CR_Road - Road)
+		:precondition 
+			(and
+				(blocked ?CR_Road)
+			)
+		:effect
+			(and
+				(not (blocked ?CR_Road))
+			)
+	)
+
+	(:task Load
+		:parameters (?L_Transporter - Transporter ?L_Transportable - Transportable ?L_Location - Location)
+		:precondition 
+			(and
+				(at ?L_Transportable ?L_Location)
+				(at ?L_Transporter ?L_Location)
+			)
+		:effect
+			(and
+				(has_loaded ?L_Transporter ?L_Transportable)
+				(not (at ?L_Transportable ?L_Location))
+			)
+	)
+
+	(:task Go
+		:parameters (?Go_Origin - Location ?Go_Destination - Location ?Go_Mobile_Object - Mobile_Object)
+		:precondition 
+			(and
+				(at ?Go_Mobile_Object ?Go_Origin)
+				(not (at ?Go_Mobile_Object ?Go_Destination))
+				(connected ?Go_Destination ?Go_Origin)
+			)
+		:effect
+			(and
+				(not (at ?Go_Mobile_Object ?Go_Origin))
+				(at ?Go_Mobile_Object ?Go_Destination)
+			)
+	)
+
+	(:task Transport
+		:parameters (?T_Destination - Location ?T_Origin - Location ?T_Transportable - Transportable ?T_Transporter - Transporter)
+		:precondition 
+			(and
+				(not (at ?T_Transportable ?T_Destination))
+				(at ?T_Transportable ?T_Origin)
+				(at ?T_Transporter ?T_Origin)
+			)
+		:effect
+			(and
+				(not (at ?T_Transportable ?T_Origin))
+				(at ?T_Transportable ?T_Destination)
+				(at ?T_Transporter ?T_Destination)
+			)
+	)
+
+	(:task Create_Facility_Emergency_Accomodation
+		:parameters (?CFEA_Facility - Emergency_Accommodation)
+		:precondition 
+			(and
+				(not (available ?CFEA_Facility))
+			)
+		:effect
+			(and
+				(available ?CFEA_Facility)
+			)
+	)
+
+	(:task Create_Facility_Command_Post
+		:parameters (?CFCC_Facility - Command_Post)
+		:precondition 
+			(and
+				(not (available ?CFCC_Facility))
+			)
+		:effect
+			(and
+				(available ?CFCC_Facility)
+			)
+	)
+
+	(:task Create_Facility_Marshalling_Area
+		:parameters (?CFMA_Facility - Marshalling_Area)
+		:precondition 
+			(and
+				(not (available ?CFMA_Facility))
+			)
+		:effect
+			(and
+				(available ?CFMA_Facility)
+			)
+	)
+
+	(:task Create_Facility_Operation_Management
+		:parameters (?CFOM_Facility - Operation_Management)
+		:precondition 
+			(and
+				(not (available ?CFOM_Facility))
+			)
+		:effect
+			(and
+				(available ?CFOM_Facility)
+			)
+	)
+
+	(:task Build_Dam
+		:parameters (?BD_Location - Location_Land ?BD_Threat - Location_Water)
+		:precondition 
+			(and
+				(threatened_by ?BD_Location ?BD_Threat)
+			)
+		:effect
+			(and
+				(not (threatened_by ?BD_Location ?BD_Threat))
+			)
+	)
+
+	(:method method0
+		:parameters (?T_Go_Go_Mobile_Object - Mobile_Object ?T_Go_Go_Origin - Location ?T_Unload_U_Location - Location ?T_Unload_U_Transportable - Transportable)
+		:task (Transport ?T_Unload_U_Location ?T_Go_Go_Origin ?T_Unload_U_Transportable ?T_Go_Go_Mobile_Object)
+		:subtasks (and
+		 (task0 (Load ?T_Go_Go_Mobile_Object ?T_Unload_U_Transportable ?T_Unload_U_Location))
+		 (task1 (Go ?T_Go_Go_Origin ?T_Unload_U_Location ?T_Go_Go_Mobile_Object))
+		 (task2 (Unload ?T_Go_Go_Mobile_Object ?T_Unload_U_Transportable ?T_Unload_U_Location))
+		)
+		:ordering (and
+			(task0 < task1)
+			(task1 < task2)
+		)
+		:causallinks (and
+			(task0 (has_loaded ?T_Go_Go_Mobile_Object ?T_Unload_U_Transportable) task2)
+			(task1 (at ?T_Go_Go_Mobile_Object ?T_Unload_U_Location) task2)
+		)
+	)
+
+	(:method method1
+		:parameters (?D_LM_Load_Material_LM_Location - Location ?D_LM_Load_Material_LM_Material - Material ?D_LM_Load_Material_LM_Truck - Truck)
+		:task (Load ?D_LM_Load_Material_LM_Truck ?D_LM_Load_Material_LM_Material ?D_LM_Load_Material_LM_Location)
+		:subtasks (and
+		 (task0 (Load_Material ?D_LM_Load_Material_LM_Location ?D_LM_Load_Material_LM_Truck ?D_LM_Load_Material_LM_Material))
+		)
+	)
+
+	(:method method2
+		:parameters (?D_LP_Load_Passengers_LP_Location - Location ?D_LP_Load_Passengers_LP_Passenger - Person ?D_LP_Load_Passengers_LP_Passenger_Transporter - Passenger_Transporter)
+		:task (Load ?D_LP_Load_Passengers_LP_Passenger_Transporter ?D_LP_Load_Passengers_LP_Passenger ?D_LP_Load_Passengers_LP_Location)
+		:subtasks (and
+		 (task0 (Load_Passengers ?D_LP_Load_Passengers_LP_Passenger ?D_LP_Load_Passengers_LP_Passenger_Transporter ?D_LP_Load_Passengers_LP_Location))
+		)
+	)
+
+	(:method method3
+		:parameters (?D_CR_Get_Clearing_Gear_T_Origin - Location ?D_CR_Get_Clearing_Gear_T_Transporter - Transporter ?D_CR_Remove_Obstacle_RO_Clearer - Clearing ?D_CR_Remove_Obstacle_RO_Clearing_Gear - Clearing_Gear ?D_CR_Remove_Obstacle_RO_Road - Road)
+		:task (Clear_Blocked_Road ?D_CR_Remove_Obstacle_RO_Road)
+		:subtasks (and
+		 (task0 (Remove_Obstacle ?D_CR_Remove_Obstacle_RO_Clearer ?D_CR_Remove_Obstacle_RO_Road ?D_CR_Remove_Obstacle_RO_Clearing_Gear))
+		 (task1 (Transport ?D_CR_Remove_Obstacle_RO_Road ?D_CR_Get_Clearing_Gear_T_Origin ?D_CR_Remove_Obstacle_RO_Clearing_Gear ?D_CR_Get_Clearing_Gear_T_Transporter))
+		)
+		:ordering (and
+			(task1 < task0)
+		)
+		:causallinks (and
+			(task1 (at ?D_CR_Remove_Obstacle_RO_Clearing_Gear ?D_CR_Remove_Obstacle_RO_Road) task0)
+		)
+	)
+
+	(:method method4
+		:parameters (?D_LHG_Load_Heavy_Gear_LG_Gear - Gear ?D_LHG_Load_Heavy_Gear_LG_Location - Location ?D_LHG_Load_Heavy_Gear_LG_Transporter - Transporter_Large)
+		:task (Load ?D_LHG_Load_Heavy_Gear_LG_Transporter ?D_LHG_Load_Heavy_Gear_LG_Gear ?D_LHG_Load_Heavy_Gear_LG_Location)
+		:subtasks (and
+		 (task0 (Load_Heavy_Gear ?D_LHG_Load_Heavy_Gear_LG_Location ?D_LHG_Load_Heavy_Gear_LG_Transporter ?D_LHG_Load_Heavy_Gear_LG_Gear))
+		)
+	)
+
+	(:method method5
+		:parameters (?BD_Threat - Location_Water ?M_D_BD_Do_Build_Dam_DBD_Sandbags - Sandbags ?M_D_BD_Do_Build_Dam_DBD_Unit - THW_Group ?M_D_BD_Do_Build_Dam_PBD_Water - Location_Water ?M_D_BD_Get_Sandbags_T_Destination - Location ?M_D_BD_Get_Sandbags_T_Origin - Location ?M_D_BD_Get_Sandbags_T_Transporter - Transporter)
+		:task (Build_Dam ?M_D_BD_Get_Sandbags_T_Destination ?BD_Threat)
+		:subtasks (and
+		 (task0 (Prim_Build_Dam ?M_D_BD_Do_Build_Dam_DBD_Unit ?M_D_BD_Get_Sandbags_T_Destination ?M_D_BD_Do_Build_Dam_DBD_Sandbags ?M_D_BD_Do_Build_Dam_PBD_Water))
+		 (task1 (Transport ?M_D_BD_Get_Sandbags_T_Destination ?M_D_BD_Get_Sandbags_T_Origin ?M_D_BD_Do_Build_Dam_DBD_Sandbags ?M_D_BD_Get_Sandbags_T_Transporter))
+		)
+		:ordering (and
+			(task1 < task0)
+		)
+		:causallinks (and
+			(task1 (at ?M_D_BD_Do_Build_Dam_DBD_Sandbags ?M_D_BD_Get_Sandbags_T_Destination) task0)
+		)
+	)
+
+	(:method method6
+		:parameters (?D_CHBR_Get_Heavy_Gear_T_Origin - Location ?D_CHBR_Get_Heavy_Gear_T_Transporter - Transporter ?D_CHBR_Remove_Heavy_Obstacle_RHO_Heavy_Clearer - Clearing_Heavy ?D_CHBR_Remove_Heavy_Obstacle_RHO_Heavy_Gear - Clearing_Gear_Heavy ?D_CHBR_Remove_Heavy_Obstacle_RHO_Road - Road)
+		:task (Clear_Heavily_Blocked_Road ?D_CHBR_Remove_Heavy_Obstacle_RHO_Road)
+		:subtasks (and
+		 (task0 (Remove_Heavy_Obstacle ?D_CHBR_Remove_Heavy_Obstacle_RHO_Road ?D_CHBR_Remove_Heavy_Obstacle_RHO_Heavy_Gear ?D_CHBR_Remove_Heavy_Obstacle_RHO_Heavy_Clearer))
+		 (task1 (Transport ?D_CHBR_Remove_Heavy_Obstacle_RHO_Road ?D_CHBR_Get_Heavy_Gear_T_Origin ?D_CHBR_Remove_Heavy_Obstacle_RHO_Heavy_Gear ?D_CHBR_Get_Heavy_Gear_T_Transporter))
+		)
+		:ordering (and
+			(task1 < task0)
+		)
+		:causallinks (and
+			(task1 (at ?D_CHBR_Remove_Heavy_Obstacle_RHO_Heavy_Gear ?D_CHBR_Remove_Heavy_Obstacle_RHO_Road) task0)
+		)
+	)
+
+	(:method method7
+		:parameters (?PE_Location - Location ?RPIB_Do_Restore_D_RPSI_Location - Location ?RPIB_Do_Restore_D_RPSI_Worker - Electrical_Power_Engineering)
+		:task (Provide_Electricity ?PE_Location)
+		:subtasks (and
+		 (task0 (Prim_Restore_Power_Supply_Infrastructure ?RPIB_Do_Restore_D_RPSI_Location ?RPIB_Do_Restore_D_RPSI_Worker))
+		)
+		:constraints (and
+			(sortof ?RPIB_Do_Restore_D_RPSI_Worker - Electrical_Power_Engineering_Building)
+			(sortof ?PE_Location - Building)
+		)
+	)
+
+	(:method method8
+		:parameters (?PE_Location - Location ?RPIHL_Do_Restore_D_RPSI_Location - Location ?RPIHL_Do_Restore_D_RPSI_Worker - Electrical_Power_Engineering)
+		:task (Provide_Electricity ?PE_Location)
+		:subtasks (and
+		 (task0 (Prim_Restore_Power_Supply_Infrastructure ?RPIHL_Do_Restore_D_RPSI_Location ?RPIHL_Do_Restore_D_RPSI_Worker))
+		)
+		:constraints (and
+			(not (sortof ?PE_Location - Building))
+			(sortof ?RPIHL_Do_Restore_D_RPSI_Worker - Electrical_Power_Engineering_HighLevel)
+		)
+	)
+
+	(:method method9
+		:parameters (?PE_D_EEG_Employ_Electricity_Group_EEG_Location - Location ?PE_D_EEG_Employ_Electricity_Group_EEG_Provider - Provider_Electricity)
+		:task (Provide_Electricity ?PE_D_EEG_Employ_Electricity_Group_EEG_Location)
+		:subtasks (and
+		 (task0 (Employ_Electricity_Group ?PE_D_EEG_Employ_Electricity_Group_EEG_Location ?PE_D_EEG_Employ_Electricity_Group_EEG_Provider))
+		)
+	)
+
+	(:method method10
+		:parameters (?PDW_D_EDWG_Employ_Drinking_Water_Group_EDWG_Location - Location ?PDW_D_EDWG_Employ_Drinking_Water_Group_EDWG_Worker - Provider_Drinking_Water)
+		:task (Provide_Drinking_Water ?PDW_D_EDWG_Employ_Drinking_Water_Group_EDWG_Location)
+		:subtasks (and
+		 (task0 (Employ_Drinking_Water_Group ?PDW_D_EDWG_Employ_Drinking_Water_Group_EDWG_Location ?PDW_D_EDWG_Employ_Drinking_Water_Group_EDWG_Worker))
+		)
+	)
+
+	(:method method11
+		:parameters (?PDW_RWSP_Do_Restore_Water_Supply_Infrastructure_D_RWSI_Location - Location ?PDW_RWSP_Do_Restore_Water_Supply_Infrastructure_D_RWSI_Worker - Infrastructural_Work)
+		:task (Provide_Drinking_Water ?PDW_RWSP_Do_Restore_Water_Supply_Infrastructure_D_RWSI_Location)
+		:subtasks (and
+		 (task0 (Prim_Restore_Water_Supply_Infrastructure ?PDW_RWSP_Do_Restore_Water_Supply_Infrastructure_D_RWSI_Location ?PDW_RWSP_Do_Restore_Water_Supply_Infrastructure_D_RWSI_Worker))
+		)
+	)
+
+	(:method method12
+		:parameters (?D_CFEA_Prepare_PL_Handler - Facility_Handling ?D_CFEA_Run_REA_Handler - Facility_Handling ?D_CFEA_Run_REA_Location - Location ?D_CFEA_Scout_SL_Handler - Facility_Handling ?D_CFEA_Set_Up_SUL_Facility - THW_Facility ?D_CFEA_Set_Up_SUL_Handler - Facility_Handling)
+		:task (Create_Facility_Emergency_Accomodation ?D_CFEA_Set_Up_SUL_Facility)
+		:subtasks (and
+		 (task0 (Scout_Location ?D_CFEA_Run_REA_Location ?D_CFEA_Set_Up_SUL_Facility ?D_CFEA_Scout_SL_Handler))
+		 (task1 (Prepare_Location ?D_CFEA_Run_REA_Location ?D_CFEA_Prepare_PL_Handler ?D_CFEA_Set_Up_SUL_Facility))
+		 (task2 (Set_Up_Location ?D_CFEA_Run_REA_Location ?D_CFEA_Set_Up_SUL_Handler ?D_CFEA_Set_Up_SUL_Facility))
+		 (task3 (Run_Emergency_Accommodation ?D_CFEA_Run_REA_Location ?D_CFEA_Set_Up_SUL_Facility ?D_CFEA_Run_REA_Handler))
+		)
+		:ordering (and
+			(task0 < task1)
+			(task1 < task2)
+			(task2 < task3)
+		)
+		:constraints (and
+			(sortof ?D_CFEA_Scout_SL_Handler - THW_Group_Command_Communication)
+		)
+		:causallinks (and
+			(task0 (assigned ?D_CFEA_Run_REA_Location ?D_CFEA_Set_Up_SUL_Facility) task1)
+			(task1 (prepared ?D_CFEA_Run_REA_Location ?D_CFEA_Set_Up_SUL_Facility) task2)
+			(task2 (set_up ?D_CFEA_Run_REA_Location ?D_CFEA_Set_Up_SUL_Facility) task3)
+		)
+	)
+
+	(:method method13
+		:parameters (?D_CFMA_Prepare_PL_Handler - Facility_Handling ?D_CFMA_Run_RF_Facility - THW_Facility ?D_CFMA_Run_RF_Handler - Facility_Handling ?D_CFMA_Run_RF_Location - Location ?D_CFMA_Scout_SL_Handler - Facility_Handling ?D_CFMA_Set_Up_SUL_Handler - Facility_Handling)
+		:task (Create_Facility_Marshalling_Area ?D_CFMA_Run_RF_Facility)
+		:subtasks (and
+		 (task0 (Scout_Location ?D_CFMA_Run_RF_Location ?D_CFMA_Run_RF_Facility ?D_CFMA_Scout_SL_Handler))
+		 (task1 (Run_Facility ?D_CFMA_Run_RF_Location ?D_CFMA_Run_RF_Handler ?D_CFMA_Run_RF_Facility))
+		 (task2 (Set_Up_Location ?D_CFMA_Run_RF_Location ?D_CFMA_Set_Up_SUL_Handler ?D_CFMA_Run_RF_Facility))
+		 (task3 (Prepare_Location ?D_CFMA_Run_RF_Location ?D_CFMA_Prepare_PL_Handler ?D_CFMA_Run_RF_Facility))
+		)
+		:ordering (and
+			(task2 < task1)
+			(task3 < task2)
+			(task0 < task3)
+		)
+		:constraints (and
+			(sortof ?D_CFMA_Scout_SL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFMA_Run_RF_Handler - THW_Group_Command_Communication)
+		)
+		:causallinks (and
+			(task0 (assigned ?D_CFMA_Run_RF_Location ?D_CFMA_Run_RF_Facility) task3)
+			(task3 (prepared ?D_CFMA_Run_RF_Location ?D_CFMA_Run_RF_Facility) task2)
+			(task2 (set_up ?D_CFMA_Run_RF_Location ?D_CFMA_Run_RF_Facility) task1)
+		)
+	)
+
+	(:method method14
+		:parameters (?D_CFOM_Prepare_PL_Handler - Facility_Handling ?D_CFOM_Run_RF_Facility - THW_Facility ?D_CFOM_Run_RF_Handler - Facility_Handling ?D_CFOM_Run_RF_Location - Location ?D_CFOM_Scout_SL_Handler - Facility_Handling ?D_CFOM_Set_Up_SUL_Handler - Facility_Handling)
+		:task (Create_Facility_Operation_Management ?D_CFOM_Run_RF_Facility)
+		:subtasks (and
+		 (task0 (Run_Facility ?D_CFOM_Run_RF_Location ?D_CFOM_Run_RF_Handler ?D_CFOM_Run_RF_Facility))
+		 (task1 (Scout_Location ?D_CFOM_Run_RF_Location ?D_CFOM_Run_RF_Facility ?D_CFOM_Scout_SL_Handler))
+		 (task2 (Prepare_Location ?D_CFOM_Run_RF_Location ?D_CFOM_Prepare_PL_Handler ?D_CFOM_Run_RF_Facility))
+		 (task3 (Set_Up_Location ?D_CFOM_Run_RF_Location ?D_CFOM_Set_Up_SUL_Handler ?D_CFOM_Run_RF_Facility))
+		)
+		:ordering (and
+			(task3 < task0)
+			(task1 < task2)
+			(task2 < task3)
+		)
+		:constraints (and
+			(sortof ?D_CFOM_Scout_SL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFOM_Prepare_PL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFOM_Set_Up_SUL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFOM_Run_RF_Handler - THW_Group_Command_Communication)
+		)
+		:causallinks (and
+			(task1 (assigned ?D_CFOM_Run_RF_Location ?D_CFOM_Run_RF_Facility) task2)
+			(task2 (prepared ?D_CFOM_Run_RF_Location ?D_CFOM_Run_RF_Facility) task3)
+			(task3 (set_up ?D_CFOM_Run_RF_Location ?D_CFOM_Run_RF_Facility) task0)
+		)
+	)
+
+	(:method method15
+		:parameters (?D_CFCP_Prepare_PL_Handler - Facility_Handling ?D_CFCP_Run_RF_Facility - THW_Facility ?D_CFCP_Run_RF_Handler - Facility_Handling ?D_CFCP_Run_RF_Location - Location ?D_CFCP_Scout_SL_Handler - Facility_Handling ?D_CFCP_Set_Up_SUL_Handler - Facility_Handling)
+		:task (Create_Facility_Command_Post ?D_CFCP_Run_RF_Facility)
+		:subtasks (and
+		 (task0 (Run_Facility ?D_CFCP_Run_RF_Location ?D_CFCP_Run_RF_Handler ?D_CFCP_Run_RF_Facility))
+		 (task1 (Scout_Location ?D_CFCP_Run_RF_Location ?D_CFCP_Run_RF_Facility ?D_CFCP_Scout_SL_Handler))
+		 (task2 (Prepare_Location ?D_CFCP_Run_RF_Location ?D_CFCP_Prepare_PL_Handler ?D_CFCP_Run_RF_Facility))
+		 (task3 (Set_Up_Location ?D_CFCP_Run_RF_Location ?D_CFCP_Set_Up_SUL_Handler ?D_CFCP_Run_RF_Facility))
+		)
+		:ordering (and
+			(task3 < task0)
+			(task1 < task2)
+			(task2 < task3)
+		)
+		:constraints (and
+			(sortof ?D_CFCP_Scout_SL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFCP_Prepare_PL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFCP_Set_Up_SUL_Handler - THW_Group_Command_Communication)
+			(sortof ?D_CFCP_Run_RF_Handler - THW_Group_Command_Communication)
+		)
+		:causallinks (and
+			(task1 (assigned ?D_CFCP_Run_RF_Location ?D_CFCP_Run_RF_Facility) task2)
+			(task2 (prepared ?D_CFCP_Run_RF_Location ?D_CFCP_Run_RF_Facility) task3)
+			(task3 (set_up ?D_CFCP_Run_RF_Location ?D_CFCP_Run_RF_Facility) task0)
+		)
+	)
+
+	(:method method16
+		:parameters (?D_GVL_Go_PG_Destination - Location_Land ?D_GVL_Go_PG_Mobile - Mobile_On_Land ?D_GVL_Go_PG_Origin - Location_Land)
+		:task (Go ?D_GVL_Go_PG_Origin ?D_GVL_Go_PG_Destination ?D_GVL_Go_PG_Mobile)
+		:subtasks (and
+		 (task0 (Prim_Go_Via_Land ?D_GVL_Go_PG_Origin ?D_GVL_Go_PG_Destination ?D_GVL_Go_PG_Mobile))
+		)
+	)
+
+	(:method method17
+		:parameters (?D_GVW_Go_PGVW_Destination - Location_Water ?D_GVW_Go_PGVW_Mobile - Mobile_On_Water ?D_GVW_Go_PGVW_Origin - Location_Water)
+		:task (Go ?D_GVW_Go_PGVW_Origin ?D_GVW_Go_PGVW_Destination ?D_GVW_Go_PGVW_Mobile)
+		:subtasks (and
+		 (task0 (Prim_Go_Via_Water ?D_GVW_Go_PGVW_Origin ?D_GVW_Go_PGVW_Destination ?D_GVW_Go_PGVW_Mobile))
+		)
+	)
+
+	(:action Remove_Heavy_Obstacle
+		:parameters (?RHO_Road - Road ?RHO_Heavy_Gear - Clearing_Gear_Heavy ?RHO_Heavy_Clearer - Clearing_Heavy)
+		:precondition 
+			(and
+				(blocked_heavily ?RHO_Road)
+				(at ?RHO_Heavy_Clearer ?RHO_Road)
+				(at ?RHO_Heavy_Gear ?RHO_Road)
+				(available ?RHO_Heavy_Clearer)
+				(available ?RHO_Heavy_Gear)
+			)
+		:effect
+			(and
+				(not (blocked_heavily ?RHO_Road))
+				(not (available ?RHO_Heavy_Clearer))
+				(not (available ?RHO_Heavy_Gear))
+			)
+	)
+
+	(:action Remove_Obstacle
+		:parameters (?RO_Clearer - Clearing ?RO_Road - Road ?RO_Clearing_Gear - Clearing_Gear)
+		:precondition 
+			(and
+				(at ?RO_Clearer ?RO_Road)
+				(blocked ?RO_Road)
+				(available ?RO_Clearer)
+				(at ?RO_Clearing_Gear ?RO_Road)
+				(available ?RO_Clearing_Gear)
+			)
+		:effect
+			(and
+				(not (blocked ?RO_Road))
+				(not (available ?RO_Clearer))
+				(not (available ?RO_Clearing_Gear))
+			)
+	)
+
+	(:action Prim_Build_Dam
+		:parameters (?DBD_Unit - THW_Group ?DBD_Location - Location_Land ?DBD_Sandbags - Sandbags ?PBD_Water - Location_Water)
+		:precondition 
+			(and
+				(at ?DBD_Unit ?DBD_Location)
+				(at ?DBD_Sandbags ?DBD_Location)
+				(available ?DBD_Unit)
+				(available ?DBD_Sandbags)
+				(threatened_by ?DBD_Location ?PBD_Water)
+			)
+		:effect
+			(and
+				(not (threatened_by ?DBD_Location ?PBD_Water))
+				(not (available ?DBD_Sandbags))
+				(not (available ?DBD_Unit))
+			)
+	)
+
+	(:action Prim_Restore_Power_Supply_Infrastructure
+		:parameters (?D_RPSI_Location - Location ?D_RPSI_Worker - Electrical_Power_Engineering)
+		:precondition 
+			(and
+				(not (supplied_with_electricity ?D_RPSI_Location))
+				(has_infrastructure_for_elictricity ?D_RPSI_Location)
+				(at ?D_RPSI_Worker ?D_RPSI_Location)
+				(available ?D_RPSI_Worker)
+			)
+		:effect
+			(and
+				(supplied_with_electricity ?D_RPSI_Location)
+				(not (available ?D_RPSI_Worker))
+			)
+	)
+
+	(:action Prim_Restore_Water_Supply_Infrastructure
+		:parameters (?D_RWSI_Location - Location ?D_RWSI_Worker - Infrastructural_Work)
+		:precondition 
+			(and
+				(not (supplied_with_drinking_water ?D_RWSI_Location))
+				(has_infrastructure_for_drinking_water ?D_RWSI_Location)
+				(at ?D_RWSI_Worker ?D_RWSI_Location)
+				(available ?D_RWSI_Worker)
+			)
+		:effect
+			(and
+				(supplied_with_drinking_water ?D_RWSI_Location)
+				(not (available ?D_RWSI_Worker))
+			)
+	)
+
+	(:action Employ_Electricity_Group
+		:parameters (?EEG_Location - Location ?EEG_Provider - Provider_Electricity)
+		:precondition 
+			(and
+				(not (supplied_with_electricity ?EEG_Location))
+				(at ?EEG_Provider ?EEG_Location)
+				(available ?EEG_Provider)
+			)
+		:effect
+			(and
+				(supplied_with_electricity ?EEG_Location)
+				(not (available ?EEG_Provider))
+			)
+	)
+
+	(:action Employ_Drinking_Water_Group
+		:parameters (?EDWG_Location - Location ?EDWG_Worker - Provider_Drinking_Water)
+		:precondition 
+			(and
+				(not (supplied_with_drinking_water ?EDWG_Location))
+				(at ?EDWG_Worker ?EDWG_Location)
+				(available ?EDWG_Worker)
+			)
+		:effect
+			(and
+				(supplied_with_drinking_water ?EDWG_Location)
+				(not (available ?EDWG_Worker))
+			)
+	)
+
+	(:action Load_Material
+		:parameters (?LM_Location - Location ?LM_Truck - Truck ?LM_Material - Material)
+		:precondition 
+			(and
+				(at ?LM_Truck ?LM_Location)
+				(at ?LM_Material ?LM_Location)
+			)
+		:effect
+			(and
+				(has_loaded ?LM_Truck ?LM_Material)
+				(not (at ?LM_Material ?LM_Location))
+			)
+	)
+
+	(:action Load_Passengers
+		:parameters (?LP_Passenger - Person ?LP_Passenger_Transporter - Passenger_Transporter ?LP_Location - Location)
+		:precondition 
+			(and
+				(at ?LP_Passenger ?LP_Location)
+				(at ?LP_Passenger_Transporter ?LP_Location)
+			)
+		:effect
+			(and
+				(has_loaded ?LP_Passenger_Transporter ?LP_Passenger)
+				(not (at ?LP_Passenger ?LP_Location))
+			)
+	)
+
+	(:action Prim_Go_Via_Water
+		:parameters (?PGVW_Origin - Location_Water ?PGVW_Destination - Location_Water ?PGVW_Mobile - Mobile_On_Water)
+		:precondition 
+			(and
+				(not (at ?PGVW_Mobile ?PGVW_Destination))
+				(at ?PGVW_Mobile ?PGVW_Origin)
+				(connected ?PGVW_Origin ?PGVW_Destination)
+			)
+		:effect
+			(and
+				(at ?PGVW_Mobile ?PGVW_Destination)
+				(not (at ?PGVW_Mobile ?PGVW_Origin))
+			)
+	)
+
+	(:action Prim_Go_Via_Land
+		:parameters (?PG_Origin - Location_Land ?PG_Destination - Location_Land ?PG_Mobile - Mobile_On_Land)
+		:precondition 
+			(and
+				(at ?PG_Mobile ?PG_Origin)
+				(not (at ?PG_Mobile ?PG_Destination))
+				(connected ?PG_Destination ?PG_Origin)
+			)
+		:effect
+			(and
+				(at ?PG_Mobile ?PG_Destination)
+				(not (at ?PG_Mobile ?PG_Origin))
+			)
+	)
+
+	(:action Unload
+		:parameters (?U_Transporter - Transporter ?U_Transportable - Transportable ?U_Location - Location)
+		:precondition 
+			(and
+				(has_loaded ?U_Transporter ?U_Transportable)
+				(at ?U_Transporter ?U_Location)
+			)
+		:effect
+			(and
+				(not (has_loaded ?U_Transporter ?U_Transportable))
+				(at ?U_Transportable ?U_Location)
+			)
+	)
+
+	(:action Load_Heavy_Gear
+		:parameters (?LHG_Location - Location ?LHG_Transporter - Transporter_Large ?LHG_Gear - Gear)
+		:precondition 
+			(and
+				(at ?LHG_Transporter ?LHG_Location)
+				(at ?LHG_Gear ?LHG_Location)
+			)
+		:effect
+			(and
+				(has_loaded ?LHG_Transporter ?LHG_Gear)
+				(not (at ?LHG_Gear ?LHG_Location))
+			)
+	)
+
+	(:action Prepare_Location
+		:parameters (?PL_Location - Location ?PL_Handler - Facility_Handling ?PL_Facility - THW_Facility)
+		:precondition 
+			(and
+				(at ?PL_Handler ?PL_Location)
+				(available ?PL_Handler)
+				(assigned ?PL_Location ?PL_Facility)
+			)
+		:effect
+			(and
+				(prepared ?PL_Location ?PL_Facility)
+			)
+	)
+
+	(:action Set_Up_Location
+		:parameters (?SUL_Location - Location ?SUL_Handler - Facility_Handling ?SUL_Facility - THW_Facility)
+		:precondition 
+			(and
+				(at ?SUL_Handler ?SUL_Location)
+				(available ?SUL_Handler)
+				(prepared ?SUL_Location ?SUL_Facility)
+			)
+		:effect
+			(and
+				(set_up ?SUL_Location ?SUL_Facility)
+			)
+	)
+
+	(:action Run_Emergency_Accommodation
+		:parameters (?REA_Location - Location ?REA_Facility - Emergency_Accommodation ?REA_Handler - Facility_Handling)
+		:precondition 
+			(and
+				(at ?REA_Handler ?REA_Location)
+				(available ?REA_Handler)
+				(set_up ?REA_Location ?REA_Facility)
+				(not (available ?REA_Facility))
+				(supplied_with_drinking_water ?REA_Location)
+				(supplied_with_electricity ?REA_Location)
+			)
+		:effect
+			(and
+				(available ?REA_Facility)
+				(at ?REA_Facility ?REA_Location)
+				(not (available ?REA_Handler))
+			)
+	)
+
+	(:action Run_Facility
+		:parameters (?RF_Location - Location ?RF_Handler - Facility_Handling ?RF_Facility - THW_Facility)
+		:precondition 
+			(and
+				(at ?RF_Handler ?RF_Location)
+				(available ?RF_Handler)
+				(set_up ?RF_Location ?RF_Facility)
+				(not (available ?RF_Facility))
+				(supplied_with_electricity ?RF_Location)
+			)
+		:effect
+			(and
+				(available ?RF_Facility)
+				(at ?RF_Facility ?RF_Location)
+				(not (available ?RF_Handler))
+			)
+	)
+
+	(:action Scout_Location
+		:parameters (?SL_Location - Location ?SL_Facility - THW_Facility ?SL_Handler - Facility_Handling)
+		:precondition 
+			(and
+				(at ?SL_Handler ?SL_Location)
+				(available ?SL_Handler)
+				(suitable_for ?SL_Location ?SL_Facility)
+			)
+		:effect
+			(and
+				(assigned ?SL_Location ?SL_Facility)
+			)
+	)
+
+	(:action Attach_Trailer
+		:parameters (?AT_Vehicle - Vehicle_Land ?AT_Trailer - Trailer ?AT_Location - Location)
+		:precondition 
+			(and
+				(at ?AT_Trailer ?AT_Location)
+				(at ?AT_Vehicle ?AT_Location)
+				(not (attached ?AT_Trailer))
+				(not (has_attached_trailer ?AT_Vehicle))
+			)
+		:effect
+			(and
+				(attached ?AT_Trailer)
+				(has_attached_trailer ?AT_Vehicle)
+				(attached_to ?AT_Trailer ?AT_Vehicle)
+			)
+	)
+
+	(:action Detach_Trailer
+		:parameters (?DT_Vehicle - Vehicle_Land ?DT_Trailer - Trailer ?DT_Location - Location)
+		:precondition 
+			(and
+				(at ?DT_Vehicle ?DT_Location)
+				(at ?DT_Trailer ?DT_Location)
+				(attached_to ?DT_Trailer ?DT_Vehicle)
+			)
+		:effect
+			(and
+				(not (attached ?DT_Trailer))
+				(not (has_attached_trailer ?DT_Vehicle))
+				(not (attached_to ?DT_Trailer ?DT_Vehicle))
+			)
+	)
+
+	(:action Prim_Pump
+		:parameters (?P_Location - Location_Land ?P_Pump - Pump ?P_Worker - Pumping_Work ?P_Water - Location_Water)
+		:precondition 
+			(and
+				(at ?P_Pump ?P_Location)
+				(at ?P_Worker ?P_Location)
+				(flooded ?P_Location)
+				(available ?P_Pump)
+				(available ?P_Worker)
+				(not (threatened_by ?P_Location ?P_Water))
+			)
+		:effect
+			(and
+				(not (flooded ?P_Location))
+				(not (available ?P_Pump))
+				(not (available ?P_Worker))
+			)
+	)
+)
